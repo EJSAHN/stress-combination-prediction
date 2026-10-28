@@ -1,0 +1,441 @@
+{
+  "status": "PASS",
+  "definition": "exact-single-span-diagnostics-v1",
+  "scope": "single_mean_span CT/S/EL/HS diagnostic rows only",
+  "identity_error_limit": 5e-10,
+  "explanation": "A full-rank single span reproduces its defining rows exactly; use observed absolute means for strict sign and Gaussian CDF diagnostics.",
+  "simulation_draws_or_predictions_modified": false,
+  "historical_engine_or_reference_modified": false,
+  "source_provenance": [
+    {
+      "genotype": "WT",
+      "source": "provenance/historical/stress_combinations_code6/input/GSE330879_Col0_fpkm.txt.gz",
+      "source_sha256": "cc688c63c6f660268d0c3c32ee7de906694f728b53e04af9ef4e7dd0a874caa0",
+      "fixed_panel_sha256": "c5a0320e25ea1dddc6f3ce1825f04469012cccaad0f5aa6227426c7bf59e1005",
+      "gene_count": 19180,
+      "single_span_singular_values": [
+        116.42883699734107,
+        69.1299009303304,
+        47.7101347880949
+      ],
+      "maximum_identity_error": 1.4654943925052066e-14
+    },
+    {
+      "genotype": "RAP2.3",
+      "source": "provenance/historical/stress_combinations_code6/input/GSE330879_RAP2.3_fpkm.txt.gz",
+      "source_sha256": "89fd2bc79eff30d390cb5aa6cadc6d7a020c1a65d55153b6a718c3c764ae5df5",
+      "fixed_panel_sha256": "5a700af5ca05e2a2543d66d702ed59193f62737ca4565287e1735c6f86b12808",
+      "gene_count": 19034,
+      "single_span_singular_values": [
+        114.94545814955407,
+        78.7465745720459,
+        51.45280466925888
+      ],
+      "maximum_identity_error": 1.0613732115416497e-13
+    }
+  ],
+  "identity_checks": [
+    {
+      "genotype": "WT",
+      "condition": "CT",
+      "features": 19180,
+      "maximum_source_projection_error": 0.0,
+      "legacy_identity_error_bound": 4.1408167226671555e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "WT",
+      "condition": "S",
+      "features": 19180,
+      "maximum_source_projection_error": 1.021405182655144e-14,
+      "legacy_identity_error_bound": 5.572655143948197e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "WT",
+      "condition": "EL",
+      "features": 19180,
+      "maximum_source_projection_error": 7.993605777301127e-15,
+      "legacy_identity_error_bound": 6.065651566819776e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "WT",
+      "condition": "HS",
+      "features": 19180,
+      "maximum_source_projection_error": 1.4654943925052066e-14,
+      "legacy_identity_error_bound": 6.718270448007097e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "RAP2.3",
+      "condition": "CT",
+      "features": 19034,
+      "maximum_source_projection_error": 0.0,
+      "legacy_identity_error_bound": 4.1606566348861127e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "RAP2.3",
+      "condition": "S",
+      "features": 19034,
+      "maximum_source_projection_error": 1.7763568394002505e-15,
+      "legacy_identity_error_bound": 5.210932298581407e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "RAP2.3",
+      "condition": "EL",
+      "features": 19034,
+      "maximum_source_projection_error": 1.2434497875801753e-14,
+      "legacy_identity_error_bound": 5.935646525223492e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    },
+    {
+      "genotype": "RAP2.3",
+      "condition": "HS",
+      "features": 19034,
+      "maximum_source_projection_error": 1.0613732115416497e-13,
+      "legacy_identity_error_bound": 6.978696426588064e-13,
+      "canonical_minimum": 0.0,
+      "canonical_negative_fraction": 0.0
+    }
+  ],
+  "files": [
+    {
+      "filename": "latent_mean_diagnostics.csv",
+      "raw_sha256": "a67cdbb0fbadd531144bc365a192e152edd76b873d35773ece497809015e3d66",
+      "corrected_sha256": "97f1c006374c1a43ad987652d2a66a04170ad12075004f2e0ebf93a48151c861"
+    },
+    {
+      "filename": "negative_working_scale_probabilities.csv",
+      "raw_sha256": "b8c051232fe9fb3544ed2d0b31cdb152009e31dd048dfd69af19eb153e31bcec",
+      "corrected_sha256": "e742d480f251a8921ca5bf3692145fe8cc11c67caa6304646621358cd9074614"
+    }
+  ],
+  "run_summary": null,
+  "changed_cells": [
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 3,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_min",
+      "raw_text": "-4.942505082188168e-15",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 3,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_negative_fraction",
+      "raw_text": "0.002815432742440042",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 5,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_min",
+      "raw_text": "-2.9855923736482837e-15",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 5,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_negative_fraction",
+      "raw_text": "0.00145985401459854",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 19,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_min",
+      "raw_text": "-8.881784197001252e-16",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 19,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_negative_fraction",
+      "raw_text": "0.00021015025743406537",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 20,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_min",
+      "raw_text": "-8.881784197001252e-16",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 20,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_negative_fraction",
+      "raw_text": "0.00047283807922664705",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 21,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_min",
+      "raw_text": "-2.5196331099953226e-15",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "latent_mean_diagnostics.csv",
+      "csv_row_number": 21,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": null,
+      "field": "latent_log_mean_negative_fraction",
+      "raw_text": "0.00215404013869917",
+      "corrected_text": "0.0"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 3,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": "0.5",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.002975799002957569",
+      "corrected_text": "0.00016037105993328072"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 4,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": "0.5",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.00012605987259263138",
+      "corrected_text": "0.00012605989361478978"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 5,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": "0.5",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.001599932996874425",
+      "corrected_text": "0.00014126153173117022"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 11,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": "1.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.004228450329952098",
+      "corrected_text": "0.0014130283516616278"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 12,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": "1.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.001235127462517932",
+      "corrected_text": "0.0012351275096466484"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 13,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": "1.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0028742646442999962",
+      "corrected_text": "0.0014212062603897815"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 19,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": "2.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0070987631364847845",
+      "corrected_text": "0.004283338226629943"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 20,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": "2.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.004921252028546457",
+      "corrected_text": "0.0049212520628373274"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 21,
+      "genotype": "WT",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": "2.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0067789144944645505",
+      "corrected_text": "0.005326269140456618"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 51,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": "0.5",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.000359523169797469",
+      "corrected_text": "0.00014868380021821733"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 52,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": "0.5",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0006327915448345097",
+      "corrected_text": "0.000161092346090184"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 53,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": "0.5",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0023159526889842256",
+      "corrected_text": "0.00016191664910545305"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 59,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": "1.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0015308002583059599",
+      "corrected_text": "0.0013259769195813618"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 60,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": "1.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.002014564372881562",
+      "corrected_text": "0.0015446872902139962"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 61,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": "1.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.003819437272204838",
+      "corrected_text": "0.0016654063282565018"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 67,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "S",
+      "noise_sd_scale": "2.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.004278292292484688",
+      "corrected_text": "0.004081346594325194"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 68,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "EL",
+      "noise_sd_scale": "2.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.0064759163197307115",
+      "corrected_text": "0.006005318782382711"
+    },
+    {
+      "file": "negative_working_scale_probabilities.csv",
+      "csv_row_number": 69,
+      "genotype": "RAP2.3",
+      "latent_null": "single_mean_span",
+      "condition": "HS",
+      "noise_sd_scale": "2.0",
+      "field": "expected_negative_condition_mean_log_fraction",
+      "raw_text": "0.008881672097799486",
+      "corrected_text": "0.006727638650050751"
+    }
+  ],
+  "changed_cell_count": 28,
+  "adapter_sha256": "6ec151f4e58d13480a74c113dca6909ad9dc6fdfcd3045ff1028bb5ecde6d89e",
+  "reference_revision": "Canonical exact-identity diagnostics; original historical reference tables remain unchanged.",
+  "original_reference_paths": [
+    "provenance/reference_tables/noise/latent_mean_diagnostics.csv",
+    "provenance/reference_tables/noise/negative_working_scale_probabilities.csv"
+  ]
+}

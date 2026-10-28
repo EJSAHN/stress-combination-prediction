@@ -1,0 +1,55 @@
+WINDOWS LOCAL VALIDATION
+
+For a complete local distribution, save its STRESS_COMBINATION_LOCAL_v1*.zip in Downloads. Paste the complete block in
+scripts/bootstrap_windows.ps1 into Windows PowerShell. It creates a unique
+package_staging directory and run directory under:
+  D:\projects\STRESS_COMBINATION_PREDICTION
+
+The launcher requires an existing 64-bit Python 3.10 or later. It first tries
+the existing anaconda3\python.exe under USERPROFILE,
+then existing Miniconda/active Conda/PATH interpreters. It checks for NumPy,
+pandas, matplotlib, openpyxl and Pillow. It does not create an environment or
+install, upgrade or download any package or data. A missing package causes a
+diagnostic failure rather than an automatic installation.
+
+To choose a different existing Python explicitly, invoke the extracted run.ps1:
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\run.ps1 -PythonExe 'D:\existing_environment\python.exe'
+ProjectRoot and ResultDirectory can also be supplied explicitly. Earlier runs
+are preserved. Temporary files and matplotlib caches are redirected into the
+new project run, and process environment variables are restored on completion.
+
+Every full run verifies the package manifest, recomputes the analysis, rebuilds
+figures and Excel tables, and checks results/validation.json. Success requires
+both Python exit code 0 and validation status PASS. The default is the complete
+analysis, including the conditional simulation, not a cached-results preview.
+
+The final console lines identify:
+  UPLOAD_THIS_ZIP=...\Downloads\RESULT_STRESS_COMBINATION_VALIDATION_<run-id>.zip
+  EXIT_CODE=0
+
+Retain that result ZIP as the run record. It includes logs,
+validation records, generated figures/tables and checksums. Original expression
+matrices, working directories, temporary caches, generated binary arrays and
+compressed generated CSV files larger than 5 MiB are excluded. The full outputs
+remain under the project run directory. On failure,
+a diagnostic ZIP is still attempted; its status remains FAIL.
+
+The complete pipeline passed on Linux and on native Windows through this
+PowerShell launcher. Windows run 20261028_170808_faf6bd34 used Python 3.11.5,
+NumPy 2.4.2, pandas 3.0.1, matplotlib 3.10.8, openpyxl 3.1.5 and Pillow 11.1.0.
+See docs/validation/native_windows_confirmation.json for the recorded scope.
+The GitHub distribution requires the explicit source acquisition step in the
+README before running this launcher.
+
+GITHUB CHECKOUT SETUP
+
+Before the first GitHub-checkout run, use the existing Python interpreter:
+  python scripts/restore_reference.py
+  python scripts/fetch_inputs.py
+  python scripts/fetch_inputs.py --check-only
+
+The first command joins three bundled parts into one byte-identical frozen
+reference. It performs no network access or installation, validates all SHA256
+values, and refuses to overwrite a mismatched existing target. The assembly
+uses a same-directory hard link to publish the complete file without replacing
+existing files; Windows NTFS supports this operation.

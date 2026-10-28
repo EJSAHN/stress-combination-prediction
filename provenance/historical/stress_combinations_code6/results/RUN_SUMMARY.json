@@ -1,0 +1,198 @@
+{
+  "status": "EXTERNAL_THREE_FACTOR_EVALUATION_COMPLETE",
+  "completed_utc": "2026-10-28T16:51:32.596042+00:00",
+  "experiment": "GSE330879",
+  "primary_genotype": "WT",
+  "secondary_genotype": "RAP2.3",
+  "primary_filter_fpkm": 1,
+  "outcomes": [
+    {
+      "genotype": "WT",
+      "threshold_fpkm": 1.0,
+      "primary_endpoint": true,
+      "classification": "DESCRIPTIVE_SUPPORT_FOR_NARROWED_THREE_FACTOR_HYPOTHESIS",
+      "criteria": {
+        "full_centroid_mean_gain_positive": true,
+        "outside_mean_gain_positive": true,
+        "outside_gain_positive_in_all_three_target_libraries": true,
+        "outside_margin_positive_in_all_three_disjoint_control_folds": true
+      },
+      "full_centroid_mean_mse_gain": 0.583570263767661,
+      "outside_mean_mse_gain": 0.062273018985954755,
+      "outside_library_mse_gains": [
+        0.053418979772151653,
+        0.06164822037493663,
+        0.07175185681077599
+      ],
+      "outside_disjoint_control_margins": [
+        0.24187738533173808,
+        0.23116550457811064,
+        0.2084201509511116
+      ]
+    },
+    {
+      "genotype": "WT",
+      "threshold_fpkm": 0.5,
+      "primary_endpoint": false,
+      "classification": "DESCRIPTIVE_SUPPORT_FOR_NARROWED_THREE_FACTOR_HYPOTHESIS",
+      "criteria": {
+        "full_centroid_mean_gain_positive": true,
+        "outside_mean_gain_positive": true,
+        "outside_gain_positive_in_all_three_target_libraries": true,
+        "outside_margin_positive_in_all_three_disjoint_control_folds": true
+      },
+      "full_centroid_mean_mse_gain": 0.56140391577567,
+      "outside_mean_mse_gain": 0.06333578520779476,
+      "outside_library_mse_gains": [
+        0.05593976203787562,
+        0.062490235577571815,
+        0.07157735800793684
+      ],
+      "outside_disjoint_control_margins": [
+        0.2404138650686884,
+        0.23533131360141943,
+        0.2122544230474007
+      ]
+    },
+    {
+      "genotype": "WT",
+      "threshold_fpkm": 2.0,
+      "primary_endpoint": false,
+      "classification": "DESCRIPTIVE_SUPPORT_FOR_NARROWED_THREE_FACTOR_HYPOTHESIS",
+      "criteria": {
+        "full_centroid_mean_gain_positive": true,
+        "outside_mean_gain_positive": true,
+        "outside_gain_positive_in_all_three_target_libraries": true,
+        "outside_margin_positive_in_all_three_disjoint_control_folds": true
+      },
+      "full_centroid_mean_mse_gain": 0.6037896410643823,
+      "outside_mean_mse_gain": 0.06105065639194821,
+      "outside_library_mse_gains": [
+        0.05094534276610439,
+        0.061398861318307685,
+        0.07080776509143255
+      ],
+      "outside_disjoint_control_margins": [
+        0.23700518647863839,
+        0.2147352633524647,
+        0.19622705395449375
+      ]
+    },
+    {
+      "genotype": "RAP2.3",
+      "threshold_fpkm": 1.0,
+      "primary_endpoint": false,
+      "classification": "DESCRIPTIVE_SUPPORT_FOR_NARROWED_THREE_FACTOR_HYPOTHESIS",
+      "criteria": {
+        "full_centroid_mean_gain_positive": true,
+        "outside_mean_gain_positive": true,
+        "outside_gain_positive_in_all_three_target_libraries": true,
+        "outside_margin_positive_in_all_three_disjoint_control_folds": true
+      },
+      "full_centroid_mean_mse_gain": 0.6225878377450079,
+      "outside_mean_mse_gain": 0.0937976399173166,
+      "outside_library_mse_gains": [
+        0.09521096798593723,
+        0.08758358949147452,
+        0.09859836227453803
+      ],
+      "outside_disjoint_control_margins": [
+        0.1921740009068047,
+        0.21625691592666718,
+        0.32585627578033094
+      ]
+    },
+    {
+      "genotype": "RAP2.3",
+      "threshold_fpkm": 0.5,
+      "primary_endpoint": false,
+      "classification": "DESCRIPTIVE_SUPPORT_FOR_NARROWED_THREE_FACTOR_HYPOTHESIS",
+      "criteria": {
+        "full_centroid_mean_gain_positive": true,
+        "outside_mean_gain_positive": true,
+        "outside_gain_positive_in_all_three_target_libraries": true,
+        "outside_margin_positive_in_all_three_disjoint_control_folds": true
+      },
+      "full_centroid_mean_mse_gain": 0.5958230257129561,
+      "outside_mean_mse_gain": 0.09188925788203096,
+      "outside_library_mse_gains": [
+        0.0921797864630469,
+        0.0871529172591382,
+        0.09633506992390779
+      ],
+      "outside_disjoint_control_margins": [
+        0.19368335860025762,
+        0.2173221930712536,
+        0.32391296811621473
+      ]
+    },
+    {
+      "genotype": "RAP2.3",
+      "threshold_fpkm": 2.0,
+      "primary_endpoint": false,
+      "classification": "DESCRIPTIVE_SUPPORT_FOR_NARROWED_THREE_FACTOR_HYPOTHESIS",
+      "criteria": {
+        "full_centroid_mean_gain_positive": true,
+        "outside_mean_gain_positive": true,
+        "outside_gain_positive_in_all_three_target_libraries": true,
+        "outside_margin_positive_in_all_three_disjoint_control_folds": true
+      },
+      "full_centroid_mean_mse_gain": 0.6458394779875961,
+      "outside_mean_mse_gain": 0.09530802244279868,
+      "outside_library_mse_gains": [
+        0.09727470816134716,
+        0.08808915280649286,
+        0.10056020636055603
+      ],
+      "outside_disjoint_control_margins": [
+        0.1857848983464505,
+        0.21195483451471053,
+        0.3189606808204407
+      ]
+    }
+  ],
+  "formal_significance_test": false,
+  "folds_are_independent_replicates": false,
+  "freeze_manifest_sha256": "52f98bceae42dbecf4abfaf6cd9649163808f5031ab12883baad52f70a9c0ae9",
+  "protocol_sha256": "063a0cff439e7856940e52023cfb65b01d83797151101e7d34b9b095229bf090",
+  "amendment_sha256": "c580b882b961ed816e7b3e27b090725434fef52e0c3f90c50c68268978012137",
+  "identifier_inventories": {
+    "WT": {
+      "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+      "source_rows": 32826,
+      "retained_unique_identifier_rows": 32822,
+      "excluded_duplicate_rows": 4,
+      "source_identifier_sha256": "b168f2ac65153570a27a1f961d96f486f0e0c31feed1cce8acbe863bcd100c47",
+      "excluded_identifier_counts": {
+        "AT1G79790": 2,
+        "AT2G04725": 2
+      }
+    },
+    "RAP2.3": {
+      "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+      "source_rows": 32826,
+      "retained_unique_identifier_rows": 32822,
+      "excluded_duplicate_rows": 4,
+      "source_identifier_sha256": "9a1bdcdd4f7dd742df0c4309bfe13eb71585e5654ef1d594070a321e27dc3957",
+      "excluded_identifier_counts": {
+        "AT1G79790": 2,
+        "AT2G04725": 2
+      }
+    }
+  },
+  "code_sha256": "e56f39573d8dd1c0db7b7c682fe0a9c6f25ee9bbbe88b0a4ab1af4a861eeb33e",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scope": "Separate experiment, same species/research group; generalized pair-to-triple test, not exact replication of the discovery four-factor selected-donor finding.",
+  "limits": "Three RNA pools per condition; source-wide preprocessing; noisy fitted single-stress span; outside-span is not pure higher-order interaction; no causal mechanism or crop generality inferred.",
+  "output_hashes": {
+    "disjoint_control_geometry.csv": "4849a7b3c1f6fcd37c56e5c5424efac988a247e67947107f28de9ae7177399ca",
+    "TARGET_OPENING_RECORD.json": "3331977ec764d3c341fb20a229a471f48b74eae8c3d61edd5028a264eb085e1e",
+    "diagnostic_basis_inventory.csv": "78ba500e7393f3bc76c68d757fac43eaf1b9afbab6540a59462a3357f3beea3d",
+    "component_summary.csv": "8f29a8d357c6af9910d1413e7b08d9a680d1111bc84df29d4ec2fa872223d714",
+    "library_gain_components.csv": "f8620614a47d83e05b31282aa76c9fb23f5fa3e3600716df86304917187d827d",
+    "model_summary.csv": "1eaa70ee110fcde3e18bded1362f91d795e068458363ddd5448468ee9928a29c",
+    "library_errors.csv": "b7ca0ca4d34b4bd9e51f0ec964b499c7c2545ff5f02db68cf6403e2124392037"
+  }
+}

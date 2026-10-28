@@ -1,0 +1,9 @@
+genotype,model,n_full_panel_features,max_absolute_prediction_difference,same_as_frozen_CODE8,single_span_rank,OLS_rank
+Car,full_pair_centroid,17470,0.0,True,3,3
+Car,second_order_factorial,17470,0.0,True,3,3
+Car,pair_trained_factor_OLS,17470,0.0,True,3,3
+Car,within_V3,17470,0.0,True,3,3
+Cleo,full_pair_centroid,16247,0.0,True,3,3
+Cleo,second_order_factorial,16247,0.0,True,3,3
+Cleo,pair_trained_factor_OLS,16247,0.0,True,3,3
+Cleo,within_V3,16247,0.0,True,3,3

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+/runs/
+/results/
+/package_staging/
+/cache/
+/tmp/
+*.download
+provenance/historical/stress_combinations_code3/reproduction/data/GSE147962_normalized_counts.txt.gz
+provenance/historical/stress_combinations_code6/input/GSE330879_Col0_fpkm.txt.gz
+provenance/historical/stress_combinations_code6/input/GSE330879_RAP2.3_fpkm.txt.gz
+provenance/historical/stress_combinations_code8/input/GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz
+
+# Restored from verified bundled parts before running the GitHub checkout.
+/provenance/historical/stress_combinations_code5/frozen/predictions.npz

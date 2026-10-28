@@ -1,0 +1,107 @@
+{
+  "protocol_id": "CODE8_CITRUS_FIXED_PAIR_TO_TRIPLE_V1",
+  "fixed_utc": "2026-10-28T18:24:08.093528+00:00",
+  "status": "fixed_before_citrus_expression_acquisition_and_any_numerical_parsing",
+  "source": "GSE203331",
+  "question": "Does the equal pair-condition centroid predict the triple-stress endpoint in both citrus genotypes more accurately than fixed lower-order baselines, including pair-trained amplitude adjustment of single responses?",
+  "prior_exposure": "CODE1-7 Arabidopsis outcomes known; citrus published qualitative findings and a third-party repeat-layer reanalysis title/metadata known, but no citrus expression values acquired or read by this workflow. New experiment/crop, overlapping investigator network; not an independent-laboratory claim.",
+  "genotypes": [
+    "Car",
+    "Cleo"
+  ],
+  "genotype_names": {
+    "Car": "Carrizo citrange",
+    "Cleo": "Cleopatra mandarin"
+  },
+  "baseline": "CT",
+  "singles": [
+    "WS",
+    "HL",
+    "HS"
+  ],
+  "pairs": [
+    "WS+HL",
+    "WS+HS",
+    "HL+HS"
+  ],
+  "target": "WS+HL+HS",
+  "primary_threshold": 1.0,
+  "thresholds": [
+    1.0,
+    0.5,
+    2.0
+  ],
+  "unit": "author-deposited RPKM, not counts",
+  "transform": "log2(1+RPKM) then equal library means",
+  "feature_filter": "Per genotype, mean RPKM across its 12 CT/single libraries >= threshold; pair and target data do not select genes.",
+  "identifier_policy": "Before numerical QC, exclude all rows with duplicated nonempty gene identifier; empty IDs or nonfinite/negative permitted values cause halt. Do not remove genes using target values. Invalid target values cause a logged stop, not selective deletion.",
+  "replicate_unit": "3 biological pooled-leaf RNA libraries per condition, pools from >=10 plants; no matching across treatment by replicate label; genotypes are not independent experiments.",
+  "models": [
+    "control",
+    "full_pair_centroid",
+    "within_V3",
+    "outside_V3",
+    "single_additive",
+    "second_order_factorial",
+    "single_mean",
+    "pair_trained_scalar",
+    "pair_trained_factor_OLS",
+    "within_V9",
+    "within_V11"
+  ],
+  "model_definitions": {
+    "notation": "C=CT mean log expression, s_i=single_i-C, p_ij=pair_ij-C, d=mean p_ij; rows are genes; no per-gene standardization or clipping.",
+    "control": "C",
+    "full_pair_centroid": "C+d",
+    "within_V3": "C+P3*d",
+    "outside_V3": "C+(I-P3)*d",
+    "single_additive": "C+sum s_i",
+    "second_order_factorial": "C+sum p_ij-sum s_i",
+    "single_mean": "C+(sum s_i)/3",
+    "pair_trained_scalar": "Fit alpha = sum_ij dot(s_i+s_j,p_ij) / sum_ij norm(s_i+s_j)^2 on all 3 pairs and retained genes. No intercept or bounds; if exact zero denominator alpha=0, explicitly flagged. Predict C+alpha*sum s_i.",
+    "pair_trained_factor_OLS": "For each pair ij and each gene, design3vector includes s_i for included factors and 0 for absent factor. Stack 3 pair contexts, solve least squares for3 shared coefficients using numpy.linalg.lstsq(rcond=None), minimum-norm if rank deficient. Predict C+sum_i beta_i*s_i. No ridge, clipping or target choice.",
+    "within_V9": "C+P9*d",
+    "within_V11": "C+P11*d"
+  },
+  "spans": {
+    "V3": "all3 single-condition mean displacement rows from CT mean",
+    "V9": "all9 individual single RNA library displacement rows from CT mean",
+    "V11": "V9 plus all3 CT residual rows (max2 extra independent directions)",
+    "rank_rule": "full numerical SVD rank using max(matrix.shape)*float64 eps*largest singular value, no target-chosen rank"
+  },
+  "ordinary_primary_comparators": [
+    "control",
+    "within_V3",
+    "single_additive",
+    "second_order_factorial",
+    "single_mean",
+    "pair_trained_scalar",
+    "pair_trained_factor_OLS"
+  ],
+  "primary_metric": "mean gene MSE for each of3 target libraries, then equal library mean; comparisons always on identical gene panel/target libraries within genotype/scenario",
+  "secondary_metrics": [
+    "MAE by library and equal mean",
+    "MSE to target mean (target replicate noise is a common additive constant)",
+    "prediction direction cosine and amplitude relative to target displacement; descriptive only"
+  ],
+  "primary_rule": {
+    "threshold": 1.0,
+    "epsilon": 1e-12,
+    "per_genotype": "D mean MSE lower than every ordinary_primary_comparator by >epsilon AND D MSE lower than CT in each of3 target libraries by >epsilon. List every comparison, do not pool genotypes.",
+    "both_genotypes": "Only if both per-genotype criteria pass call this a descriptive two-genotype crop transport success. One genotype only = heterogeneous result; neither = failure of this predefined transport claim. No threshold, model or genotype rescue."
+  },
+  "geometry_secondary": "Report D gain over withinV3,withinV9,withinV11 per library/mean; decompose total gain versusCT exactly into V3,addedV9,addedCT and outsideV11. This concerns observed estimated spans; CODE7 noise identifiability limitation remains. No disjoint-control diagnostic in CODE8.",
+  "oracle_diagnostic": "After target opening only, C+P3*(target_mean-C) is the MSE-minimizing fitted target within affine observed V3. Label TARGET_FITTED_ORACLE_NOT_PREDICTION. Its MSE is an optimistic lower bound for predictors in this observed affine span on these targets. D superiority is descriptive and does not identify the unknown true single span.",
+  "opening_boundary": "Acquire bytes after protocolfixed. Header/IDs only may be inspected for exact sample mapping. Freeze all11 predictors,3basis matrices,genes,coefficients and all6genotype/filter scenarios using only42 non-target numerical columns; verify roundtrip and all hashes plus target-poison check before separate evaluate command reads6 triple numerical columns.",
+  "header_mapping_policy": "Resolve literal header labels to GEO metadata using treatment,genotype,replicate labels; do not infer ambiguous mappings from expression. If ambiguous, stop before opening numerical data.",
+  "quality_checks": "nonnegative finite rawvalues; exact48sample header mapping; all3replicates/cell; source SHA256; gene IDs/order; source/preprocessing caveat; real target NaN poison replacement must leave frozen assets identical; independent evaluator with QR and independent coefficient algebra.",
+  "inference_limits": [
+    "No genes-as-independent-replicates p values or bootstrap",
+    "No pure higher-order interaction or new true biological dimension claim",
+    "Prediction validation uses author preprocessed matrix, not a fully blind raw-read pipeline",
+    "No universal law, algorithm novelty, mechanism or journal-readiness claim from this benchmark",
+    "Both citrus genotypes use sweet-orange reference; no direct cross-genotype effect-size calibration",
+    "Reference-dose discrepancies in primary papers logged; no recovery timecourse RNA inference"
+  ],
+  "followups": "Any changes after target access are explicitly post-result. Do not tune or choose donors, thresholds, ranks, coefficient constraints or outcome definitions to improve this primary result."
+}

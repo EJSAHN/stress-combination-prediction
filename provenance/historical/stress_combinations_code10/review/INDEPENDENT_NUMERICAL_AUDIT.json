@@ -1,0 +1,130 @@
+{
+  "status": "PASS_INDEPENDENT_CODE10_NUMERICAL_AUDIT",
+  "completed_utc": "2026-10-28T19:36:27.390924+00:00",
+  "runtime_seconds": 65.01288014699821,
+  "source": "Original author FPKM matrix; all full panels; fixed saved splits",
+  "production_module_imported": false,
+  "n_independent_full_panel_refits": 1024,
+  "n_partitions_per_genotype": 256,
+  "fit_method": "pivoted QR for OLS and QR for V3; independent full-panel refits",
+  "n_numeric_or_exact_checks": 80479,
+  "maximum_absolute_difference": 2.1316282072803006e-13,
+  "maximum_difference_by_field": {
+    "full_pool_centroid": 0.0,
+    "full_pool_second_order_factorial": 0.0,
+    "full_pool_pair_trained_factor_OLS": 7.105427357601002e-15,
+    "full_pool_within_V3": 2.842170943040401e-14,
+    "A_observed_variance": 2.220446049250313e-16,
+    "A_pool_variance_of_mean": 9.389190813724468e-17,
+    "A_stable_variance": 4.440892098500626e-16,
+    "A_offdiagonal_stable_variance": 2.220446049250313e-16,
+    "A_conditional_reliability": 3.3306690738754696e-16,
+    "A_gram": 1.1102230246251565e-16,
+    "A_pool_Pearson": 6.661338147750939e-16,
+    "A_pool_Spearman": 2.220446049250313e-16,
+    "A_cross_covariance": 6.938893903907228e-17,
+    "A_adjusted_Pearson": 6.938893903907228e-17,
+    "A_raw_Pearson": 1.1102230246251565e-16,
+    "A_raw_Spearman": 1.1102230246251565e-16,
+    "A_cross_observed": 2.220446049250313e-16,
+    "A_cross_stable": 4.440892098500626e-16,
+    "B_span_tolerance": 5.169878828456423e-25,
+    "B_beta_WS": 1.6653345369377348e-15,
+    "B_span_singular": 2.1316282072803006e-13,
+    "B_beta_HL": 1.2212453270876722e-15,
+    "B_beta_HS": 1.3322676295501878e-15,
+    "B_OLS_condition": 2.220446049250313e-15,
+    "B_mean_gain_common": 1.8596235662471372e-15,
+    "B_baseline_mse_common": 1.8318679906315083e-15,
+    "B_centroid_mse_common": 8.326672684688674e-17,
+    "B_baseline_mse_target_mean_common": 1.7763568394002505e-15,
+    "B_centroid_mse_target_mean_common": 8.326672684688674e-17,
+    "B_target_pool_variation_mse_common": 8.847089727481716e-17,
+    "B_baseline_mse_full_panel": 2.0539125955565396e-15,
+    "B_centroid_mse_full_panel": 8.326672684688674e-17,
+    "B_mean_gain_full_panel": 2.0539125955565396e-15,
+    "B_fraction_positive_gain_common": 0.0,
+    "B_Pearson": 5.88418203051333e-15,
+    "B_Spearman": 2.220446049250313e-16,
+    "B_top10pct_Jaccard": 9.71445146547012e-17,
+    "B_contrast_within": 3.885780586188048e-15,
+    "B_contrast_cross": 2.831068712794149e-15,
+    "B_contrast_difference": 2.886579864025407e-15,
+    "summary_min": 0.0,
+    "summary_q025": 4.440892098500626e-16,
+    "summary_median": 1.1102230246251565e-16,
+    "summary_q975": 1.1102230246251565e-16,
+    "summary_max": 0.0
+  },
+  "parent_pins_unchanged": true,
+  "audit_driver_sha256": "de5fea4630b8e93e6b66677b5f7742630777b1fe0a6df54ef182302c37583685",
+  "audit_primitives_sha256": "266adea86a6eaf3598ca03c73f8db2327a41091b78f9c35bfbec989dc1d3116d",
+  "protocol_sha256": "cef5121fa66cfbfdd2605be45d7fade65bb3749cb70e614be980df489f78c425",
+  "production_summary_sha256": "38d3b849b9858d91a0cce0d9c27b1acef2273f3f9517fd83e7830a6f527545dd",
+  "source_pins": [
+    {
+      "name": "protocol",
+      "sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555"
+    },
+    {
+      "name": "amendment",
+      "sha256": "b0e641430ee42775123968a74de5dc37aa043f12454375b964cf5582b63f53fd"
+    },
+    {
+      "name": "freeze_manifest",
+      "sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a"
+    },
+    {
+      "name": "result_summary",
+      "sha256": "5c1534b9d3f531b094d07c83b91c43b95168c5b4af11d6b648996d6da76310e5"
+    },
+    {
+      "name": "source",
+      "sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f"
+    },
+    {
+      "name": "design",
+      "sha256": "04b36dab139a44bc8102c27665e3e7e79ac7db6ad9cf48d07c60556fe867dd54"
+    },
+    {
+      "name": "code",
+      "sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393"
+    },
+    {
+      "name": "code9_protocol",
+      "sha256": "fe77a77a223fd30a4022efe0933f214332daa11a8c9e2fb7ec8038479f7b313f"
+    },
+    {
+      "name": "code9_correlations",
+      "sha256": "d84d8b55fcb577e4e40ea28524d7bd7afa75569852b3651859c80e92f30f35a3"
+    },
+    {
+      "name": "design_review",
+      "sha256": "dd5a55254cab2a35ff99a119753a3dff469b6ed876b7455430f950074202e10a"
+    },
+    {
+      "name": "frozen_Car_fpkm1p0",
+      "sha256": "25a65faa76723efe4de5b6560065f6850631f1a4201c95277729a8ca5aa48b8b"
+    },
+    {
+      "name": "frozen_Car_fpkm0p5",
+      "sha256": "e5b69f16d60cf7f0ce1115c5b43caecdba739f0c7d4a5683c6bb2bf1514818d2"
+    },
+    {
+      "name": "frozen_Car_fpkm2p0",
+      "sha256": "cd1e54bbbe1c71e70807384891304c52dc2e5215eede2c000e892560d1f78e52"
+    },
+    {
+      "name": "frozen_Cleo_fpkm1p0",
+      "sha256": "72ecd1abb764a76cddc353cbe764ff33077a5a6331a5dc669603338207c1f67c"
+    },
+    {
+      "name": "frozen_Cleo_fpkm0p5",
+      "sha256": "e9e20e99ba18351c0d5266366b3211408d37ce7a645863099d05868d52bcc79b"
+    },
+    {
+      "name": "frozen_Cleo_fpkm2p0",
+      "sha256": "7ba87563f414425fffcd7b37fd165d3fefad825ff58d68502eee884ba66c492d"
+    }
+  ]
+}

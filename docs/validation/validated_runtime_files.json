@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "tested_package_manifest_sha256": "da1f97dc62c75e6fbc9f7e9dbaf3ce6b9638e8ec235afc643fab505e1098a232",
+  "unchanged_executable_files": [
+    {
+      "path": "provenance/historical/stress_combinations_code10/code/attribution_reliability.py",
+      "sha256": "2ccdbc697d0dbed261aabc616fd8c03be769ae16bccbfcbe7a3092af3785d2a0"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code3/code/evaluate_frozen_predictions.py",
+      "sha256": "5391260180ebb727f6354637e82a297cdffdc8bda62c6cd2af47c2a2edb8bce2"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code3/code/freeze_predictions.py",
+      "sha256": "48a0a432e877b3df1864fa4652566f63692a4b04a65e907b26fd9da1ebe6263e"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code3/code/reference_code2_models.py",
+      "sha256": "4a90353caee5ea2e7a537130fb2fb4425a7776e3debcb8f551e32b9c9d42ef7a"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code5/code/donor_selection.py",
+      "sha256": "eb9186e946b4f9ebf58200552c1e87aa9a94ce70d51f3dc3204cc49c85b6a15a"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code6/code/external_three_factor.py",
+      "sha256": "e56f39573d8dd1c0db7b7c682fe0a9c6f25ee9bbbe88b0a4ab1af4a861eeb33e"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code7/code/empirical_span_expansion.py",
+      "sha256": "552331e5a319859d679012eb11d71cf306939abc40f4a00ea40866a93604bb1d"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code7/code/noisy_span_simulation.py",
+      "sha256": "a99c67134c9bc9017874771a1b88dd9a1312664fa7886e0125e3e8b279e74ed6"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code8/code/stress_citrus_validation.py",
+      "sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393"
+    },
+    {
+      "path": "provenance/historical/stress_combinations_code9/code/gene_gain_attribution.py",
+      "sha256": "90e87dba53f718879595af34a5ce2550012413324c109a87e82de65180cd831e"
+    },
+    {
+      "path": "run.ps1",
+      "sha256": "38871b6242a3be54521d3dd0037268f0fe22474dd0967830ded3c3fb18a0b53f"
+    },
+    {
+      "path": "scripts/audit_figure_sources.py",
+      "sha256": "9842bb3757669ed5c7cc4a27be88fa47bb83f88fa9ff7b7962e0de2d921058f4"
+    },
+    {
+      "path": "scripts/audit_primary_predictions.py",
+      "sha256": "00dfd72f6ba6657e3e4a4a082143328b57eadb87cc44ba49331a9debd73120dd"
+    },
+    {
+      "path": "scripts/audit_release_tables.py",
+      "sha256": "99ddda85d9af923d079c93300dbaac54452643f592f9ed15dcfad0c66cb3962e"
+    },
+    {
+      "path": "scripts/bootstrap_windows.ps1",
+      "sha256": "0f822cf3011b1fb55d337fdaa71befeceb6e16fb7d295c85e3e38698889113b6"
+    },
+    {
+      "path": "scripts/fetch_inputs.py",
+      "sha256": "981f7b65463a9284caa35185e93d4d8ebd9e837543c0dde13120bb0c5c6e84a5"
+    },
+    {
+      "path": "scripts/local_run.py",
+      "sha256": "200abb19817977e72cebe876a38f89d229821bbb85af9edee9063b9df4721aa6"
+    },
+    {
+      "path": "scripts/make_figures.py",
+      "sha256": "26e3106d2b2ccc93b54f2331320485c8fb9c6e85053010a9836d66b538a344c5"
+    },
+    {
+      "path": "scripts/make_workbook.py",
+      "sha256": "446f299e265d4298bf5c36bb8d28cfba7dc623ed47b47968296ed9342a79922b"
+    },
+    {
+      "path": "scripts/run_analysis.py",
+      "sha256": "29ecd4414ddb697b1da51cdf20221a88fa24144236b41ce3732dfcdae16f1f5c"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "sha256": "511f1553d99bbc6b2c07b4d301965fe8a1cd026c96d60ab6ddfba26827fb5283"
+    },
+    {
+      "path": "scripts/workbook_catalog.py",
+      "sha256": "88df4e242f6bc56046248ca79ecdbd7c79e7587942b04199332332ef1303ad24"
+    },
+    {
+      "path": "src/stress_prediction/__init__.py",
+      "sha256": "69c40496d2415d26e13a121c0abcb7f8b176faa8318c50d05f731170f1f3b7be"
+    },
+    {
+      "path": "src/stress_prediction/noise_diagnostics.py",
+      "sha256": "6ec151f4e58d13480a74c113dca6909ad9dc6fdfcd3045ff1028bb5ecde6d89e"
+    },
+    {
+      "path": "src/stress_prediction/replay.py",
+      "sha256": "e16eea340be41f69c414fb572ef7a013bbdb26e0145b4a63ef6a9cd957d3e9db"
+    },
+    {
+      "path": "tests/test_local_runner.py",
+      "sha256": "7b30a5e4bb8761cb0292843f1e05e566934b68ddc7afb0514e5c4939d98f0bfb"
+    },
+    {
+      "path": "tests/test_noise_diagnostics.py",
+      "sha256": "0ade6028c101e7e0bae6543d1d25d7acbc3e7510264815513fdbfeeaf0e24b83"
+    },
+    {
+      "path": "tests/test_numeric_portability.py",
+      "sha256": "c18e394aadd25b5ec7a8ea0b3c0a0eb50c0522664a52753f38004c14c4a57882"
+    },
+    {
+      "path": "tests/test_pipeline_contract.py",
+      "sha256": "728532020efc809f2d9ad31ee37ba86a2497908ed3071c6a6a0f2724da3e5a1d"
+    }
+  ],
+  "pinned_analysis_assets_verified": 114,
+  "reference_tables_verified": 61
+}

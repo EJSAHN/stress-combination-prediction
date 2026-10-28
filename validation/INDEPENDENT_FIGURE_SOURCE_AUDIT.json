@@ -1,0 +1,1679 @@
+{
+  "status": "PASS_INDEPENDENT_FIGURE_SOURCE_AUDIT",
+  "completed_utc": "2026-10-28T20:14:10.953722+00:00",
+  "analysis_or_plot_code_imported": false,
+  "untouched_original_archive_checked": true,
+  "scope": "Every declared numerical figure trace recomputed from its source cells; source tables compared to pinned original records; histogram membership and all conditional-noise summary moments/quantiles independently recomputed. This is a numerical provenance/export audit, not new biological validation or native Windows execution.",
+  "absolute_tolerance": 1e-10,
+  "relative_tolerance": 1e-09,
+  "figure_count": 8,
+  "trace_rows": 347,
+  "input_table_count": 17,
+  "conditional_noise_summary_rows": 180,
+  "conditional_noise_draw_rows": 36000,
+  "figure_manifest_sha256": "68e8c12829275b087c3430913e75c7d0f38ebf1cd7da260a6756936c03b5ca51",
+  "figure_code_sha256": "26e3106d2b2ccc93b54f2331320485c8fb9c6e85053010a9836d66b538a344c5",
+  "audit_code_sha256": "9842bb3757669ed5c7cc4a27be88fa47bb83f88fa9ff7b7962e0de2d921058f4",
+  "table_audit_helper_sha256": "698691fbf9f9c15ec5c018644ba701aa6a551645b57594a00a250ba960e9f815",
+  "mapping_sha256": "2bffab661e5fec38154dd643ec18ab55814d0906974025205a1c768f0c48b835",
+  "inputs": [
+    {
+      "source_file": "external_prediction/model_summary.csv",
+      "output_sha256": "1eaa70ee110fcde3e18bded1362f91d795e068458363ddd5448468ee9928a29c",
+      "rows": 36,
+      "columns": 12,
+      "numeric_cells": 252,
+      "exact_text_cells": 180,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "primary_genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "span_rank",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_gain_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_gain_percent_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "1eaa70ee110fcde3e18bded1362f91d795e068458363ddd5448468ee9928a29c"
+    },
+    {
+      "source_file": "citrus_prediction/model_summary.csv",
+      "output_sha256": "af4b6eb9f0f5ffad61d8b409acff53b708a2a3dd4ffb063422c66eb91ffd7c0d",
+      "rows": 66,
+      "columns": 14,
+      "numeric_cells": 660,
+      "exact_text_cells": 264,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "mean_library_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mean_library_mae",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_to_target_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "target_library_variation_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mean_mse_gain_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "percent_mse_reduction_vs_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "direction_cosine_to_target_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "amplitude_ratio_to_target_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "af4b6eb9f0f5ffad61d8b409acff53b708a2a3dd4ffb063422c66eb91ffd7c0d"
+    },
+    {
+      "source_file": "external_span/model_summary.csv",
+      "output_sha256": "c3076a9af435093fc196de025e15ec2a438c4173dfe1385339bf0b36e871d4af",
+      "rows": 30,
+      "columns": 12,
+      "numeric_cells": 240,
+      "exact_text_cells": 120,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_endpoint",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "rank_V3",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "rank_V9",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "rank_V11",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_gain_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "c3076a9af435093fc196de025e15ec2a438c4173dfe1385339bf0b36e871d4af"
+    },
+    {
+      "source_file": "noise/simulation_summary.csv",
+      "output_sha256": "143d2a821574ef2e9a66077dffe6e899b289c9aa071d4a9a38dea5def65a9695",
+      "rows": 180,
+      "columns": 21,
+      "numeric_cells": 2700,
+      "exact_text_cells": 1080,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "primary_genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "latent_null",
+          "kind": "exact_text"
+        },
+        {
+          "column": "lambda",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "noise_sd_scale",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "score",
+          "kind": "exact_text"
+        },
+        {
+          "column": "seed",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "draws",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "sd",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q025",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q50",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q95",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q975",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q99",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "observed_statistic",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_at_least_observed",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "conditional_exceedance_fraction",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "monte_carlo_standard_error",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "calibrated_biological_p_value",
+          "kind": "exact_text"
+        },
+        {
+          "column": "observed_comparison_same_statistic",
+          "kind": "exact_text"
+        }
+      ],
+      "original_sha256": "143d2a821574ef2e9a66077dffe6e899b289c9aa071d4a9a38dea5def65a9695"
+    },
+    {
+      "source_file": "noise/simulation_draws.csv.gz",
+      "output_sha256": "92444798e9a7a59e587d13c3a95aed39a62cab0dcdd6e9da7f3e264b65152acf",
+      "rows": 36000,
+      "columns": 12,
+      "numeric_cells": 360000,
+      "exact_text_cells": 72000,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "latent_null",
+          "kind": "exact_text"
+        },
+        {
+          "column": "lambda",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "noise_sd_scale",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "draw",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "seed",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "refitted_basis_estimated_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fixed_basis_estimated_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fixed_basis_true_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "basis_refit_increment",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "shared_control_increment",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "refitted_rank",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "92444798e9a7a59e587d13c3a95aed39a62cab0dcdd6e9da7f3e264b65152acf"
+    },
+    {
+      "source_file": "citrus_attribution/concentration_removal.csv",
+      "output_sha256": "46868e7d9c0f73d5b25a2fa61909677dc229acf2ae3a219b31542f60077fd72d",
+      "rows": 72,
+      "columns": 22,
+      "numeric_cells": 1152,
+      "exact_text_cells": 432,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "comparator",
+          "kind": "exact_text"
+        },
+        {
+          "column": "comparator_role",
+          "kind": "exact_text"
+        },
+        {
+          "column": "requested_fraction",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "removed_count",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "removed_fraction",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "remaining_count",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "removed_net_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "retained_net_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "retained_mean_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "retained_over_original_net_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "positive_mass_share_removed",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "retained_baseline_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "retained_centroid_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "retained_advantage_all3libraries",
+          "kind": "exact_text"
+        },
+        {
+          "column": "library_1_retained_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "library_2_retained_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "library_3_retained_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "46868e7d9c0f73d5b25a2fa61909677dc229acf2ae3a219b31542f60077fd72d"
+    },
+    {
+      "source_file": "citrus_attribution/gene_summary.csv",
+      "output_sha256": "861ae33d35c35dbc8fee95f7b983dce052887590f1014e747f3880a8a231997d",
+      "rows": 24,
+      "columns": 31,
+      "numeric_cells": 624,
+      "exact_text_cells": 120,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "comparator",
+          "kind": "exact_text"
+        },
+        {
+          "column": "comparator_role",
+          "kind": "exact_text"
+        },
+        {
+          "column": "n_features",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mean_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "median_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q00_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q01_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q05_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q25_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q50_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q75_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q95_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q99_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q100_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_mean_positive",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_mean_negative",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_mean_zero_tolerance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_positive_all3",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fraction_mean_positive",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fraction_positive_all3",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "positive_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "negative_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "negative_signed_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "net_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "baseline_mean_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "centroid_mean_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "861ae33d35c35dbc8fee95f7b983dce052887590f1014e747f3880a8a231997d"
+    },
+    {
+      "source_file": "citrus_attribution/direction_oracles.csv",
+      "output_sha256": "74fbffa45c420b63596498d824ee6ec0dc00e750caaa2748908dd328529023d9",
+      "rows": 18,
+      "columns": 22,
+      "numeric_cells": 270,
+      "exact_text_cells": 126,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "alpha_target_fitted",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "zero_direction_norm",
+          "kind": "exact_text"
+        },
+        {
+          "column": "original_mean_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "target_fitted_mean_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "rescaling_recoverable_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "rescaling_identity_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "direction_norm_squared_per_feature",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "oracle_label",
+          "kind": "exact_text"
+        },
+        {
+          "column": "rescaled_mse_to_target_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "direction_cosine_to_target_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "direction_cosine_unavailable_zero_norm",
+          "kind": "exact_text"
+        },
+        {
+          "column": "library_1_oracle_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "library_2_oracle_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "library_3_oracle_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "original_centroid_mean_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "rescaled_model_mse_minus_original_centroid_mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "74fbffa45c420b63596498d824ee6ec0dc00e750caaa2748908dd328529023d9"
+    },
+    {
+      "source_file": "attribution_repeatability/part_A_moments.csv",
+      "output_sha256": "9391792f01ccdc00b7d2796ce5db9837dbddb0c912dfc347adadbb0abbd54e70",
+      "rows": 6,
+      "columns": 14,
+      "numeric_cells": 54,
+      "exact_text_cells": 30,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "comparator",
+          "kind": "exact_text"
+        },
+        {
+          "column": "n_target_pools",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_common_features",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "observed_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "pool_variance_of_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "stable_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "offdiagonal_stable_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "identity_absolute_error",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "conditional_reliability",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "reliability_unavailable_reason",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "stable_variance_nonpositive",
+          "kind": "exact_text"
+        },
+        {
+          "column": "reliability_below_zero",
+          "kind": "exact_text"
+        },
+        {
+          "column": "reliability_above_one",
+          "kind": "exact_text"
+        }
+      ],
+      "original_sha256": "9391792f01ccdc00b7d2796ce5db9837dbddb0c912dfc347adadbb0abbd54e70"
+    },
+    {
+      "source_file": "attribution_repeatability/part_A_cross_genotype.csv",
+      "output_sha256": "8e8619fde2125dac06dd0e38aa51ac797c53d9ea0d744876f0cd1010e2de7e26",
+      "rows": 3,
+      "columns": 16,
+      "numeric_cells": 36,
+      "exact_text_cells": 12,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "comparator",
+          "kind": "exact_text"
+        },
+        {
+          "column": "n_common_features",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "cross_genotype_covariance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "raw_Pearson",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "raw_Spearman",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "adjusted_Pearson",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "raw_Pearson_unavailable_reason",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "raw_Spearman_unavailable_reason",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "adjusted_Pearson_unavailable_reason",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "adjusted_Pearson_outside_unit_interval",
+          "kind": "exact_text"
+        },
+        {
+          "column": "Car_observed_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "Cleo_observed_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "Car_stable_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "Cleo_stable_variance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "CODE9_Pearson_reproduced",
+          "kind": "exact_text"
+        },
+        {
+          "column": "CODE9_Spearman_reproduced",
+          "kind": "exact_text"
+        }
+      ],
+      "original_sha256": "8e8619fde2125dac06dd0e38aa51ac797c53d9ea0d744876f0cd1010e2de7e26"
+    },
+    {
+      "source_file": "attribution_repeatability/part_B_contrast_summary.csv",
+      "output_sha256": "dd8b7bb21fc67da529ec2aaaec3fc447ee7ae0023c6e0346af1012332182282c",
+      "rows": 27,
+      "columns": 12,
+      "numeric_cells": 216,
+      "exact_text_cells": 108,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "comparator",
+          "kind": "exact_text"
+        },
+        {
+          "column": "metric",
+          "kind": "exact_text"
+        },
+        {
+          "column": "component",
+          "kind": "exact_text"
+        },
+        {
+          "column": "n_total",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_finite",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_unavailable",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "min",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q025",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "median",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q975",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "max",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "summary_type",
+          "kind": "exact_text"
+        }
+      ],
+      "original_sha256": "dd8b7bb21fc67da529ec2aaaec3fc447ee7ae0023c6e0346af1012332182282c"
+    },
+    {
+      "source_file": "discovery_prediction/target_model_comparison.csv",
+      "output_sha256": "1aabaf3d99cc372548295f71211f35a80c72d7c8b7c76c09a9d164aaedf330da",
+      "rows": 64,
+      "columns": 11,
+      "numeric_cells": 512,
+      "exact_text_cells": 192,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "panel",
+          "kind": "exact_text"
+        },
+        {
+          "column": "component",
+          "kind": "exact_text"
+        },
+        {
+          "column": "n_genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_pooled_libraries",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_min",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_max",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae_mean",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae_min",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae_max",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "1aabaf3d99cc372548295f71211f35a80c72d7c8b7c76c09a9d164aaedf330da"
+    },
+    {
+      "source_file": "discovery_selection/target_model_errors.csv",
+      "output_sha256": "3215ac6485af2b8fbd63cb2f7b85cecb4ba5bfbca256ae7fd1d5a1ae0894eea1",
+      "rows": 120,
+      "columns": 7,
+      "numeric_cells": 600,
+      "exact_text_cells": 240,
+      "maximum_absolute_difference": 6.661338147750939e-16,
+      "column_checks": [
+        {
+          "column": "target",
+          "kind": "exact_text"
+        },
+        {
+          "column": "rank",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "MSE",
+          "kind": "numeric",
+          "maximum_absolute_difference": 4.440892098500626e-16
+        },
+        {
+          "column": "MAE",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "common_MSE",
+          "kind": "numeric",
+          "maximum_absolute_difference": 6.661338147750939e-16
+        },
+        {
+          "column": "residual_MSE",
+          "kind": "numeric",
+          "maximum_absolute_difference": 2.7755575615628914e-17
+        }
+      ],
+      "original_sha256": "dbb54a0e940e980b99e71eb967ace8f7d46ea2ddf98db317646eda31a0fcd531"
+    },
+    {
+      "source_file": "external_prediction/library_errors.csv",
+      "output_sha256": "b7ca0ca4d34b4bd9e51f0ec964b499c7c2545ff5f02db68cf6403e2124392037",
+      "rows": 108,
+      "columns": 13,
+      "numeric_cells": 756,
+      "exact_text_cells": 648,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "primary_genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "target_library",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "span_rank",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_gain_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_gain_percent_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "b7ca0ca4d34b4bd9e51f0ec964b499c7c2545ff5f02db68cf6403e2124392037"
+    },
+    {
+      "source_file": "citrus_prediction/library_errors.csv",
+      "output_sha256": "a56361d33debe3a479dfa9e680fada931ed207f4553b4411788b66eaa21aec5b",
+      "rows": 198,
+      "columns": 10,
+      "numeric_cells": 990,
+      "exact_text_cells": 990,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "target_library",
+          "kind": "exact_text"
+        },
+        {
+          "column": "model",
+          "kind": "exact_text"
+        },
+        {
+          "column": "mse",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mae",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mse_gain_over_control",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "a56361d33debe3a479dfa9e680fada931ed207f4553b4411788b66eaa21aec5b"
+    },
+    {
+      "source_file": "citrus_attribution/functional_summary.csv",
+      "output_sha256": "6f11dd3d0e52f25ed51d6d2c9dd4844b5a920bddbcc1fa517b97ac57f21a6502",
+      "rows": 264,
+      "columns": 39,
+      "numeric_cells": 7920,
+      "exact_text_cells": 2376,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "comparator",
+          "kind": "exact_text"
+        },
+        {
+          "column": "comparator_role",
+          "kind": "exact_text"
+        },
+        {
+          "column": "category_id",
+          "kind": "exact_text"
+        },
+        {
+          "column": "category_name",
+          "kind": "exact_text"
+        },
+        {
+          "column": "group_role",
+          "kind": "exact_text"
+        },
+        {
+          "column": "small_group_n_below20",
+          "kind": "exact_text"
+        },
+        {
+          "column": "n_features",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "mean_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "median_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q00_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q01_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q05_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q25_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q50_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q75_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q95_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q99_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "q100_gain",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_mean_positive",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_mean_negative",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_mean_zero_tolerance",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_positive_all3",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fraction_mean_positive",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fraction_positive_all3",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "positive_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "negative_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "negative_signed_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "net_mass",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "net_gain_share_of_original_scenario",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "positive_mass_share_of_original_scenario",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "fraction_positive_minus_BP_background",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_original_scenario_features",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_functionally_ineligible_excluded",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_BP_eligible_background",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "6f11dd3d0e52f25ed51d6d2c9dd4844b5a920bddbcc1fa517b97ac57f21a6502"
+    },
+    {
+      "source_file": "citrus_attribution/annotation_coverage.csv",
+      "output_sha256": "f03fe0c6b84cd45795d446a1f8c0ac2145efcccb3ab97cc3beb0a7bf9dae76a0",
+      "rows": 6,
+      "columns": 16,
+      "numeric_cells": 78,
+      "exact_text_cells": 18,
+      "maximum_absolute_difference": 0.0,
+      "column_checks": [
+        {
+          "column": "scenario",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genotype",
+          "kind": "exact_text"
+        },
+        {
+          "column": "threshold_fpkm",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "primary_threshold",
+          "kind": "exact_text"
+        },
+        {
+          "column": "genes",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_valid_entrez",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_ambiguous_entrez_excluded",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_functionally_eligible",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_any_GO_eligible",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_BP_eligible",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_any_GO_without_BP_eligible",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_GO_unannotated_eligible",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_six_group_union",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "n_multiple_group_memberships",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "any_GO_coverage_of_original_panel",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        },
+        {
+          "column": "BP_coverage_of_original_panel",
+          "kind": "numeric",
+          "maximum_absolute_difference": 0.0
+        }
+      ],
+      "original_sha256": "f03fe0c6b84cd45795d446a1f8c0ac2145efcccb3ab97cc3beb0a7bf9dae76a0"
+    }
+  ],
+  "figures": [
+    {
+      "figure": "Figure_1",
+      "trace_rows": 30,
+      "source_sha256": "77731178bfdceff1cf721f074241bd7c9fccdf1a67e29eea5343654b13d1dcbd",
+      "pdf_sha256": "90cf506826b233dfe39476e464f304a548a6cb5183650b2a7c1e39b3b4b0231b",
+      "png_sha256": "f8e131dda94779fe1f2a83d10f1f74204b9072e0baede9f153bb9f2ff15e6153",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_2",
+      "trace_rows": 82,
+      "source_sha256": "f1f9534a1af79a9e387c887949a1dbb63a23915b5b73aeb4c574dd62fcd8ccd9",
+      "pdf_sha256": "b840a3563d8b625d88f1b6fc6b11aa9bf3001538d70fe73c2684b91ea930cc9e",
+      "png_sha256": "eb89e7609926a75323df03d32719d90bda3ce8258ae64556f3703570eb2da0a3",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_3",
+      "trace_rows": 38,
+      "source_sha256": "79ca9f7f268850018d20e97b3ad176779546bb96a0f98111078fb990627c18e6",
+      "pdf_sha256": "32fca4f2d2b786c9504355b2c6bf3d6550b2971f7849eab924fb5821304d14e9",
+      "png_sha256": "e19e2c18acd19338292926acb313b4721223e046a74f2c0b4a608490a8600942",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_4",
+      "trace_rows": 24,
+      "source_sha256": "1d1204c6bf9ddcf1800cc978d714021b2a9e670291075d38176a52703752eebb",
+      "pdf_sha256": "9e2f28ae6eb84859e249ae0c4c49ef2b092d5ff1537520a8b8097fdd77c17aa0",
+      "png_sha256": "43be0e04850fab46783ac600ff7bc2358eabab7e44f19c2ae98b97aed1b9249d",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_S1",
+      "trace_rows": 31,
+      "source_sha256": "e25a944ba8f239eb84b8bf33727894070104a97cea4df4c16329d63bd5c77fd6",
+      "pdf_sha256": "edbe40a2a8fbb15c3bd0d35325afa234f0e6d1802f3b37a68aaa655c689f6aff",
+      "png_sha256": "14df6415e789543e4e7ace3da97b4487ca311f66cdc2ca463054129df840c7d8",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_S2",
+      "trace_rows": 72,
+      "source_sha256": "6a4762ddb3433e3add6d4fb702930a8516dcb9269754dd1a95900f1d6ceb4c12",
+      "pdf_sha256": "7aaab1a48ba06a6d2532e94b26682840decc1b9b174bb80533828eebe55ccbe7",
+      "png_sha256": "841826d05b12b82e618b2d2be54eb63aa4eb9b8ff0bcd154fc0627869f66371c",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_S3",
+      "trace_rows": 40,
+      "source_sha256": "7ad32dff39e93c7764a7c1b350c2b8962d13aef4945108efbbee44f3ada6e892",
+      "pdf_sha256": "8f6e4390f3e549cb48c4853eecb1d3526e2ace8e95ecff8bf5e00903b35d4492",
+      "png_sha256": "f27e5e6d4124308ae40b0405965afc8f2a9ed2d47411f34bb9613d8d82c1a482",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    },
+    {
+      "figure": "Figure_S4",
+      "trace_rows": 30,
+      "source_sha256": "8ff3c0e1e3d5fafa9be7620aa767221e14f335dd65e58f0a123884359f995128",
+      "pdf_sha256": "437b10916309c55e414435772f5c10efb0e32a39918cbf35d8341811482da3ce",
+      "png_sha256": "f0a191d7e3f752e4af2511b60bd111910d337267545a8f3dbf82c225818e9c59",
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "raster_image_objects_in_pdf": false
+    }
+  ],
+  "histograms": [
+    {
+      "figure": "Figure_2",
+      "panel": "C",
+      "genotype": "WT",
+      "bins": 30,
+      "unique_draws": 1000
+    },
+    {
+      "figure": "Figure_2",
+      "panel": "D",
+      "genotype": "RAP2.3",
+      "bins": 30,
+      "unique_draws": 1000
+    }
+  ]
+}

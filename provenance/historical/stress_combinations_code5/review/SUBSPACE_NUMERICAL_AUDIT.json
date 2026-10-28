@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "production_imports": false,
+  "basis_method": "10x10 Gram eigendecomposition",
+  "disjoint_gram_method": "explicit distinct-library cross products",
+  "fixed_prediction_vectors_verified": 6,
+  "component_vectors_verified": 3,
+  "fixed_prediction_library_rows_verified": 18,
+  "component_gain_rows_verified": 9,
+  "disjoint_component_fold_rows_verified": 12,
+  "max_fixed_diagnostic_error": 3.6415315207705135e-13,
+  "max_disjoint_error": 3.8510861166685117e-16,
+  "max_component_sum_error": 2.498001805406602e-16,
+  "hash_chain": "PASS",
+  "limits": "Already-examined processed data; noisy observed lower-order span, no pure higher-order interaction or new biological validation claim"
+}

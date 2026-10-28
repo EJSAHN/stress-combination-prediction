@@ -1,0 +1,69 @@
+CODE6 independent numerical and interpretation review
+28 October 2026. Target evaluation was opened by root only after verified freeze
+and actual-source poison/QR audit passed.
+
+DECISION
+PASS independent source reconstruction. No production scientific code was
+imported. The reviewer reconstructed gene panels, QR projection bases, all six
+predictors, 108 per-library error rows, 54 gain-component rows, and 54 disjoint
+geometry rows for all six genotype/filter scenarios. All stated classification
+booleans match. Explicit unequal-library cross-products independently confirm
+the production covariance correction; maximum margin discrepancy was below
+8e-16. See INDEPENDENT_SOURCE_RECOMPUTATION.json and its executable checker.
+
+PRIMARY WT RESULT
+At the fixed mean-FPKM >=1 threshold, 19,180 genes were retained. Control MSE
+is 0.701011984; full pair centroid MSE is 0.117441720.
+The mean full-centroid gain is 0.583570264, of which outside-span gain is
+0.062273019 and within-span gain is 0.521297245. These sum exactly under
+orthogonal decomposition. Outside gain is 10.67% of the total
+centroid gain, or 8.88% of control MSE. Most bulk gain
+is therefore inside the fitted single-stress span. Adding the fixed outside
+component to the within-only predictor reduces its MSE by
+34.65% (from 0.179714739 to
+0.117441720). These are different denominators and must not
+be interchanged. All three target-library outside gains are positive.
+
+The full centroid has lower observed MSE than the fixed single-additive and
+second-order-factorial comparators in this experiment. This is a descriptive
+comparison among the prespecified models, not proof of global optimality or
+a new universally superior algorithm. Three pooled biological RNA libraries
+per condition are the replication unit; genes are not biological replicates.
+The mutant and threshold results are sensitivity/secondary analyses in the
+same experiment; they do not constitute five additional external studies.
+
+WHY THE DISJOINT MARGINS ARE LARGER
+The primary 0.062273019 is a realized per-library prediction contribution,
+using the CT-mean reference, its three-single mean span, and the 19,180-gene
+CT-plus-singles filtered panel. The disjoint-control margins about 0.208–0.242
+use 19,217 genes selected from singles only, a different single-CT fitted span
+in each fold, two other distinct CT references, symmetrization, target and
+donor condition means, and a sampling-covariance correction. They are a
+separate population-geometry diagnostic under a different projection and
+reference construction. They should corroborate the sign, not be equated to
+or substituted for the realized primary prediction gain. Larger disjoint
+margins do not demonstrate stronger predictive performance or identify the
+magnitude of a 'true' biological interaction. Overlapping folds are not
+independent validation datasets.
+
+ALGEBRAIC EXPLANATION, NOT A NEW FITTED MODEL
+The prespecified second-order predictor has outside displacement 3r when the
+pair centroid has outside displacement r. Using already-opened fixed vectors,
+its outside gain is 6*<y,r>-9*||r||^2 = -0.187889827, versus the centroid's
+0.062273019. This deterministic post-opening explanatory calculation is
+consistent with excess outside amplitude in this comparator here; it does
+not estimate an optimal shrinkage rule or establish a regulatory mechanism.
+The primary inference remains transferable structure outside a fitted noisy
+single-stress span. Neither positive residual gain nor this algebra proves a
+pure third-order interaction; pair-specific structure can supply the gain,
+and true single effects can leak outside an estimated noisy span.
+
+SCOPE
+This is descriptive support for the declared narrowed three-factor question
+in a distinct same-species experiment with investigator overlap. It is not
+an exact replication of the earlier four-factor selected-donor result, an
+independent-laboratory replication, or a crop transfer demonstration. The
+source salt exposure precedes the acute EL/HS challenge; no simultaneous-
+onset, recovery, or memory interpretation follows. Published qualitative
+source information and author-wide preprocessing preclude a claim of full
+blindness or independently normalized held-out targets.

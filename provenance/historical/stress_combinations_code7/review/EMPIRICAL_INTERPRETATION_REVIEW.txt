@@ -1,0 +1,20 @@
+CODE7 empirical expansion: independent result review
+28 October 2026
+
+VERIFIED RESULT
+The primary WT panel is unchanged from CODE6 (19,180 genes). Independent column-pivoted QR reproduces the SVD subspaces and gain decomposition. Exact unequal-library U-statistic cross-products reproduce the covariance-corrected disjoint-reference geometry. All six genotype/filter scenarios pass these numerical checks. CODE6 source files, frozen arrays, predictions and results are unchanged by hash.
+
+The primary ranks are 3, 9 and 11. The original outside-V3 contribution to mean MSE gain is 0.06227301898595472. It partitions into the additional single-library directions, the additional control-variation directions, and the outside-V11 contribution of 0.05567352719347853. Thus 89.4023% of the original outside prediction-gain contribution remains outside the full observed lower-order library span. This is NOT a percentage of biological variance or a noise-free fraction.
+
+The outside-V11 gains are positive for all three target RNA libraries: 0.047636669228740755, 0.05875435904068035, 0.06062955331101449. On the separate singles-only diagnostic panel, outside-V9 covariance-corrected margins are positive for all three overlapping reference splits: 0.21838127665103077, 0.21616586368671287, 0.19817155391424626.
+
+WHAT THIS SUPPORTS
+The outside label is not solely caused by restricting the observed lower-order data to its three condition means. Most of the original prediction-error contribution remains after admitting the measured within-single-condition and control variability. Neither donor nor target data selected these directions or the ranks.
+
+WHAT THIS DOES NOT SUPPORT
+V11 is the span of observed lower-order libraries, not the true biological single-response subspace. The added directions can contain technical variation and biological heterogeneity. With three RNA pools per treatment, unobserved noise directions and covariance remain uncertain. A low-dimensional observed-variation expansion cannot rule out estimation error in directions absent from those few samples. The conditional null simulations remain necessary and must be reported even if less favorable.
+
+The disjoint companion correctly uses V3 and V9 only. Including the two held-out reference controls in its fitted subspace would invalidate the simple cross-reference covariance logic; the code rejects that option. Its margins differ from the observed prediction-gain estimand and should not be used as larger estimates of the same effect.
+
+AUDIT COVERAGE
+90 library prediction-error rows, 72 component rows, 108 disjoint geometry rows and 54 rank/inventory rows; all six classifications. Maximum numerical differences are recorded in INDEPENDENT_EMPIRICAL_AUDIT.json. For the real-data recomputation, no production numerical functions were imported. The production module was used only after that recomputation for separate synthetic exclusion tests: donor/target NaNs leave all fitted bases identical, held-out-control NaNs leave disjoint bases identical, and disjoint V11 is forbidden.

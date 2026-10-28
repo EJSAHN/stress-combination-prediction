@@ -1,0 +1,20 @@
+{
+  "amendment_id": "CODE6_INPUT_AMENDMENT_01",
+  "fixed_utc": "2026-10-28T16:44:20.877068+00:00",
+  "original_protocol_sha256": "063a0cff439e7856940e52023cfb65b01d83797151101e7d34b9b095229bf090",
+  "stage": "After header/source acquisition and first failed freeze; before any external target numerical values were parsed",
+  "trigger": "First freeze correctly stopped at duplicate gene-identifier validation",
+  "observed_identifier_metadata": {
+    "source_gene_rows_per_matrix": 32826,
+    "duplicate_gene_ids": [
+      "AT1G79790",
+      "AT2G04725"
+    ],
+    "rows_per_duplicated_id": 2,
+    "excluded_rows_per_matrix": 4
+  },
+  "policy": "Exclude every row carrying either duplicated gene identifier from each source matrix. No selection of a representative row, no averaging and no inspection of target numerical values. Apply identical ID-only rule before numeric QC/filtering in freeze and target evaluation. Stop on other duplicated identifiers or unexpected inventory.",
+  "analysis_change": "Only resolves ambiguous feature identity. All transforms, thresholds, spans, donors, models, endpoints, positivity rules and sensitivity labels remain as in the original fixed protocol.",
+  "review": "Independent design reviewer endorsed ID-only all-copy exclusion before target opening.",
+  "provenance": "Save both original protocol and amendment hashes, source identifier inventory hashes and excluded IDs/counts in run records. This is a documented amendment, not part of the initial plan."
+}

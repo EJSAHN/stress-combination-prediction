@@ -1,0 +1,15 @@
+Figure 1: A factorial-design diagram shows control, three single stresses, three pairs and the held triple condition. The mean pair profile predicts the triple profile. A heatmap shows lower relative prediction error for the pair centroid than three comparators in four genotype applications. A citrus plot compares additional single-response baselines; the pair centroid remains lowest.
+
+Figure 2: Two line plots show that positive gains outside the observed single-response span mostly persist as the span expands to single and control pools. Two histograms show conditional noise simulations. The observed gains lie close to the conditional 95th percentiles, with 56 and 61 of 1,000 simulated outcomes at least as large as observed.
+
+Figure 3: Removing the largest gene gains erases the advantage over the second-order model sooner than the advantage over fitted singles or the single-response span. Most features have positive mean gains. Target-fitted rescaling improves comparator errors but still leaves them above the original pair-centroid error.
+
+Figure 4: Conditional target-repeat moments are close to one, but correcting target variability changes the low between-genotype correlations little. After complementary-pool refitting, gene-gain ranks and top-gain sets agree more strongly within genotype than between genotypes. Bars show overlapping-partition ranges, not confidence intervals.
+
+Figure S1: Discovery-selected triple donors predict the four-factor target better than control, while additive and factorial alternatives have much larger error. Across five targets, a heatmap shows that selecting low-scoring donors does not consistently outperform averaging available donors. Low-common and low-raw rules coincide.
+
+Figure S2: Three individual target-pool points per model show the pair centroid's lower error in each of four genotypes. Changing the lower-order expression filter has modest effects on relative centroid error and the fraction of outside-span gain retained after span expansion.
+
+Figure S3: Four panels display all 36 conditional noise scenarios. Conditional gain ranges widen with noise scale and depend on the covariance and latent-mean assumptions. Observed gains are shown by horizontal dashed lines. Bars are conditional simulation percentiles, not confidence intervals.
+
+Figure S4: Four horizontal dot plots summarize prediction gains in six computational Gene Ontology groups. Values include positive and negative group means and differ by genotype and comparator. Small oxidant-detoxification groups are shown with open markers. Feature counts and annotation coverage are displayed; no enrichment significance is implied.

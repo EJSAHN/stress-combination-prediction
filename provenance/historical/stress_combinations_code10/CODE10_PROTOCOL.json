@@ -1,0 +1,171 @@
+{
+  "protocol_id": "CODE10_CITRUS_ATTRIBUTION_REPEATABILITY_V1",
+  "fixed_utc": "2026-10-28T19:25:23.345265+00:00",
+  "status": "Fixed before CODE10 reliability calculations and refit diagnostics; all CODE8/CODE9 outcomes already known.",
+  "question": "Do weak cross-genotype gene-gain associations remain after accounting for target-pool repeatability and under disjoint full-refit partitions?",
+  "scope": "Post-result diagnostic, not a new external validation or a change to original CODE8 predictions.",
+  "parent_pins": {
+    "protocol": {
+      "relative_path": "stress_combinations_code8/CODE8_PROTOCOL.json",
+      "sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555"
+    },
+    "amendment": {
+      "relative_path": "stress_combinations_code8/INPUT_AMENDMENT01.json",
+      "sha256": "b0e641430ee42775123968a74de5dc37aa043f12454375b964cf5582b63f53fd"
+    },
+    "freeze_manifest": {
+      "relative_path": "stress_combinations_code8/frozen/FREEZE_MANIFEST.json",
+      "sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a"
+    },
+    "result_summary": {
+      "relative_path": "stress_combinations_code8/results/RUN_SUMMARY.json",
+      "sha256": "5c1534b9d3f531b094d07c83b91c43b95168c5b4af11d6b648996d6da76310e5"
+    },
+    "source": {
+      "relative_path": "stress_combinations_code8/input/GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz",
+      "sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f"
+    },
+    "design": {
+      "relative_path": "stress_combinations_code8/input/GSE203331_design_verified.csv",
+      "sha256": "04b36dab139a44bc8102c27665e3e7e79ac7db6ad9cf48d07c60556fe867dd54"
+    },
+    "code": {
+      "relative_path": "stress_combinations_code8/code/stress_citrus_validation.py",
+      "sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393"
+    },
+    "code9_protocol": {
+      "relative_path": "stress_combinations_code9/CODE9_PROTOCOL.json",
+      "sha256": "fe77a77a223fd30a4022efe0933f214332daa11a8c9e2fb7ec8038479f7b313f"
+    },
+    "code9_correlations": {
+      "relative_path": "stress_combinations_code9/results/cross_genotype_summary.csv",
+      "sha256": "d84d8b55fcb577e4e40ea28524d7bd7afa75569852b3651859c80e92f30f35a3"
+    },
+    "design_review": {
+      "relative_path": "stress_combinations_code10/review/DESIGN_REVIEW_PRECOMPUTATION.txt",
+      "sha256": "dd5a55254cab2a35ff99a119753a3dff469b6ed876b7455430f950074202e10a"
+    },
+    "frozen_Car_fpkm1p0": {
+      "relative_path": "stress_combinations_code8/frozen/Car_fpkm1p0.npz",
+      "sha256": "25a65faa76723efe4de5b6560065f6850631f1a4201c95277729a8ca5aa48b8b"
+    },
+    "frozen_Car_fpkm0p5": {
+      "relative_path": "stress_combinations_code8/frozen/Car_fpkm0p5.npz",
+      "sha256": "e5b69f16d60cf7f0ce1115c5b43caecdba739f0c7d4a5683c6bb2bf1514818d2"
+    },
+    "frozen_Car_fpkm2p0": {
+      "relative_path": "stress_combinations_code8/frozen/Car_fpkm2p0.npz",
+      "sha256": "cd1e54bbbe1c71e70807384891304c52dc2e5215eede2c000e892560d1f78e52"
+    },
+    "frozen_Cleo_fpkm1p0": {
+      "relative_path": "stress_combinations_code8/frozen/Cleo_fpkm1p0.npz",
+      "sha256": "72ecd1abb764a76cddc353cbe764ff33077a5a6331a5dc669603338207c1f67c"
+    },
+    "frozen_Cleo_fpkm0p5": {
+      "relative_path": "stress_combinations_code8/frozen/Cleo_fpkm0p5.npz",
+      "sha256": "e9e20e99ba18351c0d5266366b3211408d37ce7a645863099d05868d52bcc79b"
+    },
+    "frozen_Cleo_fpkm2p0": {
+      "relative_path": "stress_combinations_code8/frozen/Cleo_fpkm2p0.npz",
+      "sha256": "7ba87563f414425fffcd7b37fd165d3fefad825ff58d68502eee884ba66c492d"
+    }
+  },
+  "genotypes": [
+    "Car",
+    "Cleo"
+  ],
+  "threshold_fpkm": 1.0,
+  "comparators": [
+    "second_order_factorial",
+    "pair_trained_factor_OLS",
+    "within_V3"
+  ],
+  "prediction": "full_pair_centroid",
+  "condition_order": [
+    "CT",
+    "WS",
+    "HL",
+    "HS",
+    "WS+HL",
+    "WS+HS",
+    "HL+HS",
+    "WS+HL+HS"
+  ],
+  "target": "WS+HL+HS",
+  "common_features": {
+    "n": 15466,
+    "path": "frozen/common_feature_ids.txt",
+    "sha256": "272920e690a40c5835e3ec2b6913d118aaa848e0fc46a8d6aa30b59969e41515",
+    "order": "lexical Feature_GID"
+  },
+  "full_fit_panels": {
+    "Car": 17470,
+    "Cleo": 16247
+  },
+  "scale": "log2(1+author FPKM); squared error difference; no additional normalization.",
+  "immutable_parent_rule": "Verify all pins, retain original assets/panels/predictions unchanged. Separate diagnostic refits never overwrite CODE8 or CODE9.",
+  "part_A": {
+    "predictors": "Original frozen CODE8 primary predictions, common features only for summaries.",
+    "delta": "(baseline-target_pool)^2-(centroid-target_pool)^2; positive favors centroid.",
+    "moment_convention": "H centers each vector across the finite common feature universe; inner product divides by G, not an independent-gene sampling assumption.",
+    "observed_variance": "Vobs=||H mean_j(delta_j)||^2/G",
+    "noise_variance_of_mean": "Nmean=sum_j ||H(delta_j-mean_delta)||^2/[n(n-1)G], n=3",
+    "stable_variance": "Vstable=Vobs-Nmean; exact equivalent sum_{j!=k}(Hdelta_j dot Hdelta_k)/[n(n-1)G]",
+    "conditional_reliability": "Vstable/Vobs when Vobs>0, retain negatives and flag. No clipping.",
+    "cross_genotype": "C=Hmean_delta_Car dot Hmean_delta_Cleo/G; raw Pearson and Spearman; adjustedPearson=C/sqrt(VstableCar*VstableCleo) only when both strictly positive.",
+    "ratio_limits": "AdjustedPearson is a plug-in moment ratio, not unbiased; retain values beyond [-1,1] and flag. No correction of Spearman.",
+    "within_pairs": "All three target-pool pair Pearson/Spearman values per genotype/comparator, no P values.",
+    "assumptions": "Stable conditional means, zero-mean pool-specific errors uncorrelated across repeats and genotypes; arbitrary within-pool cross-gene covariance allowed.",
+    "limits": "RNA-pool variability includes biological and technical components. Shared predictor fitting errors and shared preprocessing remain; stable components need not be biological truth."
+  },
+  "part_B": {
+    "draws": 256,
+    "rng": "numpy.Generator(PCG64(seed))",
+    "seeds": {
+      "Car": 2026102801,
+      "Cleo": 2026102802
+    },
+    "partition_space": 6561,
+    "draw_rule": "Uniform choice of 256 unique complete base3 codes without replacement independently by genotype; index_i=(code//3**i)%3 in fixed condition order.",
+    "partition_path": "frozen/partition_draws.csv",
+    "partition_sha256": "6b68fb1f47d436ae7303388518ef4cb5d6532c796a164007338dab9108121375",
+    "sides": "One chosen pool per condition on side1, complementary two on side2. Computational draw pair is not an experimental matched block.",
+    "fitting": "Each side separately fits its own CT, single and pair means using FULL original genotype primary panel; target excluded from fitting. Same CODE8 SVD tolerance eps*max(shape)*largest singular value and np.linalg.lstsq(rcond=None). No refilter or new coefficient constraints.",
+    "models": "D=C+mean(pair-C); second=C+sum(pair-C)-sum(single-C); withinV3=C+P_single(D-C); factorOLS uses three factor-masked single columns stacked over three pairs, no intercept.",
+    "scoring": "Align full-panel predictions and side-specific target observations to common feature IDs. Per-gene gain equals gain against target mean. Report absolute MSE averaged over target pools, with convention explicit.",
+    "primary_pairings": [
+      "Car1_Car2",
+      "Cleo1_Cleo2",
+      "Car1_Cleo2",
+      "Car2_Cleo1"
+    ],
+    "secondary_pairings": [
+      "Car1_Cleo1",
+      "Car2_Cleo2"
+    ],
+    "metrics": [
+      "Pearson",
+      "Spearman",
+      "top10pct_Jaccard"
+    ],
+    "top_k": 1547,
+    "top_rule": "Exactly ceil(0.10*15466), descending mean gain with lexical Feature_GID ties, no positive-gain restriction.",
+    "matched_contrast": "Per draw and metric, mean(Car1_Car2,Cleo1_Cleo2)-mean(Car1_Cleo2,Car2_Cleo1). Unavailable if any required value unavailable.",
+    "summary": "Each metric/contrast: finite count, min, q0.025, median, q0.975, max; arithmetic quantiles method linear. These overlapping-partition distributions are sensitivity ranges, NOT confidence intervals or independent experiments.",
+    "saved": "Exact partitions/sample names; per-draw pair metrics and contrasts; side/condition identities; coefficients/ranks; side MSE and gain; failure/degeneracy flags; source/code/runtime hashes. No huge per-draw gene arrays necessary.",
+    "limits": "Only 3 pools per condition; sides 1 vs2; shared full-data feature selection and author preprocessing remain. Within/cross differences do not identify causal genotype effects or remove all noise."
+  },
+  "unavailable_rule": "Constant centered vector -> unavailable correlation, never zero. Nonpositive stable variance -> unavailable adjustedPearson. Preserve explicit reasons and failed fits; no silent deletion.",
+  "selftests": [
+    "gain factorization and target-variance cancellation",
+    "centered offdiagonal moment identity",
+    "zero/negative stable variance and zero-norm flags",
+    "exact top-k lexical ties",
+    "side-disjointness and unique complete codes",
+    "synthetic rank-deficient span/OLS",
+    "all-pool reconstruction of existing CODE8 primary predictions"
+  ],
+  "inference": "No gene-level P values, gene bootstrap, RNA-replicate claims from feature count, calibrated CIs, new success cutoff or predictor retuning.",
+  "claim_boundary": "Aggregate prediction accuracy and gene attribution reliability are separate. Persistently weaker between-genotype associations support an observed attribution difference under this diagnostic, not a shared/different causal pathway mechanism.",
+  "resource_plan": "Single BLAS thread, existing Python; no network/download/install needed for calculation."
+}

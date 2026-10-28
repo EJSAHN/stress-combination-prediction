@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_STATIC_LAUNCHER_REVIEW",
+  "reviewed_utc": "2026-10-28T20:03:49.104920+00:00",
+  "native_Windows_PowerShell_executed": false,
+  "scope": "Read-only review of PowerShell 5.1 syntax constructs, existing-environment policy, error handling, paths, cache/environment restoration and result-bundle behavior. Not a PowerShell parser or Windows runtime test.",
+  "checks": [
+    "PowerShell 5.1-compatible constructs; no PS7-only operators identified.",
+    "Native interpreter stderr captured under ErrorActionPreference Continue, exit codes checked explicitly.",
+    "Existing Anaconda/Miniconda/explicit/system interpreters only; no package installation or environment creation.",
+    "Temporary and matplotlib caches set beneath the run folder before interpreter probes.",
+    "Unique staging/run directories; existing result archives are not overwritten; no recursive cleanup.",
+    "Python wrapper verifies package paths, file sizes and hashes and validates the produced pipeline status.",
+    "Failure path retains logs and a diagnostic ZIP when the output location is available.",
+    "Process environment and console encoding restored in finally.",
+    "Native Windows and PowerShell execution flags derive from the observed runtime, not Linux replay."
+  ],
+  "files": [
+    {
+      "path": "run.ps1",
+      "sha256": "38871b6242a3be54521d3dd0037268f0fe22474dd0967830ded3c3fb18a0b53f"
+    },
+    {
+      "path": "scripts/bootstrap_windows.ps1",
+      "sha256": "0f822cf3011b1fb55d337fdaa71befeceb6e16fb7d295c85e3e38698889113b6"
+    },
+    {
+      "path": "scripts/local_run.py",
+      "sha256": "200abb19817977e72cebe876a38f89d229821bbb85af9edee9063b9df4721aa6"
+    }
+  ],
+  "remaining_status": "Actual user-PC Windows PowerShell execution still pending.",
+  "followup_review": "Required dependency probe now omits SciPy, which is optional for historical QR audit scripts and unused by default replay; all other reviewed launcher behavior is unchanged."
+}

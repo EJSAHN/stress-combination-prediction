@@ -1,0 +1,742 @@
+{
+  "status": "ALL_SIX_SCENARIOS_FROZEN_BEFORE_TARGET_PARSE",
+  "started_utc": "2026-10-28T16:49:19.229178+00:00",
+  "source": "GSE330879 author-deposited FPKM",
+  "source_hashes": {
+    "WT": {
+      "path": "/workspace/scratch/2c80e384db1d/stress_combinations_code6/input/GSE330879_Col0_fpkm.txt.gz",
+      "sha256": "cc688c63c6f660268d0c3c32ee7de906694f728b53e04af9ef4e7dd0a874caa0"
+    },
+    "RAP2.3": {
+      "path": "/workspace/scratch/2c80e384db1d/stress_combinations_code6/input/GSE330879_RAP2.3_fpkm.txt.gz",
+      "sha256": "89fd2bc79eff30d390cb5aa6cadc6d7a020c1a65d55153b6a718c3c764ae5df5"
+    }
+  },
+  "protocol_sha256": "063a0cff439e7856940e52023cfb65b01d83797151101e7d34b9b095229bf090",
+  "amendment_sha256": "c580b882b961ed816e7b3e27b090725434fef52e0c3f90c50c68268978012137",
+  "design_sha256": "f67cf80665ee340afe13f67884f2038e10fe44a8c25d91c134c0205964841212",
+  "freeze_code_sha256": "e56f39573d8dd1c0db7b7c682fe0a9c6f25ee9bbbe88b0a4ab1af4a861eeb33e",
+  "target_numerical_values_parsed": false,
+  "sample_pairing_inferred": false,
+  "scenarios": [
+    {
+      "genotype": "WT",
+      "threshold_fpkm": 1.0,
+      "primary_threshold": true,
+      "primary_genotype": true,
+      "gene_column": "gene",
+      "header_mapping": {
+        "C11": "C11",
+        "C12": "C12",
+        "C13": "C13",
+        "C14": "C14",
+        "C15": "C15",
+        "C16": "C16",
+        "C17": "C17",
+        "C18": "C18",
+        "C21": "C21",
+        "C22": "C22",
+        "C23": "C23",
+        "C24": "C24",
+        "C25": "C25",
+        "C26": "C26",
+        "C27": "C27",
+        "C28": "C28",
+        "C31": "C31",
+        "C32": "C32",
+        "C33": "C33",
+        "C34": "C34",
+        "C35": "C35",
+        "C36": "C36",
+        "C37": "C37",
+        "C38": "C38"
+      },
+      "allowed_numeric_columns": [
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C31",
+        "C32",
+        "C33",
+        "C34",
+        "C35",
+        "C36",
+        "C37"
+      ],
+      "excluded_target_columns": [
+        "C18",
+        "C28",
+        "C38"
+      ],
+      "source_gene_rows": 32826,
+      "identifier_qc": {
+        "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+        "source_rows": 32826,
+        "retained_unique_identifier_rows": 32822,
+        "excluded_duplicate_rows": 4,
+        "source_identifier_sha256": "b168f2ac65153570a27a1f961d96f486f0e0c31feed1cce8acbe863bcd100c47",
+        "excluded_identifier_counts": {
+          "AT1G79790": 2,
+          "AT2G04725": 2
+        }
+      },
+      "eligible_unique_identifier_rows": 32822,
+      "prediction_gene_count": 19180,
+      "diagnostic_gene_count": 19217,
+      "span_rank": 3,
+      "rank_tolerance": 4.958489382664858e-10,
+      "singular_values": [
+        116.42883699734107,
+        69.1299009303304,
+        47.7101347880949
+      ],
+      "diagnostic_folds": [
+        {
+          "fold": 1,
+          "basis_control": "C11",
+          "reference_controls": [
+            "C21",
+            "C31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 6.107677826862767e-10
+        },
+        {
+          "fold": 2,
+          "basis_control": "C21",
+          "reference_controls": [
+            "C11",
+            "C31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.212261620478722e-10
+        },
+        {
+          "fold": 3,
+          "basis_control": "C31",
+          "reference_controls": [
+            "C11",
+            "C21"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.402049774142654e-10
+        }
+      ],
+      "key": "WT_fpkm1p0",
+      "assets": "WT_fpkm1p0.npz",
+      "assets_sha256": "c5a0320e25ea1dddc6f3ce1825f04469012cccaad0f5aa6227426c7bf59e1005",
+      "atomic_write_round_trip_verified": true
+    },
+    {
+      "genotype": "WT",
+      "threshold_fpkm": 0.5,
+      "primary_threshold": false,
+      "primary_genotype": true,
+      "gene_column": "gene",
+      "header_mapping": {
+        "C11": "C11",
+        "C12": "C12",
+        "C13": "C13",
+        "C14": "C14",
+        "C15": "C15",
+        "C16": "C16",
+        "C17": "C17",
+        "C18": "C18",
+        "C21": "C21",
+        "C22": "C22",
+        "C23": "C23",
+        "C24": "C24",
+        "C25": "C25",
+        "C26": "C26",
+        "C27": "C27",
+        "C28": "C28",
+        "C31": "C31",
+        "C32": "C32",
+        "C33": "C33",
+        "C34": "C34",
+        "C35": "C35",
+        "C36": "C36",
+        "C37": "C37",
+        "C38": "C38"
+      },
+      "allowed_numeric_columns": [
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C31",
+        "C32",
+        "C33",
+        "C34",
+        "C35",
+        "C36",
+        "C37"
+      ],
+      "excluded_target_columns": [
+        "C18",
+        "C28",
+        "C38"
+      ],
+      "source_gene_rows": 32826,
+      "identifier_qc": {
+        "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+        "source_rows": 32826,
+        "retained_unique_identifier_rows": 32822,
+        "excluded_duplicate_rows": 4,
+        "source_identifier_sha256": "b168f2ac65153570a27a1f961d96f486f0e0c31feed1cce8acbe863bcd100c47",
+        "excluded_identifier_counts": {
+          "AT1G79790": 2,
+          "AT2G04725": 2
+        }
+      },
+      "eligible_unique_identifier_rows": 32822,
+      "prediction_gene_count": 20613,
+      "diagnostic_gene_count": 20639,
+      "span_rank": 3,
+      "rank_tolerance": 5.446954215287476e-10,
+      "singular_values": [
+        119.00694209611814,
+        70.94835201597904,
+        49.01231549440933
+      ],
+      "diagnostic_folds": [
+        {
+          "fold": 1,
+          "basis_control": "C11",
+          "reference_controls": [
+            "C21",
+            "C31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 6.752531304944731e-10
+        },
+        {
+          "fold": 2,
+          "basis_control": "C21",
+          "reference_controls": [
+            "C11",
+            "C31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.768900050440609e-10
+        },
+        {
+          "fold": 3,
+          "basis_control": "C31",
+          "reference_controls": [
+            "C11",
+            "C21"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.971576757955257e-10
+        }
+      ],
+      "key": "WT_fpkm0p5",
+      "assets": "WT_fpkm0p5.npz",
+      "assets_sha256": "dc76df6cc9bcb64e90fa8979c99113132f63f05fbc064c9dee4ffb8e5e238893",
+      "atomic_write_round_trip_verified": true
+    },
+    {
+      "genotype": "WT",
+      "threshold_fpkm": 2.0,
+      "primary_threshold": false,
+      "primary_genotype": true,
+      "gene_column": "gene",
+      "header_mapping": {
+        "C11": "C11",
+        "C12": "C12",
+        "C13": "C13",
+        "C14": "C14",
+        "C15": "C15",
+        "C16": "C16",
+        "C17": "C17",
+        "C18": "C18",
+        "C21": "C21",
+        "C22": "C22",
+        "C23": "C23",
+        "C24": "C24",
+        "C25": "C25",
+        "C26": "C26",
+        "C27": "C27",
+        "C28": "C28",
+        "C31": "C31",
+        "C32": "C32",
+        "C33": "C33",
+        "C34": "C34",
+        "C35": "C35",
+        "C36": "C36",
+        "C37": "C37",
+        "C38": "C38"
+      },
+      "allowed_numeric_columns": [
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C31",
+        "C32",
+        "C33",
+        "C34",
+        "C35",
+        "C36",
+        "C37"
+      ],
+      "excluded_target_columns": [
+        "C18",
+        "C28",
+        "C38"
+      ],
+      "source_gene_rows": 32826,
+      "identifier_qc": {
+        "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+        "source_rows": 32826,
+        "retained_unique_identifier_rows": 32822,
+        "excluded_duplicate_rows": 4,
+        "source_identifier_sha256": "b168f2ac65153570a27a1f961d96f486f0e0c31feed1cce8acbe863bcd100c47",
+        "excluded_identifier_counts": {
+          "AT1G79790": 2,
+          "AT2G04725": 2
+        }
+      },
+      "eligible_unique_identifier_rows": 32822,
+      "prediction_gene_count": 17428,
+      "diagnostic_gene_count": 17448,
+      "span_rank": 3,
+      "rank_tolerance": 4.3322883922143265e-10,
+      "singular_values": [
+        111.9514137527999,
+        65.72310940338191,
+        45.62984580091308
+      ],
+      "diagnostic_folds": [
+        {
+          "fold": 1,
+          "basis_control": "C11",
+          "reference_controls": [
+            "C21",
+            "C31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.216522556373502e-10
+        },
+        {
+          "fold": 2,
+          "basis_control": "C21",
+          "reference_controls": [
+            "C11",
+            "C31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 4.5394619066043807e-10
+        },
+        {
+          "fold": 3,
+          "basis_control": "C31",
+          "reference_controls": [
+            "C11",
+            "C21"
+          ],
+          "rank": 3,
+          "rank_tolerance": 4.6436328295108773e-10
+        }
+      ],
+      "key": "WT_fpkm2p0",
+      "assets": "WT_fpkm2p0.npz",
+      "assets_sha256": "df61e5b670ad49a14ce2114a3f4bf98e73c7bfc4467236472701da6c3f576130",
+      "atomic_write_round_trip_verified": true
+    },
+    {
+      "genotype": "RAP2.3",
+      "threshold_fpkm": 1.0,
+      "primary_threshold": true,
+      "primary_genotype": false,
+      "gene_column": "gene",
+      "header_mapping": {
+        "R11": "R11",
+        "R12": "R12",
+        "R13": "R13",
+        "R14": "R14",
+        "R15": "R15",
+        "R16": "R16",
+        "R17": "R17",
+        "R18": "R18",
+        "R21": "R21",
+        "R22": "R22",
+        "R23": "R23",
+        "R24": "R24",
+        "R25": "R25",
+        "R26": "R26",
+        "R27": "R27",
+        "R28": "R28",
+        "R31": "R31",
+        "R32": "R32",
+        "R33": "R33",
+        "R34": "R34",
+        "R35": "R35",
+        "R36": "R36",
+        "R37": "R37",
+        "R38": "R38"
+      },
+      "allowed_numeric_columns": [
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37"
+      ],
+      "excluded_target_columns": [
+        "R18",
+        "R28",
+        "R38"
+      ],
+      "source_gene_rows": 32826,
+      "identifier_qc": {
+        "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+        "source_rows": 32826,
+        "retained_unique_identifier_rows": 32822,
+        "excluded_duplicate_rows": 4,
+        "source_identifier_sha256": "9a1bdcdd4f7dd742df0c4309bfe13eb71585e5654ef1d594070a321e27dc3957",
+        "excluded_identifier_counts": {
+          "AT1G79790": 2,
+          "AT2G04725": 2
+        }
+      },
+      "eligible_unique_identifier_rows": 32822,
+      "prediction_gene_count": 19034,
+      "diagnostic_gene_count": 19074,
+      "span_rank": 3,
+      "rank_tolerance": 4.85805140652798e-10,
+      "singular_values": [
+        114.94545814955407,
+        78.7465745720459,
+        51.45280466925888
+      ],
+      "diagnostic_folds": [
+        {
+          "fold": 1,
+          "basis_control": "R11",
+          "reference_controls": [
+            "R21",
+            "R31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.261406831741885e-10
+        },
+        {
+          "fold": 2,
+          "basis_control": "R21",
+          "reference_controls": [
+            "R11",
+            "R31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.699521019262984e-10
+        },
+        {
+          "fold": 3,
+          "basis_control": "R31",
+          "reference_controls": [
+            "R11",
+            "R21"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.032481255205364e-10
+        }
+      ],
+      "key": "RAP2_3_fpkm1p0",
+      "assets": "RAP2_3_fpkm1p0.npz",
+      "assets_sha256": "5a700af5ca05e2a2543d66d702ed59193f62737ca4565287e1735c6f86b12808",
+      "atomic_write_round_trip_verified": true
+    },
+    {
+      "genotype": "RAP2.3",
+      "threshold_fpkm": 0.5,
+      "primary_threshold": false,
+      "primary_genotype": false,
+      "gene_column": "gene",
+      "header_mapping": {
+        "R11": "R11",
+        "R12": "R12",
+        "R13": "R13",
+        "R14": "R14",
+        "R15": "R15",
+        "R16": "R16",
+        "R17": "R17",
+        "R18": "R18",
+        "R21": "R21",
+        "R22": "R22",
+        "R23": "R23",
+        "R24": "R24",
+        "R25": "R25",
+        "R26": "R26",
+        "R27": "R27",
+        "R28": "R28",
+        "R31": "R31",
+        "R32": "R32",
+        "R33": "R33",
+        "R34": "R34",
+        "R35": "R35",
+        "R36": "R36",
+        "R37": "R37",
+        "R38": "R38"
+      },
+      "allowed_numeric_columns": [
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37"
+      ],
+      "excluded_target_columns": [
+        "R18",
+        "R28",
+        "R38"
+      ],
+      "source_gene_rows": 32826,
+      "identifier_qc": {
+        "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+        "source_rows": 32826,
+        "retained_unique_identifier_rows": 32822,
+        "excluded_duplicate_rows": 4,
+        "source_identifier_sha256": "9a1bdcdd4f7dd742df0c4309bfe13eb71585e5654ef1d594070a321e27dc3957",
+        "excluded_identifier_counts": {
+          "AT1G79790": 2,
+          "AT2G04725": 2
+        }
+      },
+      "eligible_unique_identifier_rows": 32822,
+      "prediction_gene_count": 20448,
+      "diagnostic_gene_count": 20497,
+      "span_rank": 3,
+      "rank_tolerance": 5.312157648258546e-10,
+      "singular_values": [
+        116.99839204435895,
+        80.9491977744872,
+        52.567064648457915
+      ],
+      "diagnostic_folds": [
+        {
+          "fold": 1,
+          "basis_control": "R11",
+          "reference_controls": [
+            "R21",
+            "R31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.80512574120301e-10
+        },
+        {
+          "fold": 2,
+          "basis_control": "R21",
+          "reference_controls": [
+            "R11",
+            "R31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 6.28826226318715e-10
+        },
+        {
+          "fold": 3,
+          "basis_control": "R31",
+          "reference_controls": [
+            "R11",
+            "R21"
+          ],
+          "rank": 3,
+          "rank_tolerance": 5.558892289085812e-10
+        }
+      ],
+      "key": "RAP2_3_fpkm0p5",
+      "assets": "RAP2_3_fpkm0p5.npz",
+      "assets_sha256": "3b54466e22e66afb18de534bdf8ef6d4e92a1bd02f29eb1129de2784e7eb0366",
+      "atomic_write_round_trip_verified": true
+    },
+    {
+      "genotype": "RAP2.3",
+      "threshold_fpkm": 2.0,
+      "primary_threshold": false,
+      "primary_genotype": false,
+      "gene_column": "gene",
+      "header_mapping": {
+        "R11": "R11",
+        "R12": "R12",
+        "R13": "R13",
+        "R14": "R14",
+        "R15": "R15",
+        "R16": "R16",
+        "R17": "R17",
+        "R18": "R18",
+        "R21": "R21",
+        "R22": "R22",
+        "R23": "R23",
+        "R24": "R24",
+        "R25": "R25",
+        "R26": "R26",
+        "R27": "R27",
+        "R28": "R28",
+        "R31": "R31",
+        "R32": "R32",
+        "R33": "R33",
+        "R34": "R34",
+        "R35": "R35",
+        "R36": "R36",
+        "R37": "R37",
+        "R38": "R38"
+      },
+      "allowed_numeric_columns": [
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R21",
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37"
+      ],
+      "excluded_target_columns": [
+        "R18",
+        "R28",
+        "R38"
+      ],
+      "source_gene_rows": 32826,
+      "identifier_qc": {
+        "policy": "exclude_all_rows_with_duplicated_gene_identifier",
+        "source_rows": 32826,
+        "retained_unique_identifier_rows": 32822,
+        "excluded_duplicate_rows": 4,
+        "source_identifier_sha256": "9a1bdcdd4f7dd742df0c4309bfe13eb71585e5654ef1d594070a321e27dc3957",
+        "excluded_identifier_counts": {
+          "AT1G79790": 2,
+          "AT2G04725": 2
+        }
+      },
+      "eligible_unique_identifier_rows": 32822,
+      "prediction_gene_count": 17244,
+      "diagnostic_gene_count": 17322,
+      "span_rank": 3,
+      "rank_tolerance": 4.25065231926756e-10,
+      "singular_values": [
+        111.01389585441265,
+        74.01200785716163,
+        49.362514973984844
+      ],
+      "diagnostic_folds": [
+        {
+          "fold": 1,
+          "basis_control": "R11",
+          "reference_controls": [
+            "R21",
+            "R31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 4.564916804899156e-10
+        },
+        {
+          "fold": 2,
+          "basis_control": "R21",
+          "reference_controls": [
+            "R11",
+            "R31"
+          ],
+          "rank": 3,
+          "rank_tolerance": 4.958991018177346e-10
+        },
+        {
+          "fold": 3,
+          "basis_control": "R31",
+          "reference_controls": [
+            "R11",
+            "R21"
+          ],
+          "rank": 3,
+          "rank_tolerance": 4.36810892339301e-10
+        }
+      ],
+      "key": "RAP2_3_fpkm2p0",
+      "assets": "RAP2_3_fpkm2p0.npz",
+      "assets_sha256": "30dd821a33ea65d515ce796d36206c5536a7cef7f2c4fae5c49cd1732d737b46",
+      "atomic_write_round_trip_verified": true
+    }
+  ],
+  "all_asset_integrity_rechecked_at_completion": true,
+  "completed_utc": "2026-10-28T16:49:24.053050+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

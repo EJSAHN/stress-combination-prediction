@@ -1,0 +1,17 @@
+model,family,source,outcome_target_fit
+control_mean,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+single_effect_sum,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+main_effects,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+pairwise,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+ridge_pairwise,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+main_clipped,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+ridge_pairwise_clipped,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+rank1_main,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+rank1_main_score_clipped,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+rank2_main,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+rank2_main_score_clipped,lower_order_CODE2,33 libraries in 11 conditions of order<=2,False
+all_triples_mean,discovery_informed_extrapolation,45 libraries in 15 already-unlocked conditions,False
+quiet_triples_mean,discovery_informed_extrapolation,Two quiet triples chosen after CODE2 discovery; lower-order rank2 basis,False
+quiet_residual_rank2,discovery_informed_extrapolation,Two quiet triples chosen after CODE2 discovery; lower-order rank2 basis,False
+quiet_common_rank2,discovery_informed_extrapolation,Two quiet triples chosen after CODE2 discovery; lower-order rank2 basis,False
+cubic_factorial,discovery_informed_extrapolation,45 libraries in 15 already-unlocked conditions,False

@@ -1,0 +1,186 @@
+{
+  "protocol_id": "GSE147962_CODE3_INTERNAL_FOURWAY_HOLDOUT_v1",
+  "freeze_stage": "Review and freeze before computing prediction vectors; freeze vectors before opening target numerical columns",
+  "input_hashes": {
+    "GSE147962_normalized_counts.txt.gz": "a306e5a3fc497dee7f2e137d352233a0da783ededbea658a2270f8a64efc8c8e",
+    "GSE147962_sample_design.csv": "52f4c3d649224d3cffc5f67ceaac64664714b539b0e315bc60ea99917703fa37",
+    "gene_panel.csv": "816fe05791be5feeb1d280c1fc15bd34b8e63c27bbd50080c075345ee1af0c1e",
+    "reference_code2_models.py": "4a90353caee5ea2e7a537130fb2fb4425a7776e3debcb8f551e32b9c9d42ef7a",
+    "program_membership.csv": "2b7c3a577631481c1ff36d3d5f81337f12abd175cd141cdac81f088763e7e52d",
+    "program_membership_nonIEA.csv": "54e033e7182b510188f006f24b2bc6db538900e950ac2a36b1e7acc176434eda",
+    "program_catalog.csv": "783ef4ff5be3e43073adecd1b85155746ae7d3cd9a9fe5d2db065b8b6d27fcce"
+  },
+  "input_sha256": {
+    "data": "a306e5a3fc497dee7f2e137d352233a0da783ededbea658a2270f8a64efc8c8e",
+    "design": "52f4c3d649224d3cffc5f67ceaac64664714b539b0e315bc60ea99917703fa37",
+    "gene_panel": "816fe05791be5feeb1d280c1fc15bd34b8e63c27bbd50080c075345ee1af0c1e",
+    "basis_code": "4a90353caee5ea2e7a537130fb2fb4425a7776e3debcb8f551e32b9c9d42ef7a",
+    "membership": "2b7c3a577631481c1ff36d3d5f81337f12abd175cd141cdac81f088763e7e52d",
+    "membership_noniea": "54e033e7182b510188f006f24b2bc6db538900e950ac2a36b1e7acc176434eda",
+    "catalog": "783ef4ff5be3e43073adecd1b85155746ae7d3cd9a9fe5d2db065b8b6d27fcce"
+  },
+  "factors": [
+    "salt",
+    "paraquat",
+    "high_light",
+    "heat"
+  ],
+  "filter_training_mean_count_min": 10,
+  "selected_ridge_alpha": 0.01,
+  "quiet_triples": [
+    "PQ-HL-HS",
+    "S-PQ-HL"
+  ],
+  "models": [
+    "control_mean",
+    "single_effect_sum",
+    "main_effects",
+    "pairwise",
+    "ridge_pairwise",
+    "main_clipped",
+    "ridge_pairwise_clipped",
+    "rank1_main",
+    "rank1_main_score_clipped",
+    "rank2_main",
+    "rank2_main_score_clipped",
+    "all_triples_mean",
+    "quiet_triples_mean",
+    "quiet_residual_rank2",
+    "quiet_common_rank2",
+    "cubic_factorial"
+  ],
+  "prediction_fit": {
+    "lower_order_libraries": 33,
+    "unlocked_libraries": 45,
+    "target_libraries": 3,
+    "target_conditions": 1,
+    "expression_scale": "log2(1 + author DESeq2-normalized count)",
+    "training_gene_filter": "mean normalized count across33 order<=2 libraries >=10",
+    "primary_gene_count": 21495,
+    "training_responsive_gene_count": 9695,
+    "CODE2_models": "Exact hash-pinned predict_all and training_state functions; no refit on triples",
+    "extra_models": {
+      "all_triples_mean": "Mean of four unlocked triple cell means",
+      "quiet_triples_mean": "Mean of PQ-HL-HS and S-PQ-HL cell means, selected after prior discovery",
+      "quiet_common_rank2": "CT + orthogonal rank2 projection of quiet_triples_mean-CT",
+      "quiet_residual_rank2": "CT + complement of orthogonal rank2 projection of quiet_triples_mean-CT",
+      "cubic_factorial": "Sum of triples - sum of pairs + sum of singles - CT; degree<=3 factorial extension"
+    },
+    "identity": "quiet_triples_mean = quiet_common_rank2 + quiet_residual_rank2 - control_mean"
+  },
+  "primary_geometry": {
+    "rank": 2,
+    "gene_universe": "all_filtered; 21495 genes in unchanged source order",
+    "basis": "Exact CODE2 SVD of11 lower-order cell means minus CT, unscaled log expression, no grand centering",
+    "projector": "E_common = (E @ basis.T) @ basis; E_residual=E-E_common",
+    "responsive_panel": "Ordinary expression metrics only; no restricted or QR basis"
+  },
+  "evaluation": {
+    "all_models_reported": true,
+    "panels": [
+      "all_filtered",
+      "training_responsive"
+    ],
+    "per_library_metrics": [
+      "MSE",
+      "RMSE",
+      "MAE"
+    ],
+    "primary_all_filtered_components": [
+      "expression",
+      "common_rank2",
+      "residual_rank2"
+    ],
+    "paired_gain_baselines": [
+      "control_mean",
+      "quiet_common_rank2",
+      "quiet_triples_mean"
+    ],
+    "gain_definition": "baseline error minus candidate error per same pooled library",
+    "uncertainty_reporting": "Three separate pooled libraries and min/mean/max; no genes-as-replicates inference",
+    "p_values": false,
+    "target_columns": [
+      "S-PQ-HL-HS_46",
+      "S-PQ-HL-HS_47",
+      "S-PQ-HL-HS_48"
+    ],
+    "target_read": "Explicit separate evaluation command after protocol, code, inputs and prediction NPZ hashes frozen"
+  },
+  "program_scenarios": [
+    {
+      "id": "primary_rank2_filter10",
+      "rank": 2,
+      "filter_training_mean_count_min": 10,
+      "annotation": "primary",
+      "matched_sets": 1000
+    },
+    {
+      "id": "rank1_filter10",
+      "rank": 1,
+      "filter_training_mean_count_min": 10,
+      "annotation": "primary",
+      "matched_sets": 0
+    },
+    {
+      "id": "rank2_filter5",
+      "rank": 2,
+      "filter_training_mean_count_min": 5,
+      "annotation": "primary",
+      "matched_sets": 0
+    },
+    {
+      "id": "rank2_filter20",
+      "rank": 2,
+      "filter_training_mean_count_min": 20,
+      "annotation": "primary",
+      "matched_sets": 0
+    },
+    {
+      "id": "nonIEA_rank2_filter10",
+      "rank": 2,
+      "filter_training_mean_count_min": 10,
+      "annotation": "nonIEA",
+      "matched_sets": 0
+    }
+  ],
+  "program_matching": {
+    "seed": 20261028,
+    "n_matched_sets": 1000,
+    "matched_scenario": "primary_rank2_filter10",
+    "joint_mean_bins": 5,
+    "joint_variance_bins": 3,
+    "mean_variable": "Training mean normalized count over33 order<=2 libraries",
+    "variance_variable": "Within-condition pooled variance after projecting each library into rank2 residual space",
+    "variance_pooled_denominator": 22,
+    "bin_ties": "Lexical gene-ID order",
+    "matching": "Exact per-program gene counts in each joint bin; no outcome use",
+    "infeasibility": "If any required bin has fewer background genes than requested, report diagnostic INFEASIBLE; no adaptive bin relaxation",
+    "interpretation": "Descriptive matched-reference specificity, not independent biological replication",
+    "sampling": "Exclude target-program genes; without replacement within each draw; same frozen draws for every condition and target",
+    "metrics": [
+      "absolute residual mean effect",
+      "residual gene-effect RMS"
+    ],
+    "null_limit": "Joint matching does not preserve biological coexpression or GO overlap; empirical percentiles descriptive, not P-values"
+  },
+  "limitations": [
+    "One internal held-out factorial cell with three biological pooled RNA libraries; not external replication",
+    "The quiet triple definitions were selected after viewing discovery triples",
+    "Processed source normalization may have used all48 libraries, including target columns",
+    "Published qualitative four-way findings were already known; numerical outcome holdout is not fully hypothesis-blind",
+    "Large pools of seedlings do not increase biological n beyond three libraries per cell",
+    "No mechanism, memory, hysteresis or phase-transition inference from this single endpoint",
+    "All16 models and predeclared program scenarios must be reported; no post-target model tuning"
+  ],
+  "outcome_opening_gate": "Parent explicitly authorizes target numerical read only after reviewing frozen prediction and program manifests",
+  "program_definition": {
+    "membership": "All15 unchanged CODE2 GO sets; >=10 filtered genes; all retained in catalog",
+    "score": "Project EACH library before equal-weight program means; raw, common and residual effects versus CT",
+    "uncertainty": "Biological-pool SE conditional on fixed basis; preserve shared-control covariance; leave-one-pool range is not a confidence interval",
+    "quiet_comparison": "Full15-program profile cosine descriptive; direct quiet1-minus-quiet2 contrasts cancel CT for fixed basis",
+    "target_comparison": "Frozen15-program target residual profile versus quiet-pair centroid; no selected subsets or refit",
+    "ratio": "Residual/raw RMS can exceed1 for a program; never label explained-variance fraction",
+    "dependency": "GO residual score depends on genes outside the set via the global projector; not pathway activity"
+  },
+  "dataset_decision": "Retain same dataset regardless of predictor outcome."
+}

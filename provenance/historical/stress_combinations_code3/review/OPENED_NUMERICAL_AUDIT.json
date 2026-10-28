@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "opening_record_sha256": "3c066787ea2e4b84956b08882aa3772860784606756e646ac261972b97def60c",
+  "frozen_hashes_match_opening_record": true,
+  "models_reconstructed": 16,
+  "prediction_vectors_reconstructed": 16,
+  "model_library_rows_recomputed": 192,
+  "program_scenarios": 5,
+  "program_condition_rows_recomputed": 1200,
+  "target_program_mean_and_se_checks": 450,
+  "target_matched_percentile_checks": 30,
+  "comparison_batches": 4048,
+  "maximum_absolute_error": 2.4158453015843406e-13,
+  "production_modules_imported": false,
+  "four_way_read_after_root_authorization": true,
+  "derivation": "Cell mean lstsq/solve, ridge alpha divided by3, independent Gram eigenvectors; scores and SE directly from individual pools."
+}

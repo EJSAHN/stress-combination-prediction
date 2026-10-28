@@ -1,0 +1,7 @@
+scenario,genotype,threshold_fpkm,primary_threshold,genes,target_column_1,target_column_2,target_column_3
+Car_fpkm1p0,Car,1.0,True,17470,WmasLmasH-Car1_FPKM,WmasLmasH-Car2_FPKM,WmasLmasH-Car3_FPKM
+Car_fpkm0p5,Car,0.5,False,19000,WmasLmasH-Car1_FPKM,WmasLmasH-Car2_FPKM,WmasLmasH-Car3_FPKM
+Car_fpkm2p0,Car,2.0,False,15640,WmasLmasH-Car1_FPKM,WmasLmasH-Car2_FPKM,WmasLmasH-Car3_FPKM
+Cleo_fpkm1p0,Cleo,1.0,True,16247,WmasLmasH-Cleo1_FPKM,WmasLmasH-Cleo2_FPKM,W-L-H-Cleo3-bis_FPKM
+Cleo_fpkm0p5,Cleo,0.5,False,17668,WmasLmasH-Cleo1_FPKM,WmasLmasH-Cleo2_FPKM,W-L-H-Cleo3-bis_FPKM
+Cleo_fpkm2p0,Cleo,2.0,False,14629,WmasLmasH-Cleo1_FPKM,WmasLmasH-Cleo2_FPKM,W-L-H-Cleo3-bis_FPKM

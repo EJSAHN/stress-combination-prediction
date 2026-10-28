@@ -1,0 +1,30 @@
+{
+  "status": "Exploratory after all 48 expression libraries were examined in CODE3 and CODE4; no new blinded test",
+  "question": "Can a fixed rule select useful immediate-subset donors without reading the expression values of the current target?",
+  "input_hashes": {
+    "GSE147962_normalized_counts.txt.gz": "a306e5a3fc497dee7f2e137d352233a0da783ededbea658a2270f8a64efc8c8e",
+    "GSE147962_sample_design.csv": "52f4c3d649224d3cffc5f67ceaac64664714b539b0e315bc60ea99917703fa37"
+  },
+  "targets": ["PQ-HL-HS", "S-HL-HS", "S-PQ-HL", "S-PQ-HS", "S-PQ-HL-HS"],
+  "factors": ["salt", "paraquat", "high_light", "heat"],
+  "allowed_inputs": "For each target: 33 order<=2 libraries plus its immediate proper-subset donors, deduplicated. Current target and other high-order cells excluded with read_csv(usecols).",
+  "filter": "Mean author-normalized count >=10 in the 33 control/single/pair libraries only; expected 21495 genes",
+  "transform": "log2(1 + author-normalized count)",
+  "basis": "Unscaled control-anchored SVD of 11 lower-order condition means. Rank2 primary, rank1 sensitivity; no tuning.",
+  "donors": "Immediate proper subsets by factorial bits: three pair conditions for a triple target, four triples for the four-way target",
+  "scores": "Mean squared control-centered raw effect, rank-r common projection and residual projection; ascending scores, lexicographic condition-name tie break",
+  "models": ["control_mean", "single_effect_sum", "pairwise", "all_donors_mean", "all_donors_half_shrink", "common_low1", "common_low2", "raw_low1", "raw_low2", "residual_low1", "residual_low2", "common_low2_residual_only"],
+  "prediction": "Selected models predict full selected-donor centroids except explicit common_low2_residual_only. Half shrink is CT + 0.5*(all-donor mean-CT).",
+  "primary_comparisons": ["common_low2 versus raw_low2", "common_low2 versus all_donors_mean"],
+  "evaluation": "Every model/rank/target: mean and each RNA-library MSE, MAE, common-component MSE, residual-component MSE. No P values, gene bootstraps or pooled significance.",
+  "stability": "Omit each candidate donor library one at a time, hold original filter/control/basis fixed, recompute that donor mean and rerank six selection rules. Report membership changes, not confidence intervals. Target values unused.",
+  "separation": "Save numerical predictions and hashes before a separate evaluation command. This is code-level input separation after discovery, not new blind validation.",
+  "limitations": [
+    "All expression values were already examined; no donor count, rank, filter, shrinkage or model is tuned after this comparison.",
+    "Pair donors for triple targets contributed to the lower-order basis; triple donors for the four-way target did not. Tasks are not identically distributed independent validations.",
+    "Single/pair benchmarks use 33 libraries. Four-way donor predictors also use observed triples; this is not an equal-information algorithm contest.",
+    "Author normalization may couple all 48 libraries. Current-target exclusion does not provide independent preprocessing.",
+    "The raw squared score equals common plus residual squared scores. Identical donor selection and prediction cannot establish a distinct useful selector.",
+    "Projection residual is not a gene-wise factorial interaction contrast; it can contain lower-order effects outside the retained basis."
+  ]
+}

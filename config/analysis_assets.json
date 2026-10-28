@@ -1,0 +1,575 @@
+{
+  "status": "EXACT_HISTORICAL_INPUTS_AND_AUDITED_ENGINES",
+  "files": [
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/CODE10_PROTOCOL.json",
+      "sha256": "cef5121fa66cfbfdd2605be45d7fade65bb3749cb70e614be980df489f78c425",
+      "bytes": 9803
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/PROTOCOL_FIXED_AT.json",
+      "sha256": "79c80f450065cd3ec7a9c455d0a1809523b1d1836456559afce9c013fea28148",
+      "bytes": 445
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/READ_ME_FIRST.txt",
+      "sha256": "7d70964cba80188dd6dd96ce16b2f674f497ca035478eab6775635901a5f4bb5",
+      "bytes": 9105
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/code/attribution_reliability.py",
+      "sha256": "2ccdbc697d0dbed261aabc616fd8c03be769ae16bccbfcbe7a3092af3785d2a0",
+      "bytes": 23283
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/frozen/common_feature_ids.txt",
+      "sha256": "272920e690a40c5835e3ec2b6913d118aaa848e0fc46a8d6aa30b59969e41515",
+      "bytes": 277656
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/frozen/partition_draws.csv",
+      "sha256": "6b68fb1f47d436ae7303388518ef4cb5d6532c796a164007338dab9108121375",
+      "bytes": 305863
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/review/AUDIT_SKELETON_SELFTEST.json",
+      "sha256": "9a816f4589a223a625ee034928ff673a501b04f22df93d3cf9d0b00433a573fe",
+      "bytes": 199
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/review/DESIGN_REVIEW_PRECOMPUTATION.txt",
+      "sha256": "dd5a55254cab2a35ff99a119753a3dff469b6ed876b7455430f950074202e10a",
+      "bytes": 8287
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/review/INDEPENDENT_NUMERICAL_AUDIT.json",
+      "sha256": "73dda4f8fbb226b952b654c3cd21224b2d8ad1ab6a993652960040fee4420eb2",
+      "bytes": 5192
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/review/INTERPRETATION_REVIEW.txt",
+      "sha256": "6f0d4a1ad9af1b0151157554cc54bb69a7321ebc299af8815067d722109b16a7",
+      "bytes": 9284
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code10/review/THEORY_REFERENCE_REVIEW.txt",
+      "sha256": "2545ad0fdc7304f842944ffd455bd525a1e54c403fa9b77f178d8e3a4ababb10",
+      "bytes": 9377
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/CODE3_PROTOCOL.json",
+      "sha256": "7634deb786f5dc084df427426a2492c57ac499eb48f66cb135435291407500dd",
+      "bytes": 8325
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/READ_ME_FIRST.txt",
+      "sha256": "aed4d2fc1ea4543dac0cfd407c7871867968cef02117356e1e56b9e333356759",
+      "bytes": 7367
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/code/evaluate_frozen_predictions.py",
+      "sha256": "5391260180ebb727f6354637e82a297cdffdc8bda62c6cd2af47c2a2edb8bce2",
+      "bytes": 9240
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/code/freeze_predictions.py",
+      "sha256": "48a0a432e877b3df1864fa4652566f63692a4b04a65e907b26fd9da1ebe6263e",
+      "bytes": 11546
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/code/reference_code2_models.py",
+      "sha256": "4a90353caee5ea2e7a537130fb2fb4425a7776e3debcb8f551e32b9c9d42ef7a",
+      "bytes": 17618
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/frozen/models/PREDICTIONS_FROZEN.json",
+      "sha256": "a25ecae71843914b9bd932c239a7746dbc3d78c3ed4b245560d5a90070f2ad4b",
+      "bytes": 3128
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/frozen/models/frozen_predictions.npz",
+      "sha256": "24112a6c2f41d283dd945e5254e28f35ed2be3ab79d18d7343a2ca1d6252b441",
+      "bytes": 3175224
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/frozen/models/model_metadata.csv",
+      "sha256": "8301703fa92346b83c591c1b3f1a0ea6990d82adb205795aad948c9df7c9c0d8",
+      "bytes": 1538
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/frozen/models/prediction_summary.csv",
+      "sha256": "a4bd178e92716c9b789f3be5e84fe781648653953e1c104adc90b9b9fd30aa7a",
+      "bytes": 1219
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/frozen/models/unlocked_sample_design.csv",
+      "sha256": "09ee5de5a5f310213a6ab8093f2954d5734a3b44165c5aa18577ba9e2a1d6f44",
+      "bytes": 4015
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/reproduction/data/GSE147962_normalized_counts.txt.gz",
+      "sha256": "a306e5a3fc497dee7f2e137d352233a0da783ededbea658a2270f8a64efc8c8e",
+      "bytes": 9491190
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/reproduction/data/GSE147962_sample_design.csv",
+      "sha256": "52f4c3d649224d3cffc5f67ceaac64664714b539b0e315bc60ea99917703fa37",
+      "bytes": 4424
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/reproduction/data/gene_panel.csv",
+      "sha256": "816fe05791be5feeb1d280c1fc15bd34b8e63c27bbd50080c075345ee1af0c1e",
+      "bytes": 729174
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code3/review/OPENED_NUMERICAL_AUDIT.json",
+      "sha256": "3c22489939fbbfbbd201bde7957c383b0962e4910d08ef5f9a2f0a264ddae984",
+      "bytes": 749
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/CODE5_PROTOCOL.json",
+      "sha256": "5ed53d8e76d6e2f5800e2d5abf01e19285b9f4a6b65aafb14cc6a9fd0e25b186",
+      "bytes": 3404
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/READ_ME_FIRST.txt",
+      "sha256": "80396848d56051355c24265ae79bda485de174bdfb14c031abe0d95dcf550c16",
+      "bytes": 9682
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/code/donor_selection.py",
+      "sha256": "eb9186e946b4f9ebf58200552c1e87aa9a94ce70d51f3dc3204cc49c85b6a15a",
+      "bytes": 17198
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/ALLOWED_INPUTS.json",
+      "sha256": "6ac865851d9678d43b1978a1e6780a30a5607285edf7839b7b1171ef267690cd",
+      "bytes": 5786
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/FREEZE_MANIFEST.json",
+      "sha256": "89ad4071d9af51e439337385852ad40c3a1bb06334bbbf8fd6188407c33e45af",
+      "bytes": 1692
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/donor_omission_stability.csv",
+      "sha256": "48941c8b080ecd0bc997cf5a7e78261ece84b8f8cb7e7cac033696a9a6c805ab",
+      "bytes": 35589
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/donor_omission_summary.csv",
+      "sha256": "50793313bd3bb7daf6bd48ee70992f88694bf070674f4f162787d4a498cecac4",
+      "bytes": 1925
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/donor_scores.csv",
+      "sha256": "94e934448808390cf4d689c78787fce29246ac48007debbfabf333b5f88b2a0a",
+      "bytes": 2458
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/predictions.npz",
+      "sha256": "86fccfe3078dcaa830a4f30ab56a5189138edb31c537c892a92de9ed50591a13",
+      "bytes": 19932365
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/frozen/selected_donors.csv",
+      "sha256": "e915218d2262c0d8d23bbc8f92b31eb222a2c7f5f0d18230b010ecb326d0f445",
+      "bytes": 5294
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/review/FINAL_INTERPRETATION_REVIEW.txt",
+      "sha256": "dc547b76df07902bbe8de9769c1365c52c1ad3fd997fb637d089ccc6d7f20274",
+      "bytes": 3060
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/review/INDEPENDENT_NUMERICAL_AUDIT.json",
+      "sha256": "89a9ac0b4aa1887220e4c6e092084c34bb8d00830c77aab94ba93cc21afb3d47",
+      "bytes": 2241
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code5/review/SUBSPACE_NUMERICAL_AUDIT.json",
+      "sha256": "aebbc29c70160976ba539a72819f91bc7a9f56411d442422a62fa2963b82790a",
+      "bytes": 713
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/CODE6_PROTOCOL.json",
+      "sha256": "063a0cff439e7856940e52023cfb65b01d83797151101e7d34b9b095229bf090",
+      "bytes": 5738
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/INPUT_AMENDMENT_01.json",
+      "sha256": "c580b882b961ed816e7b3e27b090725434fef52e0c3f90c50c68268978012137",
+      "bytes": 1502
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/PROTOCOL_FIXED_AT.json",
+      "sha256": "d1df1855d852e1bda03b8a882cad07553f71f3a6e40978921fdaf3c3501da8c8",
+      "bytes": 143
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/READ_ME_FIRST.txt",
+      "sha256": "2de21d4e8ca4b1a458e66ae9948b3625681681deff3d1031f620b6c01ce21ebd",
+      "bytes": 5516
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/code/external_three_factor.py",
+      "sha256": "e56f39573d8dd1c0db7b7c682fe0a9c6f25ee9bbbe88b0a4ab1af4a861eeb33e",
+      "bytes": 26331
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/fallback_metadata/sample_inventory.csv",
+      "sha256": "f67cf80665ee340afe13f67884f2038e10fe44a8c25d91c134c0205964841212",
+      "bytes": 5161
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/FREEZE_MANIFEST.json",
+      "sha256": "52f98bceae42dbecf4abfaf6cd9649163808f5031ab12883baad52f70a9c0ae9",
+      "bytes": 18480
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/RAP2_3_fpkm0p5.npz",
+      "sha256": "3b54466e22e66afb18de534bdf8ef6d4e92a1bd02f29eb1129de2784e7eb0366",
+      "bytes": 4787646
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/RAP2_3_fpkm1p0.npz",
+      "sha256": "5a700af5ca05e2a2543d66d702ed59193f62737ca4565287e1735c6f86b12808",
+      "bytes": 4460681
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/RAP2_3_fpkm2p0.npz",
+      "sha256": "30dd821a33ea65d515ce796d36206c5536a7cef7f2c4fae5c49cd1732d737b46",
+      "bytes": 4043281
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/WT_fpkm0p5.npz",
+      "sha256": "dc76df6cc9bcb64e90fa8979c99113132f63f05fbc064c9dee4ffb8e5e238893",
+      "bytes": 4820266
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/WT_fpkm1p0.npz",
+      "sha256": "c5a0320e25ea1dddc6f3ce1825f04469012cccaad0f5aa6227426c7bf59e1005",
+      "bytes": 4493702
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/frozen_verified/WT_fpkm2p0.npz",
+      "sha256": "df61e5b670ad49a14ce2114a3f4bf98e73c7bfc4467236472701da6c3f576130",
+      "bytes": 4076543
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/input/GSE330879_Col0_fpkm.txt.gz",
+      "sha256": "cc688c63c6f660268d0c3c32ee7de906694f728b53e04af9ef4e7dd0a874caa0",
+      "bytes": 2178093
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/input/GSE330879_RAP2.3_fpkm.txt.gz",
+      "sha256": "89fd2bc79eff30d390cb5aa6cadc6d7a020c1a65d55153b6a718c3c764ae5df5",
+      "bytes": 2166676
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/RUN_SUMMARY.json",
+      "sha256": "afc31e062e3ab59df33825f63220adf64cc67ff2f82da9b72635c8be076675fc",
+      "bytes": 7670
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/TARGET_OPENING_RECORD.json",
+      "sha256": "3331977ec764d3c341fb20a229a471f48b74eae8c3d61edd5028a264eb085e1e",
+      "bytes": 1011
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/component_summary.csv",
+      "sha256": "8f29a8d357c6af9910d1413e7b08d9a680d1111bc84df29d4ec2fa872223d714",
+      "bytes": 6684
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/diagnostic_basis_inventory.csv",
+      "sha256": "78ba500e7393f3bc76c68d757fac43eaf1b9afbab6540a59462a3357f3beea3d",
+      "bytes": 1136
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/disjoint_control_geometry.csv",
+      "sha256": "4849a7b3c1f6fcd37c56e5c5424efac988a247e67947107f28de9ae7177399ca",
+      "bytes": 13871
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/library_errors.csv",
+      "sha256": "b7ca0ca4d34b4bd9e51f0ec964b499c7c2545ff5f02db68cf6403e2124392037",
+      "bytes": 14371
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/library_gain_components.csv",
+      "sha256": "f8620614a47d83e05b31282aa76c9fb23f5fa3e3600716df86304917187d827d",
+      "bytes": 8633
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/results/model_summary.csv",
+      "sha256": "1eaa70ee110fcde3e18bded1362f91d795e068458363ddd5448468ee9928a29c",
+      "bytes": 4733
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/review/INDEPENDENT_SOURCE_RECOMPUTATION.json",
+      "sha256": "9a439544b301da5af78753ee0c257c11e86a2754ab45a04237a9e424b7a3f671",
+      "bytes": 3143
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code6/review/POSTOPEN_NUMERICAL_INTERPRETATION_REVIEW.txt",
+      "sha256": "0ac987a31dfeffd7a582f94bfd8a73c07902248c8456353164c1b89a85a7bd02",
+      "bytes": 4244
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/CODE7_PROTOCOL.json",
+      "sha256": "3b1767ce3c701d263cfa907b9cc96390693d96ee62d32c6a07b7ee2d19b37334",
+      "bytes": 5727
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/PROTOCOL_FIXED_AT.json",
+      "sha256": "22e8b9918d08424b5381b63577d71ff52e900e79e7c2d3028aac5d71b005a933",
+      "bytes": 181
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/READ_ME_FIRST.txt",
+      "sha256": "aadb05c735d853cfa109ea1d1191f06e3e9fd5478c39745e3c7f7ac35ec9e8c2",
+      "bytes": 5424
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/code/empirical_span_expansion.py",
+      "sha256": "552331e5a319859d679012eb11d71cf306939abc40f4a00ea40866a93604bb1d",
+      "bytes": 20075
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/code/noisy_span_simulation.py",
+      "sha256": "a99c67134c9bc9017874771a1b88dd9a1312664fa7886e0125e3e8b279e74ed6",
+      "bytes": 21781
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/review/EMPIRICAL_INTERPRETATION_REVIEW.txt",
+      "sha256": "38a086aae08c1a7b32c23e3b3e68cc18502d4e8cbe277add4328eccb59801498",
+      "bytes": 3069
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/review/INDEPENDENT_EMPIRICAL_AUDIT.json",
+      "sha256": "ba1cb0ca90225e57657eff544e9fff23226efa892fc75fac2bef759b3977a1d9",
+      "bytes": 3749
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/review/INDEPENDENT_SIMULATION_AUDIT.json",
+      "sha256": "08130a9df5a3f6852aee72ce05b3f191d2d323eac00e3bed2d8ba9a7c9c9087a",
+      "bytes": 2899
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code7/review/SIMULATION_INTERPRETATION_REVIEW.txt",
+      "sha256": "99426b033157df06f6ba1b5a69d06bf2a811c761865d91c16549eb907a15f16e",
+      "bytes": 3115
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/CODE8_PROTOCOL.json",
+      "sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555",
+      "bytes": 7010
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/INPUT_AMENDMENT01.json",
+      "sha256": "b0e641430ee42775123968a74de5dc37aa043f12454375b964cf5582b63f53fd",
+      "bytes": 1077
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/PROTOCOL_FIXED_AT.json",
+      "sha256": "f9c5427feac9ef11c23b389b3f4210f6e038c728cb3a3b210ab23b91dd2b9abf",
+      "bytes": 224
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/READ_ME_FIRST.txt",
+      "sha256": "68dd149a5fcbd612c1aa9f61e9e55158ca50136935ffc29274b44480997fa84a",
+      "bytes": 5633
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/code/stress_citrus_validation.py",
+      "sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393",
+      "bytes": 28251
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/Car_fpkm0p5.npz",
+      "sha256": "e5b69f16d60cf7f0ce1115c5b43caecdba739f0c7d4a5683c6bb2bf1514818d2",
+      "bytes": 8042839
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/Car_fpkm1p0.npz",
+      "sha256": "25a65faa76723efe4de5b6560065f6850631f1a4201c95277729a8ca5aa48b8b",
+      "bytes": 7394077
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/Car_fpkm2p0.npz",
+      "sha256": "cd1e54bbbe1c71e70807384891304c52dc2e5215eede2c000e892560d1f78e52",
+      "bytes": 6607591
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/Cleo_fpkm0p5.npz",
+      "sha256": "e9e20e99ba18351c0d5266366b3211408d37ce7a645863099d05868d52bcc79b",
+      "bytes": 7482021
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/Cleo_fpkm1p0.npz",
+      "sha256": "72ecd1abb764a76cddc353cbe764ff33077a5a6331a5dc669603338207c1f67c",
+      "bytes": 6876334
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/Cleo_fpkm2p0.npz",
+      "sha256": "7ba87563f414425fffcd7b37fd165d3fefad825ff58d68502eee884ba66c492d",
+      "bytes": 6179256
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/FREEZE_MANIFEST.json",
+      "sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a",
+      "bytes": 28290
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/span_inventory.csv",
+      "sha256": "a2eea8c2c2bde4649196c3fd0bee9ccc6c5a2c656377b47360a9159c7a0bf0f2",
+      "bytes": 3945
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/frozen/training_coefficients.csv",
+      "sha256": "b00eb6460decdae5045ecf3ff2bbe76aeba106e01aaaf8e904978b8f16a621d9",
+      "bytes": 1954
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/input/GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz",
+      "sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f",
+      "bytes": 13295096
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/input/GSE203331_design_verified.csv",
+      "sha256": "04b36dab139a44bc8102c27665e3e7e79ac7db6ad9cf48d07c60556fe867dd54",
+      "bytes": 17563
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/RUN_SUMMARY.json",
+      "sha256": "5c1534b9d3f531b094d07c83b91c43b95168c5b4af11d6b648996d6da76310e5",
+      "bytes": 4106
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/TARGET_OPENING_RECORD.json",
+      "sha256": "98ae3408ed78e191e6dcf04c4f62fec3d3f6b6b13f7700a1dd8dc02811cb8a4b",
+      "bytes": 718
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/algebra_checks.csv",
+      "sha256": "bafddab905fae6281a0a805f8b8cb4990a23b13e4f4bf39e9d3981dfa29657e2",
+      "bytes": 810
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/comparator_summary.csv",
+      "sha256": "4d0f034ea6534efba4d7ff5003611bd296c6515d6bfab9e229228999742d15d8",
+      "bytes": 9825
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/component_summary.csv",
+      "sha256": "c752e5a9f66e2b279c448515cb43b2aaec455cb81ae8d91b2271c3e6c2ddc036",
+      "bytes": 3082
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/library_errors.csv",
+      "sha256": "a56361d33debe3a479dfa9e680fada931ed207f4553b4411788b66eaa21aec5b",
+      "bytes": 24618
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/library_gain_components.csv",
+      "sha256": "48e315bf7948d59baa0e22cbefa0c80d4c0aa56092fff258d6ccb26f8fbbcfca",
+      "bytes": 10414
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/model_summary.csv",
+      "sha256": "af4b6eb9f0f5ffad61d8b409acff53b708a2a3dd4ffb063422c66eb91ffd7c0d",
+      "bytes": 13132
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/results/target_fitted_oracle_diagnostic.csv",
+      "sha256": "5d0697bb0cbb765e8e5e346f6abb2f5c6c0ce2c7f4369c594f0b387d06e17eb7",
+      "bytes": 5101
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/review/INDEPENDENT_INTERPRETATION_REVIEW.txt",
+      "sha256": "1151e37ff4f1343adf6bcebc1242ec5adae06bedf1a29013d32f399a5e2a774c",
+      "bytes": 3778
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/review/INDEPENDENT_POSTOPEN_NUMERICAL_AUDIT.json",
+      "sha256": "462247194babf3990f3f8aa59565422c7228c3b1fc1a50ee1c2363f4034f6213",
+      "bytes": 3997
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code8/review/INDEPENDENT_PREOPEN_NUMERICAL_AUDIT.json",
+      "sha256": "78a7354fc6454e34ba593f33b1b8f815b732b9948511aeba26dcdfe33b78b526",
+      "bytes": 5395
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/CODE9_PROTOCOL.json",
+      "sha256": "fe77a77a223fd30a4022efe0933f214332daa11a8c9e2fb7ec8038479f7b313f",
+      "bytes": 10904
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/PROTOCOL_FIXED_AT.json",
+      "sha256": "dce50fbe3fe271b8fcb4d122f810c47724039db91265dbd0085431640cfcd4f0",
+      "bytes": 287
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/READ_ME_FIRST.txt",
+      "sha256": "4aa9dafb6ceb786cb12d03d672b7a2f27bdc294dcb7fca120fa38c46df8e510a",
+      "bytes": 8015
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/annotation/ANNOTATION_ANNEX.json",
+      "sha256": "281a7d49b3957419711bf8cb7e25eec45942174d1dd6e02b4fe4dbe6d75e483a",
+      "bytes": 4602
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/annotation/ANNOTATION_SOURCE_AND_LIMITS.txt",
+      "sha256": "cb7a306c9550ba66d70e68000a49b1b0130baeffc14773163f537825e10c3b00",
+      "bytes": 4644
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/annotation/categories.csv",
+      "sha256": "01d32acb703cfbc8f73cabc5e670bab777b719b22ffa31fd6df252e7f47153f2",
+      "bytes": 309
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/annotation/feature_annotation.csv.gz",
+      "sha256": "42559729beb53e15a4919be619bf149b4a8219711400357cf42938268bc4c2f2",
+      "bytes": 519337
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/annotation/memberships.csv.gz",
+      "sha256": "05f5e59dc5f8b2293ed8f79045f32b00466b8596839ab93f341615f3163b088b",
+      "bytes": 6465
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/code/gene_gain_attribution.py",
+      "sha256": "90e87dba53f718879595af34a5ce2550012413324c109a87e82de65180cd831e",
+      "bytes": 28785
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/results/cross_genotype_summary.csv",
+      "sha256": "d84d8b55fcb577e4e40ea28524d7bd7afa75569852b3651859c80e92f30f35a3",
+      "bytes": 1571
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/review/FUNCTIONAL_INTERPRETATION_REVIEW.txt",
+      "sha256": "84ad0ca74ad4ba8cba913f0a7b90b27854267e83c586cec9d1adf54720229c51",
+      "bytes": 4910
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/review/INDEPENDENT_ANNOTATION_AUDIT.json",
+      "sha256": "548dfd0273f49e36716dc03a7646c975b6fc380233416fb87ef581a22c244af5",
+      "bytes": 1481
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/review/INDEPENDENT_INTERPRETATION_REVIEW.txt",
+      "sha256": "afc39b87c8e2cf948ce7fe6e1c4bc755e8e625311b5bc67e70b75fca0953ec4d",
+      "bytes": 5201
+    },
+    {
+      "relative_path": "provenance/historical/stress_combinations_code9/review/INDEPENDENT_NUMERICAL_AUDIT.json",
+      "sha256": "2a1f2ae9454cea34670cb8b15b943245da35bf4effed4767677a05da88f1cdc2",
+      "bytes": 3784
+    }
+  ]
+}

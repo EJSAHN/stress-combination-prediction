@@ -1,0 +1,99 @@
+{
+  "status": "CODE8_EVALUATION_COMPLETE",
+  "decision": "DESCRIPTIVE_TWO_GENOTYPE_CROP_TRANSPORT_SUCCESS",
+  "completed_utc": "2026-10-28T18:31:46.042747+00:00",
+  "source": "GSE203331",
+  "primary_threshold_fpkm": 1.0,
+  "outcomes": [
+    {
+      "scenario": "Car_fpkm1p0",
+      "genotype": "Car",
+      "threshold_fpkm": 1.0,
+      "primary_threshold": true,
+      "genes": 17470,
+      "centroid_beats_all_seven_comparators_on_mean_mse": true,
+      "centroid_beats_control_in_all_three_target_libraries": true,
+      "predeclared_per_genotype_pass": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Car_fpkm0p5",
+      "genotype": "Car",
+      "threshold_fpkm": 0.5,
+      "primary_threshold": false,
+      "genes": 19000,
+      "centroid_beats_all_seven_comparators_on_mean_mse": true,
+      "centroid_beats_control_in_all_three_target_libraries": true,
+      "predeclared_per_genotype_pass": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Car_fpkm2p0",
+      "genotype": "Car",
+      "threshold_fpkm": 2.0,
+      "primary_threshold": false,
+      "genes": 15640,
+      "centroid_beats_all_seven_comparators_on_mean_mse": true,
+      "centroid_beats_control_in_all_three_target_libraries": true,
+      "predeclared_per_genotype_pass": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Cleo_fpkm1p0",
+      "genotype": "Cleo",
+      "threshold_fpkm": 1.0,
+      "primary_threshold": true,
+      "genes": 16247,
+      "centroid_beats_all_seven_comparators_on_mean_mse": true,
+      "centroid_beats_control_in_all_three_target_libraries": true,
+      "predeclared_per_genotype_pass": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Cleo_fpkm0p5",
+      "genotype": "Cleo",
+      "threshold_fpkm": 0.5,
+      "primary_threshold": false,
+      "genes": 17668,
+      "centroid_beats_all_seven_comparators_on_mean_mse": true,
+      "centroid_beats_control_in_all_three_target_libraries": true,
+      "predeclared_per_genotype_pass": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Cleo_fpkm2p0",
+      "genotype": "Cleo",
+      "threshold_fpkm": 2.0,
+      "primary_threshold": false,
+      "genes": 14629,
+      "centroid_beats_all_seven_comparators_on_mean_mse": true,
+      "centroid_beats_control_in_all_three_target_libraries": true,
+      "predeclared_per_genotype_pass": true,
+      "failed_mean_comparators": []
+    }
+  ],
+  "runtime_seconds": 2.5255418849992566,
+  "source_sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f",
+  "protocol_sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555",
+  "amendment_sha256": "b0e641430ee42775123968a74de5dc37aa043f12454375b964cf5582b63f53fd",
+  "freeze_manifest_sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a",
+  "code_sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393",
+  "poison_report_sha256": "b3a083b1563076252767cf402faad86b2938fe30ece0f1c8afdb5960a61a5de0",
+  "formal_significance_test": false,
+  "genotypes_are_independent_experiments": false,
+  "target_fitted_oracle_is_prediction": false,
+  "CODE7_noisy_span_limitation_resolved": false,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "output_hashes": {
+    "TARGET_OPENING_RECORD.json": "98ae3408ed78e191e6dcf04c4f62fec3d3f6b6b13f7700a1dd8dc02811cb8a4b",
+    "algebra_checks.csv": "bafddab905fae6281a0a805f8b8cb4990a23b13e4f4bf39e9d3981dfa29657e2",
+    "comparator_summary.csv": "4d0f034ea6534efba4d7ff5003611bd296c6515d6bfab9e229228999742d15d8",
+    "component_summary.csv": "c752e5a9f66e2b279c448515cb43b2aaec455cb81ae8d91b2271c3e6c2ddc036",
+    "library_errors.csv": "a56361d33debe3a479dfa9e680fada931ed207f4553b4411788b66eaa21aec5b",
+    "library_gain_components.csv": "48e315bf7948d59baa0e22cbefa0c80d4c0aa56092fff258d6ccb26f8fbbcfca",
+    "model_summary.csv": "af4b6eb9f0f5ffad61d8b409acff53b708a2a3dd4ffb063422c66eb91ffd7c0d",
+    "target_fitted_oracle_diagnostic.csv": "5d0697bb0cbb765e8e5e346f6abb2f5c6c0ce2c7f4369c594f0b387d06e17eb7"
+  }
+}

@@ -1,0 +1,164 @@
+CODE10 THEORY REFERENCE REVIEW
+Prepared 2026-10-28 UTC. Supporting theory only; no real-data numerical analysis.
+Reviewed design: review/DESIGN_REVIEW_PRECOMPUTATION.txt.
+
+VERDICT
+The proposed off-diagonal, centered inner-product estimator is unbiased for a
+fixed finite-feature latent squared norm, conditional on fixed predictors and
+the feature panel, if repeat errors have zero conditional means and zero
+cross-repeat covariance. Independence is sufficient but stronger than needed.
+Arbitrary covariance among genes within each repeat and different repeat
+variances do not invalidate this expectation result. The ratio used to obtain
+a noise-adjusted Pearson coefficient is NOT itself an unbiased estimator.
+This is an application of established crossvalidated second-moment reasoning,
+not a new correlation estimator or a new independent validation experiment.
+
+TWO PRIMARY REFERENCES
+
+1. Schuett HH, Kipnis AD, Diedrichsen J, Kriegeskorte N (2023).
+   Statistical inference on representational geometries. eLife 12:e82566.
+   DOI: https://doi.org/10.7554/eLife.82566
+   Publisher: https://elifesciences.org/articles/82566
+   Exact location: Materials and methods, Crossvalidated distance estimators,
+   equation (11); browser text lines 366-378.
+
+   Source-based summary: The paper uses independent estimates of response
+   differences in crossvalidated inner products, averaged over distinct repeat
+   pairs, to avoid the upward noise bias of ordinary squared distances. Its
+   crossnobis equation explicitly averages over N(N-1) ordered pairs. Negative
+   estimates are permitted. Its wider inference framework concerns separately
+   specified sources of sampling variability and cannot be imported as a
+   justification for treating our genes or overlapping partitions as independent
+   biological replicates. CODE10 uses a fixed centering matrix rather than
+   estimating a whitening matrix; it is not implementing the paper's full RSA
+   inference procedure.
+
+   Retrieval: publisher full text verified 2026-10-28. Browser references
+   turn1450view0 and turn1452view1. No verbatim passages copied here.
+
+2. Stringer C, Pachitariu M, Steinmetz N, Carandini M, Harris KD (2019).
+   High-dimensional geometry of population responses in visual cortex.
+   Nature 571:361-365. DOI: https://doi.org/10.1038/s41586-019-1346-5
+   Publisher: https://www.nature.com/articles/s41586-019-1346-5
+   Author-hosted paper:
+   https://www.steinmetzlab.net/assets/img/Stringer%20et%20al%20-%202019%20-%20Nature.pdf
+   Full-text archive: https://pmc.ncbi.nlm.nih.gov/articles/PMC6642054/
+
+   Source-based summary: Crossvalidated PCA estimates repeatable response
+   variance by comparing projections across independent presentations of the
+   same stimulus ensemble. This is a useful precedent for estimating signal
+   second moments from repeated measurements rather than from noisy squared
+   norms. It does not establish unbiasedness of our plug-in correlation ratio,
+   validate inference from three RNA pools, or justify transferring its specific
+   signal/noise model to these plant data. CODE10 is not cvPCA and makes no
+   eigenspectrum or dimensionality claim.
+
+   Retrieval: indexed primary full text and author-hosted PDF verified through
+   search on 2026-10-28 (turn1453search0, turn1453search25; earlier primary
+   publisher search turn1447search3). Direct publisher open was redirected to
+   an inaccessible identity endpoint, and direct PMC open returned a CAPTCHA;
+   those failed opens are not evidence. Primary indexed text supports the
+   limited description above. No secondary commentary used.
+
+DERIVATION SPECIFIC TO CODE10 (OWN ALGEBRA, NOT A QUOTED SOURCE CLAIM)
+
+Take a fixed universe of G features and fixed H = I - 11'/G. H is symmetric
+and idempotent. Let x_j = m + e_j, j=1,...,n, with finite second moments,
+E(e_j | fixed predictors, feature panel) = 0, and
+E(e_j e_k' | fixed predictors, feature panel) = 0 for every j != k.
+All expectations below are conditional on those fixed quantities.
+
+For j != k,
+  E[(H x_j)'(H x_k)/G]
+    = m'Hm/G + tr{H E[e_k e_j']}/G
+    = m'Hm/G.
+
+Therefore
+  Vstable = sum_{j != k} (H x_j)'(H x_k) / [G n(n-1)]
+is unbiased for the centered finite-feature norm m'Hm/G. There is no
+independence assumption across features in this calculation: off-diagonal
+entries of each within-repeat error covariance matrix may be arbitrary.
+Unequal repeat covariance matrices also do not change the result. G, not
+G-1, defines the chosen fixed-feature average; this is not a population
+variance estimator over randomly sampled independent genes.
+
+Let xbar = sum_j x_j/n. The purely algebraic identity is
+  Vstable = (H xbar)'(H xbar)/G
+            - sum_j ||H(x_j-xbar)||^2 / [G n(n-1)].
+This equality holds even when the stochastic assumptions fail. It must not
+itself be presented as evidence that the errors really are independent.
+
+For two genotypes a and b, C_ab = (H xbar_a)'(H xbar_b)/G has expectation
+m_a'Hm_b/G when their averaged errors have zero cross-covariance. If errors
+are correlated across genotype groups, an additional trace term remains.
+The finite-feature latent Pearson correlation (when both norms are positive)
+is rho = (m_a'Hm_b/G) / sqrt[(m_a'Hm_a/G)(m_b'Hm_b/G)]. Substitution of noisy
+unbiased moment estimates into this nonlinear ratio does not preserve
+unbiasedness. Even unbiased components need not produce an unbiased ratio.
+
+APPLICATION TO THE FROZEN GAIN VECTORS
+
+With fixed comparator b, fixed centroid d, and repeat target y_j,
+  x_j = (b-y_j)^2 - (d-y_j)^2
+      = b^2-d^2-2(b-d)*y_j,
+where operations are componentwise. Thus if y_j = mu_y + eta_j,
+  e_j = -2 diag(b-d) eta_j,
+  x_j-xbar = -2(b-d)*(y_j-ybar).
+The gain is linear in target measurement error even though each squared loss
+is quadratic. This makes the conditional moment calculation exact under the
+stated error model; no small-noise Taylor approximation is required.
+
+LIMITS THAT MUST REMAIN IN THE REPORT
+
+* Three target pools provide only three distinct unordered cross-products.
+  The six ordered terms repeat those same three values, and all unordered
+  pairs share pools. They are not six independent replicates. Thousands of
+  correlated genes do not increase the number of independent RNA pools.
+* Vstable can be negative. A ratio is unavailable if either estimated stable
+  norm is nonpositive. When available, the plug-in ratio can exceed [-1,1];
+  retain the value with a flag rather than clipping it and pretending it is a
+  conventional Pearson sample correlation. A negative variance estimate does
+  not mean that the latent biological squared norm is negative.
+* With n=3, report components and all three target-pair values. Avoid
+  gene-bootstrap confidence intervals, per-gene pseudo-replicate P values,
+  or precise uncertainty claims for the adjusted ratio. Spearman does not
+  receive this moment correction.
+* Shared batch effects, shared preprocessing, normalization that couples
+  repeats, or common deviations of pooled samples can violate the required
+  cross-repeat covariance condition. Repeat variability here includes
+  biological pooling variability, not just technical measurement error.
+  The assumptions are conditional statements, not empirically certified by
+  having three libraries.
+* Fixed fitting errors in b and d belong to the conditional mean m. Diagnostic
+  A subtracts target-repeat variability; it does not subtract lower-order
+  predictor fitting uncertainty, shared controls, or a shared systematic
+  error. Likewise, centering removes a feature-wide scalar offset only, not
+  arbitrary correlated feature patterns.
+* A feature panel chosen using target outcomes would need a separate
+  selection argument. The frozen common CODE8 panel is retained here and
+  not chosen again using CODE10 target-repeat results. The lower-order panel
+  and source preprocessing still remain common conditioning information.
+* Diagnostic B refits independently on complementary observed-pool sides.
+  It addresses whether within-genotype agreement survives refitting relative
+  to across-genotype agreement, but one-pool and two-pool fits have different
+  sampling properties. Overlapping partitions of these same observed pools
+  are sensitivity replicates, not new biological experiments. Their quantiles
+  are partition sensitivity, not population confidence intervals.
+* Agreement after either diagnostic supports a descriptive repeatability
+  statement for these pools, features and estimators. It does not isolate a
+  causal genotype mechanism, establish a universal program, remove all noise,
+  or supply previously unseen validation.
+
+SUGGESTED METHODS LANGUAGE
+
+We estimated a conditional repeat-stable centered gain moment by averaging
+inner products between distinct target-pool gain vectors. This is unbiased
+for the centered squared norm of their common conditional mean if repeat
+errors have zero means and zero cross-repeat covariance; covariance among
+features is unrestricted. The noise-adjusted correlation is a descriptive
+plug-in ratio of estimated moments, not an unbiased correlation estimator.
+We separately assessed sensitivity to refitting using complementary pool
+partitions, with shared feature selection and source preprocessing retained.
+
+END. No protocol or scientific implementation files were modified, and no
+new real-data gain statistics were calculated for this review.

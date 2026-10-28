@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "Exact string/schema and numerical comparison of plot source CSVs generated from archived versus freshly reexecuted analyses",
+  "tolerance": {
+    "absolute": 1e-12,
+    "relative": 1e-10
+  },
+  "figures": [
+    {
+      "figure": "Figure_1_source",
+      "rows": 30,
+      "numeric_cells": 146,
+      "max_abs_error": 0,
+      "source_sha256": "77731178bfdceff1cf721f074241bd7c9fccdf1a67e29eea5343654b13d1dcbd"
+    },
+    {
+      "figure": "Figure_2_source",
+      "rows": 82,
+      "numeric_cells": 448,
+      "max_abs_error": 0,
+      "source_sha256": "f1f9534a1af79a9e387c887949a1dbb63a23915b5b73aeb4c574dd62fcd8ccd9"
+    },
+    {
+      "figure": "Figure_3_source",
+      "rows": 38,
+      "numeric_cells": 190,
+      "max_abs_error": 0,
+      "source_sha256": "79ca9f7f268850018d20e97b3ad176779546bb96a0f98111078fb990627c18e6"
+    },
+    {
+      "figure": "Figure_4_source",
+      "rows": 24,
+      "numeric_cells": 150,
+      "max_abs_error": 0,
+      "source_sha256": "1d1204c6bf9ddcf1800cc978d714021b2a9e670291075d38176a52703752eebb"
+    },
+    {
+      "figure": "Figure_S1_source",
+      "rows": 31,
+      "numeric_cells": 99,
+      "max_abs_error": 0,
+      "source_sha256": "e25a944ba8f239eb84b8bf33727894070104a97cea4df4c16329d63bd5c77fd6"
+    },
+    {
+      "figure": "Figure_S2_source",
+      "rows": 72,
+      "numeric_cells": 288,
+      "max_abs_error": 0,
+      "source_sha256": "6a4762ddb3433e3add6d4fb702930a8516dcb9269754dd1a95900f1d6ceb4c12"
+    },
+    {
+      "figure": "Figure_S3_source",
+      "rows": 40,
+      "numeric_cells": 344,
+      "max_abs_error": 0,
+      "source_sha256": "7ad32dff39e93c7764a7c1b350c2b8962d13aef4945108efbbee44f3ada6e892"
+    },
+    {
+      "figure": "Figure_S4_source",
+      "rows": 30,
+      "numeric_cells": 150,
+      "max_abs_error": 0,
+      "source_sha256": "8ff3c0e1e3d5fafa9be7620aa767221e14f335dd65e58f0a123884359f995128"
+    }
+  ],
+  "total_numeric_cells": 1815
+}

@@ -1,0 +1,60 @@
+SCIENTIFIC REPLAY AND HISTORICAL PROVENANCE
+
+The public entry point is scripts/run_analysis.py. It rebuilds predictions from
+the deposited processed expression matrices, evaluates them, runs all declared
+diagnostics, and compares fresh numerical results with immutable earlier values.
+No table is copied from reference_tables into the new scientific results.
+
+Historical engine names and protocol identifiers are retained under historical/
+so the exact source-code hashes recorded during the study remain verifiable.
+These are provenance identifiers, not extra independent validation studies.
+Public stage names describe the corresponding scientific analysis.
+
+Fresh primary fitting includes the discovery four-way comparison, discovery
+donor-selection diagnostic, separate Arabidopsis three-factor study, and both
+citrus genotypes. Fresh model arrays must match the recorded arrays before later
+diagnostics execute. Basis comparison permits rotations/signs within the same
+orthonormal row space; prediction values, genes, settings and numerical scores
+must agree to the stated tolerances.
+
+The span, conditional-noise and citrus gene-attribution diagnostics retain their
+historically fixed feature panels and predictor definitions. Their source-level
+primary predictions have just been independently reconstructed by the replay.
+The diagnostics then reread expression values and calculate their scores anew.
+The repeatability stage also performs all 1,024 complementary-pool refits.
+
+All 36,000 conditional simulation outcomes are regenerated with the recorded
+seed and batch size. Simulation quantiles are conditional sensitivity summaries,
+not calibrated biological P values. All 256 repeatability partitions per
+genotype are used; these partitions repeatedly reuse the same original pools.
+
+Functional memberships are frozen external annotation inputs. They are not
+reconstructed from the original GAF/GO database archive during this default run.
+Their exact hashes, ontology version, original sources and mapping limitations
+are in historical/stress_combinations_code9/annotation/. Functional summary
+statistics ARE recomputed from fresh gains using those fixed memberships.
+
+Every outcome was already known before release preparation. The fitting versus
+target-reading separation checks code behavior and preserves the original
+protocol, but release replay cannot turn the targets into new unseen evidence.
+The source normalization can couple samples. RNA pools, not genes or partition
+draws, are the independent repeated-measurement units assumed in the study.
+
+Numerical validation uses two complementary comparisons:
+1. Fresh predictor arrays versus recorded frozen arrays, including exact feature
+   identities and projection-space checks in both directions.
+2. Fifty-nine compact result tables versus unchanged historical goldens, plus
+   two documented canonical noise-diagnostic references introduced in 1.0.1.
+   Their original historical references remain pinned and preserved. The
+   correction uses the exact single-span identity for CT/S/EL/HS diagnostics,
+   retains raw output backups and changes no predictions or simulation draws.
+   Numeric tolerance is still atol=rtol=5e-10. Two declared singular-value JSON
+   arrays are compared numerically; other labels and missingness remain exact.
+
+Historical independent numerical audits are retained as provenance. The release
+validation is an additional reproducibility test, not a replacement for those
+independent implementations and not an assertion of native Windows execution.
+
+Source expression files and imported annotations remain third-party research
+data. Their presence here does not grant new rights or place them under the
+software license. Cite the GEO records and original studies.

@@ -1,0 +1,84 @@
+{
+  "status": "PASS_INDEPENDENT_EMPIRICAL_RECOMPUTATION",
+  "code7_protocol_sha256": "3b1767ce3c701d263cfa907b9cc96390693d96ee62d32c6a07b7ee2d19b37334",
+  "production_code_sha256": "552331e5a319859d679012eb11d71cf306939abc40f4a00ea40866a93604bb1d",
+  "production_code_imported_for_real_computation": false,
+  "production_module_used_only_for_synthetic_basis_exclusion_check": true,
+  "independent_basis_method": "Column-pivoted QR",
+  "independent_geometry_method": "Explicit unequal-library U-statistic cross-products, no covariance subtraction reused",
+  "CODE6_frozen_assets_and_results_unchanged": true,
+  "synthetic_pair_target_NaN_values_leave_basis_identical": true,
+  "synthetic_heldout_control_NaN_values_leave_disjoint_basis_identical": true,
+  "disjoint_V11_rejected": true,
+  "scenarios": [
+    {
+      "scenario": "WT_fpkm1p0",
+      "independent_QR_predictions_and_partitions": true,
+      "explicit_cross_library_Gram_verified": true,
+      "classification": "SURVIVES_OBSERVED_VARIATION_EXPANSION"
+    },
+    {
+      "scenario": "WT_fpkm0p5",
+      "independent_QR_predictions_and_partitions": true,
+      "explicit_cross_library_Gram_verified": true,
+      "classification": "SURVIVES_OBSERVED_VARIATION_EXPANSION"
+    },
+    {
+      "scenario": "WT_fpkm2p0",
+      "independent_QR_predictions_and_partitions": true,
+      "explicit_cross_library_Gram_verified": true,
+      "classification": "SURVIVES_OBSERVED_VARIATION_EXPANSION"
+    },
+    {
+      "scenario": "RAP2_3_fpkm1p0",
+      "independent_QR_predictions_and_partitions": true,
+      "explicit_cross_library_Gram_verified": true,
+      "classification": "SURVIVES_OBSERVED_VARIATION_EXPANSION"
+    },
+    {
+      "scenario": "RAP2_3_fpkm0p5",
+      "independent_QR_predictions_and_partitions": true,
+      "explicit_cross_library_Gram_verified": true,
+      "classification": "SURVIVES_OBSERVED_VARIATION_EXPANSION"
+    },
+    {
+      "scenario": "RAP2_3_fpkm2p0",
+      "independent_QR_predictions_and_partitions": true,
+      "explicit_cross_library_Gram_verified": true,
+      "classification": "SURVIVES_OBSERVED_VARIATION_EXPANSION"
+    }
+  ],
+  "rows_verified": {
+    "library_errors": 90,
+    "gain_components": 72,
+    "disjoint_geometry": 108,
+    "span_inventory": 54
+  },
+  "max_absolute_differences": {
+    "nested_V3_in_V9": 6.418476861114186e-16,
+    "nested_V9_in_V11": 1.2490009027033011e-15,
+    "CODE6_control_prediction": 0.0,
+    "CODE6_full_prediction": 0.0,
+    "CODE6_within_prediction": 1.270095140171179e-13,
+    "library_mse": 3.0531133177191805e-16,
+    "library_mae": 2.7755575615628914e-16,
+    "library_mse_gain_over_control": 3.3306690738754696e-16,
+    "component_mse_gain_over_control": 8.326672684688674e-16,
+    "component_donor_squared_effect": 4.440892098500626e-16,
+    "component_target_squared_effect": 9.43689570931383e-16,
+    "component_donor_target_inner_product": 6.106226635438361e-16,
+    "full_gain_partition": 4.440892098500626e-16,
+    "CODE6_outside_gain_partition": 1.5265566588595902e-16,
+    "geometry_donor_squared_effect": 1.0547118733938987e-15,
+    "geometry_target_squared_effect": 1.2212453270876722e-15,
+    "geometry_donor_target_inner_product": 8.881784197001252e-16,
+    "geometry_population_proximity_margin": 1.1657341758564144e-15,
+    "geometry_corrected_squared_distance": 9.645062526431047e-16,
+    "geometry_donor_mean_sampling_variance": 1.0061396160665481e-16,
+    "geometry_target_mean_sampling_variance": 1.0820337681405334e-16,
+    "geometry_additivity": 6.661338147750939e-16,
+    "outcome_outside_library": 1.3877787807814457e-17,
+    "outcome_disjoint_margin": 3.3306690738754696e-16
+  },
+  "empirical_run_summary_sha256": "2813695021fc44af66cbf5bf69bde0627a254185c8d0a6679590afe86f74058d"
+}

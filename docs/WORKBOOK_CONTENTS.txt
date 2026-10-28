@@ -1,0 +1,35 @@
+The integrated results workbook
+
+The default pipeline writes tables/Results.xlsx with 19 sheets. It reports
+freshly executed CSV values; scientific calculations are not reimplemented as
+Excel formulas. All displayed fields are checked after saving against the
+source CSV, including blank cells, text labels and every numeric cell.
+
+Prediction and Pool_scores contain held triple-stress prediction comparisons
+and the three target RNA-pool scores. Observed_spans and Control_geometry
+contain estimated-span and control-split diagnostics. Conditional_noise retains
+all imposed noise scenarios, including unfavorable cases. Discovery retains
+the four-factor endpoint and the failed donor-selection sensitivity.
+
+Gene_gains, Concentration, Rescaling and Functions describe comparator-relative
+prediction-loss contributions and their exploratory qualifications.
+Repeatability, Refit_associations, Refit_contrasts and Refit_scores contain the
+pool and complementary-refit diagnostics. Refit quantiles are partition
+sensitivity ranges, not confidence intervals.
+
+Figure_1_data through Figure_4_data reproduce the exact main-figure plotting
+records. Their operation and source fields identify calculations performed by
+the plotting code, including differences and ratios. The corresponding figure
+legend defines each range. Sources records original processed-file provenance
+and interpretation limits.
+
+Numeric cell values retain source precision even when Excel displays six
+decimals, percentages or scientific notation. Source Boolean values are shown
+as Yes/No; identifiers use explicit readable-label mappings in
+scripts/workbook_catalog.py. Text styling does not alter numeric results.
+
+tables/workbook_validation.json records cell counts, source hashes and the
+exported workbook hash. tables/workbook_cell_lineage.json records source
+columns, row ranges and workbook destinations. Both reports accompany each
+new workbook. Visual rendering and numerical export checks do not certify
+execution in native Microsoft Excel or Windows PowerShell.

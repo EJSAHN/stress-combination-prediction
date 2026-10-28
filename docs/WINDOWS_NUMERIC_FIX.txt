@@ -1,0 +1,40 @@
+WINDOWS NUMERICAL PORTABILITY CORRECTION — RELEASE 1.0.1
+
+The original Windows run completed every scientific computation, then failed
+the final table comparison. Figure and workbook stages therefore did not run.
+The original FAIL record remains valid; this fix does not relabel that run.
+
+An audit of all 61 result tables found discrepancies limited to two auxiliary
+noise diagnostics and two numeric arrays serialized as JSON strings. All
+36,000 individual simulated outcomes matched the Linux run at the existing
+numerical tolerance (largest absolute difference about 4.11e-15).
+
+For the single_mean_span null, the control and three defining single-stress
+profiles lie exactly in their own fitted span. Their absolute latent means
+therefore equal their observed means. Reconstructing this identity by SVD and
+matrix multiplication introduced machine-rounding values near zero. A strict
+negative-value count, and Gaussian probabilities at zero or tiny variance,
+turned those rounding signs into visible diagnostic differences.
+
+The correction derives those diagnostic means directly from the source data
+using the exact identity. It retains the raw tables, checks the source hashes,
+rank and identity bounds, and records every changed diagnostic cell. It does
+not truncate simulated values, remove genuinely negative projected pair/triple
+means, change covariance or seeds, or alter predictions and simulated outcomes.
+Original audited engine files and historical reference files are unchanged.
+Only two explicitly documented canonical diagnostic references are added.
+
+The declared singular-value JSON arrays are now parsed and compared as numeric
+vectors with equal shape and finite entries. Their previous last-digit string
+differences were not scientific discrepancies. Ordinary labels still require
+exact equality. The standard numeric tolerance remains atol=rtol=5e-10.
+
+Use the compact Windows patch to create a fresh corrected package from the
+verified original package. It preserves the old package and failed run, uses
+the existing Python environment, and reruns the complete pipeline. There is
+no new environment, installation, data download or SciNet requirement.
+
+Native Windows confirmation completed in run 20261028_170808_faf6bd34 on
+28 October 2026. Analysis, figures and workbook all passed. The confirmation
+is recorded in docs/validation/native_windows_confirmation.json. This release
+already includes the correction; no separate patch is needed.

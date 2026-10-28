@@ -1,0 +1,503 @@
+{
+  "description": "59 untouched historical tables and two explicitly amended exact-identity diagnostic tables; original references retained and pinned. Every result is recalculated.",
+  "tables": [
+    {
+      "stage": "discovery_prediction",
+      "output": "tables/discovery_prediction/paired_gain_summary.csv",
+      "reference": "provenance/reference_tables/discovery_prediction/paired_gain_summary.csv",
+      "original_relative_path": "stress_combinations_code3/results/models_fourway/paired_gain_summary.csv",
+      "sha256": "59176936481f2f67740b73e8fa86ba9177a2957714992a83b38f48ab5eb854f9",
+      "bytes": 33369
+    },
+    {
+      "stage": "discovery_prediction",
+      "output": "tables/discovery_prediction/paired_library_gains.csv",
+      "reference": "provenance/reference_tables/discovery_prediction/paired_library_gains.csv",
+      "original_relative_path": "stress_combinations_code3/results/models_fourway/paired_library_gains.csv",
+      "sha256": "b0bc0293fc74f91be0e786fca2279880cb3652c3b46b82ee15c0a632e9e07e16",
+      "bytes": 64661
+    },
+    {
+      "stage": "discovery_prediction",
+      "output": "tables/discovery_prediction/target_library_metrics.csv",
+      "reference": "provenance/reference_tables/discovery_prediction/target_library_metrics.csv",
+      "original_relative_path": "stress_combinations_code3/results/models_fourway/target_library_metrics.csv",
+      "sha256": "cd69b11d470ed8f60450ed7f420b1eea3ee27e926322585d513d22cd3feb36f5",
+      "bytes": 33459
+    },
+    {
+      "stage": "discovery_prediction",
+      "output": "tables/discovery_prediction/target_model_comparison.csv",
+      "reference": "provenance/reference_tables/discovery_prediction/target_model_comparison.csv",
+      "original_relative_path": "stress_combinations_code3/results/models_fourway/target_model_comparison.csv",
+      "sha256": "1aabaf3d99cc372548295f71211f35a80c72d7c8b7c76c09a9d164aaedf330da",
+      "bytes": 10742
+    },
+    {
+      "stage": "discovery_prediction",
+      "output": "tables/discovery_prediction/target_sample_design.csv",
+      "reference": "provenance/reference_tables/discovery_prediction/target_sample_design.csv",
+      "original_relative_path": "stress_combinations_code3/results/models_fourway/target_sample_design.csv",
+      "sha256": "6b8afc417d1e52881d72ae63780935b1c2a4844735944d609670faa698cd13f0",
+      "bytes": 508
+    },
+    {
+      "stage": "discovery_prediction",
+      "output": "tables/discovery_prediction/target_state_geometry.csv",
+      "reference": "provenance/reference_tables/discovery_prediction/target_state_geometry.csv",
+      "original_relative_path": "stress_combinations_code3/results/models_fourway/target_state_geometry.csv",
+      "sha256": "96d3cc459b6e7e58ac2f8633bac6ab99e7d25b0e13338a5c40070ddd38724dd5",
+      "bytes": 550
+    },
+    {
+      "stage": "discovery_selection",
+      "output": "tables/discovery_selection/library_errors.csv",
+      "reference": "provenance/reference_tables/discovery_selection/library_errors.csv",
+      "original_relative_path": "stress_combinations_code5/results/library_errors.csv",
+      "sha256": "447b90a257fce9a3cdfb90e26fb5cc732bab2d4b4108cf172d273d59250241e1",
+      "bytes": 41223
+    },
+    {
+      "stage": "discovery_selection",
+      "output": "tables/discovery_selection/paired_primary_comparisons.csv",
+      "reference": "provenance/reference_tables/discovery_selection/paired_primary_comparisons.csv",
+      "original_relative_path": "stress_combinations_code5/results/paired_primary_comparisons.csv",
+      "sha256": "6daa70b822ec8826722c810309d98089e0d1f1ac799e7f91c9c1d42ba64e6fdc",
+      "bytes": 10051
+    },
+    {
+      "stage": "discovery_selection",
+      "output": "tables/discovery_selection/target_model_errors.csv",
+      "reference": "provenance/reference_tables/discovery_selection/target_model_errors.csv",
+      "original_relative_path": "stress_combinations_code5/results/target_model_errors.csv",
+      "sha256": "dbb54a0e940e980b99e71eb967ace8f7d46ea2ddf98db317646eda31a0fcd531",
+      "bytes": 12351
+    },
+    {
+      "stage": "external_prediction",
+      "output": "tables/external_prediction/component_summary.csv",
+      "reference": "provenance/reference_tables/external_prediction/component_summary.csv",
+      "original_relative_path": "stress_combinations_code6/results/component_summary.csv",
+      "sha256": "8f29a8d357c6af9910d1413e7b08d9a680d1111bc84df29d4ec2fa872223d714",
+      "bytes": 6684
+    },
+    {
+      "stage": "external_prediction",
+      "output": "tables/external_prediction/diagnostic_basis_inventory.csv",
+      "reference": "provenance/reference_tables/external_prediction/diagnostic_basis_inventory.csv",
+      "original_relative_path": "stress_combinations_code6/results/diagnostic_basis_inventory.csv",
+      "sha256": "78ba500e7393f3bc76c68d757fac43eaf1b9afbab6540a59462a3357f3beea3d",
+      "bytes": 1136
+    },
+    {
+      "stage": "external_prediction",
+      "output": "tables/external_prediction/disjoint_control_geometry.csv",
+      "reference": "provenance/reference_tables/external_prediction/disjoint_control_geometry.csv",
+      "original_relative_path": "stress_combinations_code6/results/disjoint_control_geometry.csv",
+      "sha256": "4849a7b3c1f6fcd37c56e5c5424efac988a247e67947107f28de9ae7177399ca",
+      "bytes": 13871
+    },
+    {
+      "stage": "external_prediction",
+      "output": "tables/external_prediction/library_errors.csv",
+      "reference": "provenance/reference_tables/external_prediction/library_errors.csv",
+      "original_relative_path": "stress_combinations_code6/results/library_errors.csv",
+      "sha256": "b7ca0ca4d34b4bd9e51f0ec964b499c7c2545ff5f02db68cf6403e2124392037",
+      "bytes": 14371
+    },
+    {
+      "stage": "external_prediction",
+      "output": "tables/external_prediction/library_gain_components.csv",
+      "reference": "provenance/reference_tables/external_prediction/library_gain_components.csv",
+      "original_relative_path": "stress_combinations_code6/results/library_gain_components.csv",
+      "sha256": "f8620614a47d83e05b31282aa76c9fb23f5fa3e3600716df86304917187d827d",
+      "bytes": 8633
+    },
+    {
+      "stage": "external_prediction",
+      "output": "tables/external_prediction/model_summary.csv",
+      "reference": "provenance/reference_tables/external_prediction/model_summary.csv",
+      "original_relative_path": "stress_combinations_code6/results/model_summary.csv",
+      "sha256": "1eaa70ee110fcde3e18bded1362f91d795e068458363ddd5448468ee9928a29c",
+      "bytes": 4733
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/algebra_checks.csv",
+      "reference": "provenance/reference_tables/external_span/algebra_checks.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/algebra_checks.csv",
+      "sha256": "2d313a0aad575495bd64357adf54a62843b1d8b7af4fe0b2bc49fd4eab5feed1",
+      "bytes": 1708
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/component_summary.csv",
+      "reference": "provenance/reference_tables/external_span/component_summary.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/component_summary.csv",
+      "sha256": "c1076b88961622cbfd57ae15e6bfc6fd743200c78cc10fff1ac9e0a7a3883884",
+      "bytes": 3417
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/disjoint_control_geometry.csv",
+      "reference": "provenance/reference_tables/external_span/disjoint_control_geometry.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/disjoint_control_geometry.csv",
+      "sha256": "47caea023abf16aaf900ceb9c6bef8bd3e0585d36ec44f3bfe4dc4e39ddb733b",
+      "bytes": 21854
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/library_errors.csv",
+      "reference": "provenance/reference_tables/external_span/library_errors.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/library_errors.csv",
+      "sha256": "616982bf6d769608dffd13289269f876a5e9107f213cac2db4ff1a5c20c66ce9",
+      "bytes": 10145
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/library_gain_components.csv",
+      "reference": "provenance/reference_tables/external_span/library_gain_components.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/library_gain_components.csv",
+      "sha256": "89347424e8fd5831f76a91f319f1ecb3e04f4f7515a9051102a4aba920b9d510",
+      "bytes": 10213
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/model_summary.csv",
+      "reference": "provenance/reference_tables/external_span/model_summary.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/model_summary.csv",
+      "sha256": "c3076a9af435093fc196de025e15ec2a438c4173dfe1385339bf0b36e871d4af",
+      "bytes": 3332
+    },
+    {
+      "stage": "external_span",
+      "output": "tables/external_span/span_inventory.csv",
+      "reference": "provenance/reference_tables/external_span/span_inventory.csv",
+      "original_relative_path": "stress_combinations_code7/results/empirical/span_inventory.csv",
+      "sha256": "8bccb775e376d2867cd22c6b46cbeed2b176eeae93acc1e84a438368b6592098",
+      "bytes": 4970
+    },
+    {
+      "stage": "noise",
+      "output": "tables/noise/analytic_oracle_expectations.csv",
+      "reference": "provenance/reference_tables/noise/analytic_oracle_expectations.csv",
+      "original_relative_path": "stress_combinations_code7/results/simulation/analytic_oracle_expectations.csv",
+      "sha256": "2a3ca0f7cd731a0f241f3a08beb7bcd7bd62b9ebc07269caa44d061091f00967",
+      "bytes": 3369
+    },
+    {
+      "stage": "noise",
+      "output": "tables/noise/latent_mean_diagnostics.csv",
+      "reference": "provenance/portability_reference_tables/noise/latent_mean_diagnostics.csv",
+      "original_relative_path": "stress_combinations_code7/results/simulation/latent_mean_diagnostics.csv",
+      "sha256": "97f1c006374c1a43ad987652d2a66a04170ad12075004f2e0ebf93a48151c861",
+      "bytes": 10986,
+      "historical_reference": "provenance/reference_tables/noise/latent_mean_diagnostics.csv",
+      "historical_sha256": "a67cdbb0fbadd531144bc365a192e152edd76b873d35773ece497809015e3d66",
+      "historical_bytes": 11170,
+      "correction": "single_span_identity_diagnostics_v1",
+      "amendment_record": "provenance/portability_reference_tables/noise/REFERENCE_AMENDMENT.json"
+    },
+    {
+      "stage": "noise",
+      "output": "tables/noise/negative_working_scale_probabilities.csv",
+      "reference": "provenance/portability_reference_tables/noise/negative_working_scale_probabilities.csv",
+      "original_relative_path": "stress_combinations_code7/results/simulation/negative_working_scale_probabilities.csv",
+      "sha256": "e742d480f251a8921ca5bf3692145fe8cc11c67caa6304646621358cd9074614",
+      "bytes": 15493,
+      "historical_reference": "provenance/reference_tables/noise/negative_working_scale_probabilities.csv",
+      "historical_sha256": "b8c051232fe9fb3544ed2d0b31cdb152009e31dd048dfd69af19eb153e31bcec",
+      "historical_bytes": 15485,
+      "correction": "single_span_identity_diagnostics_v1",
+      "amendment_record": "provenance/portability_reference_tables/noise/REFERENCE_AMENDMENT.json"
+    },
+    {
+      "stage": "noise",
+      "output": "tables/noise/oracle_expectation_checks.csv",
+      "reference": "provenance/reference_tables/noise/oracle_expectation_checks.csv",
+      "original_relative_path": "stress_combinations_code7/results/simulation/oracle_expectation_checks.csv",
+      "sha256": "00bfb99d6201e4e81c2e1ba9ae2031d1ee7cc210e5d6dc8b51fda06372c6d93d",
+      "bytes": 15008
+    },
+    {
+      "stage": "noise",
+      "output": "tables/noise/simulation_summary.csv",
+      "reference": "provenance/reference_tables/noise/simulation_summary.csv",
+      "original_relative_path": "stress_combinations_code7/results/simulation/simulation_summary.csv",
+      "sha256": "143d2a821574ef2e9a66077dffe6e899b289c9aa071d4a9a38dea5def65a9695",
+      "bytes": 44034
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/algebra_checks.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/algebra_checks.csv",
+      "original_relative_path": "stress_combinations_code8/results/algebra_checks.csv",
+      "sha256": "bafddab905fae6281a0a805f8b8cb4990a23b13e4f4bf39e9d3981dfa29657e2",
+      "bytes": 810
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/comparator_summary.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/comparator_summary.csv",
+      "original_relative_path": "stress_combinations_code8/results/comparator_summary.csv",
+      "sha256": "4d0f034ea6534efba4d7ff5003611bd296c6515d6bfab9e229228999742d15d8",
+      "bytes": 9825
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/component_summary.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/component_summary.csv",
+      "original_relative_path": "stress_combinations_code8/results/component_summary.csv",
+      "sha256": "c752e5a9f66e2b279c448515cb43b2aaec455cb81ae8d91b2271c3e6c2ddc036",
+      "bytes": 3082
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/library_errors.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/library_errors.csv",
+      "original_relative_path": "stress_combinations_code8/results/library_errors.csv",
+      "sha256": "a56361d33debe3a479dfa9e680fada931ed207f4553b4411788b66eaa21aec5b",
+      "bytes": 24618
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/library_gain_components.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/library_gain_components.csv",
+      "original_relative_path": "stress_combinations_code8/results/library_gain_components.csv",
+      "sha256": "48e315bf7948d59baa0e22cbefa0c80d4c0aa56092fff258d6ccb26f8fbbcfca",
+      "bytes": 10414
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/model_summary.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/model_summary.csv",
+      "original_relative_path": "stress_combinations_code8/results/model_summary.csv",
+      "sha256": "af4b6eb9f0f5ffad61d8b409acff53b708a2a3dd4ffb063422c66eb91ffd7c0d",
+      "bytes": 13132
+    },
+    {
+      "stage": "citrus_prediction",
+      "output": "tables/citrus_prediction/target_fitted_oracle_diagnostic.csv",
+      "reference": "provenance/reference_tables/citrus_prediction/target_fitted_oracle_diagnostic.csv",
+      "original_relative_path": "stress_combinations_code8/results/target_fitted_oracle_diagnostic.csv",
+      "sha256": "5d0697bb0cbb765e8e5e346f6abb2f5c6c0ce2c7f4369c594f0b387d06e17eb7",
+      "bytes": 5101
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/annotation_coverage.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/annotation_coverage.csv",
+      "original_relative_path": "stress_combinations_code9/results/annotation_coverage.csv",
+      "sha256": "f03fe0c6b84cd45795d446a1f8c0ac2145efcccb3ab97cc3beb0a7bf9dae76a0",
+      "bytes": 1002
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/concentration_removal.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/concentration_removal.csv",
+      "original_relative_path": "stress_combinations_code9/results/concentration_removal.csv",
+      "sha256": "46868e7d9c0f73d5b25a2fa61909677dc229acf2ae3a219b31542f60077fd72d",
+      "bytes": 21161
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/critical_removal.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/critical_removal.csv",
+      "original_relative_path": "stress_combinations_code9/results/critical_removal.csv",
+      "sha256": "aef1b599a853c7f750cfcc8f987f758e9aad733f7a57aaaec87d15f71c71a8a3",
+      "bytes": 4064
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/cross_genotype_summary.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/cross_genotype_summary.csv",
+      "original_relative_path": "stress_combinations_code9/results/cross_genotype_summary.csv",
+      "sha256": "d84d8b55fcb577e4e40ea28524d7bd7afa75569852b3651859c80e92f30f35a3",
+      "bytes": 1571
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/direction_oracles.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/direction_oracles.csv",
+      "original_relative_path": "stress_combinations_code9/results/direction_oracles.csv",
+      "sha256": "74fbffa45c420b63596498d824ee6ec0dc00e750caaa2748908dd328529023d9",
+      "bytes": 7229
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/duplicate_Entrez_score_QC.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/duplicate_Entrez_score_QC.csv",
+      "original_relative_path": "stress_combinations_code9/results/duplicate_Entrez_score_QC.csv",
+      "sha256": "9d9b3a336ddf90dc23aa933a16262677e3bec9e419e2fb959886d3c91cb10071",
+      "bytes": 12851
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/functional_core_summary.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/functional_core_summary.csv",
+      "original_relative_path": "stress_combinations_code9/results/functional_core_summary.csv",
+      "sha256": "61c2c7e8c210cfeeb8ddfb98faac0f87fce5793972841050958e60ecd90f2a0e",
+      "bytes": 9436
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/functional_summary.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/functional_summary.csv",
+      "original_relative_path": "stress_combinations_code9/results/functional_summary.csv",
+      "sha256": "6f11dd3d0e52f25ed51d6d2c9dd4844b5a920bddbcc1fa517b97ac57f21a6502",
+      "bytes": 147705
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/gene_examples.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/gene_examples.csv",
+      "original_relative_path": "stress_combinations_code9/results/gene_examples.csv",
+      "sha256": "99e30f62a5ee32651a0eeababa960b1491ae27c2976325fbd10a1f4b7a2efce8",
+      "bytes": 45917
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/gene_summary.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/gene_summary.csv",
+      "original_relative_path": "stress_combinations_code9/results/gene_summary.csv",
+      "sha256": "861ae33d35c35dbc8fee95f7b983dce052887590f1014e747f3880a8a231997d",
+      "bytes": 11238
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/identity_checks.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/identity_checks.csv",
+      "original_relative_path": "stress_combinations_code9/results/identity_checks.csv",
+      "sha256": "41c85997e61fc67d48f4b82bf740135e1732a7e0c730f130845483a5b62748c2",
+      "bytes": 3845
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/scenario_inventory.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/scenario_inventory.csv",
+      "original_relative_path": "stress_combinations_code9/results/scenario_inventory.csv",
+      "sha256": "14626fce2f5379b0dca7cc20194a03e57e54f02bf39c792b951ffd338ab6742c",
+      "bytes": 670
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/strict_core_examples.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/strict_core_examples.csv",
+      "original_relative_path": "stress_combinations_code9/results/strict_core_examples.csv",
+      "sha256": "54b6b1c64c144015249a6fab46673e6c989afca3c73d42d7a92d5ec0cd50581c",
+      "bytes": 5832
+    },
+    {
+      "stage": "citrus_attribution",
+      "output": "tables/citrus_attribution/strict_core_summary.csv",
+      "reference": "provenance/reference_tables/citrus_attribution/strict_core_summary.csv",
+      "original_relative_path": "stress_combinations_code9/results/strict_core_summary.csv",
+      "sha256": "ae1e58f9feab683d36a19b3160291ae51922f92c6eb13f0ed91b807dd3f29585",
+      "bytes": 189
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/full_pool_reconstruction_checks.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/full_pool_reconstruction_checks.csv",
+      "original_relative_path": "stress_combinations_code10/results/full_pool_reconstruction_checks.csv",
+      "sha256": "218a7b288e3e866741481ce946f884ccd06f3cd80263aa688e340f076700e65b",
+      "bytes": 459
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_A_cross_genotype.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_A_cross_genotype.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_A_cross_genotype.csv",
+      "sha256": "8e8619fde2125dac06dd0e38aa51ac797c53d9ea0d744876f0cd1010e2de7e26",
+      "bytes": 971
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_A_gram.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_A_gram.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_A_gram.csv",
+      "sha256": "111f6f0ccde34fb4874f20cfd137535492f3dd814cd5ed80a8439439ab90227b",
+      "bytes": 2568
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_A_moments.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_A_moments.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_A_moments.csv",
+      "sha256": "9391792f01ccdc00b7d2796ce5db9837dbddb0c912dfc347adadbb0abbd54e70",
+      "bytes": 1275
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_A_pool_pairs.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_A_pool_pairs.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_A_pool_pairs.csv",
+      "sha256": "e011b2ba6205b894fcb810679ccdbb68cd3faa8b44f1160307d2c303cebe52e1",
+      "bytes": 1319
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_contrast_summary.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_contrast_summary.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_contrast_summary.csv",
+      "sha256": "dd8b7bb21fc67da529ec2aaaec3fc447ee7ae0023c6e0346af1012332182282c",
+      "bytes": 5680
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_fit_details.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_fit_details.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_fit_details.csv",
+      "sha256": "4366af3307fca0a654f7258aee7e049773492eb4906f2a76c96c888cf5ac9b25",
+      "bytes": 210044
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_fit_summary.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_fit_summary.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_fit_summary.csv",
+      "sha256": "0ad88b4691ed9d820ea4c4956913f1afc60d77810c0e9de43230792eb595d7d1",
+      "bytes": 3832
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_matched_contrasts.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_matched_contrasts.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_matched_contrasts.csv",
+      "sha256": "7936c946dd792638803adbc5100bbdaf4c7bdcf8cc8d160c5e7cc0d9b88dce73",
+      "bytes": 214066
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_pair_metrics.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_pair_metrics.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_pair_metrics.csv",
+      "sha256": "b167886d6227030bcc3e36575bb7a8e7e7d842514cb44ad581803a08882dd98b",
+      "bytes": 649628
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_pair_summary.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_pair_summary.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_pair_summary.csv",
+      "sha256": "10191eb2813972f810a9b9cc585abe2763d24ba5d90dc939924a9ed25972aab2",
+      "bytes": 12432
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_side_score_summary.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_side_score_summary.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_side_score_summary.csv",
+      "sha256": "7e2e08c3b3d50b2d90768640f34880590182c57337f6fe2a24131d20d4af2dc4",
+      "bytes": 17813
+    },
+    {
+      "stage": "attribution_repeatability",
+      "output": "tables/attribution_repeatability/part_B_side_scores.csv",
+      "reference": "provenance/reference_tables/attribution_repeatability/part_B_side_scores.csv",
+      "original_relative_path": "stress_combinations_code10/results/part_B_side_scores.csv",
+      "sha256": "10c866ceb215caf266475dc4f62d4cd62c7d7f2e7d95c9a288e126d6df5240c4",
+      "bytes": 744448
+    }
+  ]
+}

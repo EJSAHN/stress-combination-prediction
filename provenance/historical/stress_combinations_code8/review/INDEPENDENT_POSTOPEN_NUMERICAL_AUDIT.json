@@ -1,0 +1,124 @@
+{
+  "status": "PASS_INDEPENDENT_POSTOPEN_NUMERICAL_AUDIT",
+  "created_utc": "2026-10-28T18:33:16.621129+00:00",
+  "independent_method": "previously frozen pivoted-QR and independent normal-equation predictors, direct target-library calculations; no production scientific-code imports",
+  "decision": "DESCRIPTIVE_TWO_GENOTYPE_CROP_TRANSPORT_SUCCESS",
+  "numeric_cells_checked": {
+    "library_errors": 594,
+    "model_summary": 528,
+    "comparator_summary": 300,
+    "library_gain_components": 288,
+    "component_summary": 96,
+    "target_fitted_oracle_diagnostic": 108
+  },
+  "maximum_absolute_difference_by_table": {
+    "library_errors": 1.7541523789077473e-14,
+    "model_summary": 2.877698079828406e-13,
+    "comparator_summary": 1.1546319456101628e-14,
+    "library_gain_components": 1.1324274851176597e-14,
+    "component_summary": 2.886579864025407e-15,
+    "target_fitted_oracle_diagnostic": 3.552713678800501e-15
+  },
+  "scenarios": [
+    {
+      "scenario": "Car_fpkm1p0",
+      "pass": true,
+      "primary_threshold": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Car_fpkm0p5",
+      "pass": true,
+      "primary_threshold": false,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Car_fpkm2p0",
+      "pass": true,
+      "primary_threshold": false,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Cleo_fpkm1p0",
+      "pass": true,
+      "primary_threshold": true,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Cleo_fpkm0p5",
+      "pass": true,
+      "primary_threshold": false,
+      "failed_mean_comparators": []
+    },
+    {
+      "scenario": "Cleo_fpkm2p0",
+      "pass": true,
+      "primary_threshold": false,
+      "failed_mean_comparators": []
+    }
+  ],
+  "metrics": [
+    {
+      "scenario": "Car_fpkm1p0",
+      "centroid_mse": 0.21201062160313397,
+      "control_mse": 1.2941421512883806,
+      "scalar_mse": 0.4349859690269158,
+      "factor_mse": 0.41206441846750214,
+      "within_mse": 0.4158391015487606,
+      "oracle_mse": 0.37915528238872875,
+      "outsideV11_gain": 0.16956221958709802
+    },
+    {
+      "scenario": "Car_fpkm0p5",
+      "centroid_mse": 0.20223169717034062,
+      "control_mse": 1.2225341780979448,
+      "scalar_mse": 0.41855704404274646,
+      "factor_mse": 0.39513154170847664,
+      "within_mse": 0.39796382549901416,
+      "oracle_mse": 0.3641449199806363,
+      "outsideV11_gain": 0.16470381062441042
+    },
+    {
+      "scenario": "Car_fpkm2p0",
+      "centroid_mse": 0.21803616322515607,
+      "control_mse": 1.353566201425586,
+      "scalar_mse": 0.4392141409868642,
+      "factor_mse": 0.419517561573626,
+      "within_mse": 0.4236798999451115,
+      "oracle_mse": 0.38418216213818757,
+      "outsideV11_gain": 0.16966396427824806
+    },
+    {
+      "scenario": "Cleo_fpkm1p0",
+      "centroid_mse": 0.279195457580314,
+      "control_mse": 1.626397704175074,
+      "scalar_mse": 0.5974360762533062,
+      "factor_mse": 0.5929488630107211,
+      "within_mse": 0.5966881485757636,
+      "oracle_mse": 0.5668210991766739,
+      "outsideV11_gain": 0.28478141694693404
+    },
+    {
+      "scenario": "Cleo_fpkm0p5",
+      "centroid_mse": 0.28550586260158367,
+      "control_mse": 1.5862107698184544,
+      "scalar_mse": 0.6065371234664818,
+      "factor_mse": 0.60060107477533,
+      "within_mse": 0.6054161047638703,
+      "oracle_mse": 0.5770856545209558,
+      "outsideV11_gain": 0.2892196606829238
+    },
+    {
+      "scenario": "Cleo_fpkm2p0",
+      "centroid_mse": 0.27079332352568386,
+      "control_mse": 1.6522563834004027,
+      "scalar_mse": 0.5742309866252696,
+      "factor_mse": 0.5719976960769126,
+      "within_mse": 0.5770939156280279,
+      "oracle_mse": 0.54465680700168,
+      "outsideV11_gain": 0.273251879622431
+    }
+  ],
+  "freeze_manifest_sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a",
+  "production_result_summary_sha256": "5c1534b9d3f531b094d07c83b91c43b95168c5b4af11d6b648996d6da76310e5"
+}

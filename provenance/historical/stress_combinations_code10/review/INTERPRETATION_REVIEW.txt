@@ -1,0 +1,166 @@
+CODE10 INDEPENDENT SCIENTIFIC INTERPRETATION REVIEW
+2026-10-28 UTC
+
+Scope: Read the frozen CODE10 protocol and completed CSV/JSON outputs; counted
+signs and distinct fit IDs directly from CSV. No scientific implementation was
+imported and no real gene-level calculation was rerun. Numerical files remain
+unchanged. This review concerns interpretation, not a replacement for the
+separate numerical audit.
+
+MAIN INTERPRETATION
+
+The aggregate error advantage of the pair-centroid rule recurs in both citrus
+genotypes and survives all sampled complementary-pool refits. The identity and
+ranking of the genes contributing to that advantage agree much better within
+each genotype than between genotypes. Thus recurrence of an aggregate prediction
+advantage does not imply portability of the gene-level gain profile.
+
+Here "recurs in both genotypes" means applying the same rule separately to each
+genotype's own lower-order observations. No model fitted solely in one genotype
+was transferred to predict the other. Avoid unqualified "prediction transport"
+or "cross-genotype transfer" if readers might understand either as that stronger
+experiment. "A recurring aggregate advantage with limited between-genotype gain
+profile concordance" is precise.
+
+EVIDENCE AND EXACT DENOMINATORS
+
+1. Aggregate score robustness under the sampled refits
+
+There are 1,024 side-specific fits: 256 partitions x 2 genotypes x 2 sides.
+Each fit was compared with 3 baselines on the same 15,466 common features.
+All 3,072 mean-gain comparisons are positive. The minimum mean gain is
+0.04033443816109875 squared log2(1+FPKM) units per feature. No fit failed.
+The centroid therefore has smaller mean squared error than each comparator
+for every sampled side-specific fit under the specified score convention.
+
+The two sides within a partition use disjoint pools, but the 1,024 fits are NOT
+mutually disjoint or independent. Different partitions repeatedly reuse the
+same observed pools. Targets are excluded from fitting, but targets and all
+outcomes were already seen before this diagnostic was planned. This is a
+post-result robustness result, not 1,024 new validations or new test cohorts.
+
+2. Target-repeat contribution conditional on the original predictors
+
+Across the 6 genotype/comparator combinations, the estimated conditional stable
+moment fraction ranges from 0.9792401983 to 0.9956624528. The adjusted Pearson
+coefficients barely change:
+
+Comparator                 Raw Pearson   Adjusted Pearson
+second_order_factorial      0.118982       0.120981
+pair_trained_factor_OLS     0.153887       0.155260
+within_V3                  0.268145       0.269966
+
+Under the zero-mean, uncorrelated repeat-error model, the observed target-pool
+variability contributes little to the centered gain variance of the mean.
+Consequently this particular correction does not explain away the weak
+between-genotype gain association. Say "not accounted for by the target-pool
+variability estimated in this conditional diagnostic," rather than "not due
+to noise" or "97.9-99.6% biological signal." Shared predictor errors, correlated
+pool errors and systematic preprocessing effects can remain in the stable
+component. The adjusted correlation is a plug-in ratio, not unbiased truth.
+
+3. Agreement after refitting all lower-order predictors
+
+For each partition, within_mean averages Car-side1 versus Car-side2 and
+Cleo-side1 versus Cleo-side2. cross_mean averages the two between-genotype
+comparisons matched to the same 1-pool versus 2-pool side sizes.
+
+Comparator                 Median within_mean   Median cross_mean
+                           Spearman              Spearman
+second_order_factorial      0.565391              0.052179
+pair_trained_factor_OLS     0.584437              0.050222
+within_V3                  0.714051              0.118991
+
+Each of the 256 matched within-minus-cross contrasts is positive for every
+comparator and each of Pearson, Spearman and exact-top-10%-set Jaccard. For
+Spearman, minimum contrasts are 0.251605, 0.259035 and 0.397154, respectively.
+These are statements about the specified means and observed partitions; do
+not silently strengthen them into every individual within-pair correlation
+exceeding every individual cross-pair correlation.
+
+The median of the matched difference is not generally equal to the difference
+of the two marginal medians. Report the recorded difference summary if using
+that statistic. Quantile ranges across partitions are sensitivity ranges,
+not confidence intervals. All-positive signs supply no calibrated P value.
+
+WHAT THIS ADDS BEYOND THE TARGET-REPEAT DIAGNOSTIC
+
+Diagnostic A conditions on a single set of fitted lower-order predictors.
+Diagnostic B varies the observed pools used for both lower-order fitting and
+target scoring, and compares two complementary sides within each genotype.
+The within-versus-between contrast persists under these full refits. It is
+therefore not an artifact solely of fixing one particular lower-order fit
+while varying only its target pools. Together, A and B support an observed,
+repeatable difference in comparator-relative gain profiles between the two
+genotype datasets, beyond the limited target-repeat contribution estimated
+by A.
+
+That is evidence of conditional reproducibility within these data, not a
+proof of a genotype-caused transcriptional program. The refits retain shared
+processing, fixed panels, and the experimental context; they do not isolate
+all possible sources of reproducible genotype-associated differences.
+Moderate within-genotype rank concordance also matters: the profile is more
+repeatable within genotype, but not perfectly stable gene by gene. The near-1
+conditional stable fractions from A must not be reported as reliability of
+the complete refitting procedure measured in B.
+
+SCIENTIFIC BOUNDARIES TO KEEP VISIBLE
+
+* These are gene-wise differences of squared prediction error, conditional on
+  a specified comparator, transformation and feature universe. They are not
+  gene effects, causal contributions, differential-expression statistics or
+  direct measurements of regulatory mechanisms. Baseline model errors can
+  influence which genes appear most favorable to the centroid.
+* All fits are scored on a common 15,466-feature panel, which makes vector
+  alignment consistent. It does not make their targets the same measured
+  outcomes: each genotype and partition side has its own target pools.
+* Fitting still uses the full original genotype-specific panels (17,470 and
+  16,247 features), so common scoring does not remove differences in the
+  contexts used for global OLS or span estimation. A difference in gain
+  profiles need not isolate a gene-intrinsic genotype response difference.
+* Feature filtering was fixed from the parent analysis and is shared between
+  refit sides. No independent refiltering or fresh feature discovery occurs.
+  Shared selection and author preprocessing remain conditioning information.
+* There are only 3 RNA pools per condition. Pools are the repeated measurement
+  units; features and overlapping partitions do not create more independent
+  biological replication. One-pool and two-pool sides have different sampling
+  properties, which the matched comparison addresses only in its stated way.
+* Results use author FPKM and squared errors on log2(1+FPKM). Repeated-pool
+  checks do not remove compositional, reference-mapping, annotation or shared
+  normalization effects, nor establish invariance to expression scale.
+* Two genotypes from one experimental study cannot establish general
+  portability across species, stress combinations, field conditions, labs or
+  crops. Cross-genotype gain associations are low, not absent; do not describe
+  the contributing genes as wholly different or mutually exclusive.
+* The analytical ingredients are established moment/cross-product and
+  complementary-partition diagnostics. These results do not establish a new
+  estimator, a novel biological mechanism or a publication-level novelty
+  claim by themselves.
+
+SUGGESTED RESULTS PARAGRAPH
+
+On 15,466 common features, the pair-centroid rule retained lower mean squared
+error than all three comparators in every sampled side-specific refit
+(1,024 fits across two genotypes and 256 complementary-pool partitions).
+Conditional target-repeat correction changed cross-genotype Pearson gain
+correlations only slightly (0.119 to 0.121, 0.154 to 0.155, and 0.268 to 0.270).
+After independently refitting complementary pool sides, median within-genotype
+mean Spearman concordance was 0.565, 0.584 and 0.714, compared with matched
+between-genotype means of 0.052, 0.050 and 0.119. Each matched contrast was
+positive across the sampled partitions. These post-result diagnostics show
+that recurring aggregate accuracy need not entail a portable gene-level gain
+profile; they describe repeatability within the observed pools and shared
+analysis framework, rather than new independent validation or causal genotype
+effects.
+
+FILES READ
+CODE10_PROTOCOL.json
+results/RUN_SUMMARY.json
+results/part_A_moments.csv
+results/part_A_cross_genotype.csv
+results/part_B_contrast_summary.csv
+results/part_B_side_score_summary.csv
+results/part_B_side_scores.csv
+results/part_B_matched_contrasts.csv
+
+END. No numerical output, protocol or production code changed.

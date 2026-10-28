@@ -1,0 +1,6 @@
+{
+  "status": "PASS_SYNTHETIC_AUDIT_FUNCTIONS",
+  "production_files_read": false,
+  "max_QR_SVD_lstsq_and_gain_difference": 1.1102230246251565e-15,
+  "moment_identity_error": 4.440892098500626e-16
+}

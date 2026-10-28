@@ -1,0 +1,8 @@
+# Recorded Linux validation environment, Python 3.12.14.
+# Do not reinstall a working local environment merely to match this file.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+matplotlib==3.10.8
+Pillow==12.3.0
+openpyxl==3.1.5

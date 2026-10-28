@@ -1,0 +1,25 @@
+CODE9 FUNCTIONAL ANNOTATION — SOURCE, MAPPING AND LIMITS
+
+Source gene identities and product descriptions were extracted only from the eight annotation columns of the original GSE203331 matrix. No CODE9 contribution ranks or numerical expression values were inspected while defining categories. CODE8 aggregate results were already known, so this is outcome-blind category construction for a post-result interpretation, not a new external validation.
+
+The source contains 30,136 distinct Feature_GID rows but30,113 Entrez Gene IDs. The23 duplicated Entrez IDs each occur as a gene-/rna- microRNA pair (46features). They are flagged, not collapsed or symbol-remapped. Functional summaries exclude every feature mapping to these ambiguous IDs. Whole-panel CODE8 prediction is unchanged; any scoring-only exclusion sensitivity belongs toCODE9. None of these miRNA pairs has an admissible protein GO association in the retrieved GAF.
+
+NCBI's original AR102/Csi_valencia_1.0 assembly directory has no GAF. The newer AR103/DVS_A1.0 assembly supplies a 976,815-byte GAF generated21November2023. The current functional annotation was transferred to the original expression reference only through exact Entrez Gene identifiers; unmatched features remain unmatched. NCBI documents preservation of gene identifiers between assembly annotations where genomic remapping supports it, but sequence/gene-model changes still limit this transfer. We did not claim that the current annotations were used by the original experiment.
+
+All63,808 GAF assertions use IEA (inferred from electronic annotation), generated with InterProScan5.64-96.0 andPANTHER17.0. They are computational functional hypotheses, not direct validation in citrus. The stated GO version is27July2023. The matching GO.db3.18.0 data archive was downloaded from the official Bioconductor GWDG mirror because direct GO OBO downloads returned403. Its SQLite metadata independently confirms GOSOURCEDATE2023-07-27. NoR package or environment was installed. All GAF term IDs resolve in that ontology; no obsolete-term replacement or secondary-ID remapping was required.
+
+Six category roots were fixed before membership/gain analysis: protein folding(GO:0006457), photosynthesis(GO:0015979), translation(GO:0006412), cellular oxidant detoxification(GO:0098869), transmembrane transport(GO:0055085), cell wall organization or biogenesis(GO:0071554). A feature belongs when an assigned BP term is the root or reaches it through only is_a/part_of edges. Regulation relationships are excluded. Categories overlap and must not be summed as a partition. These six groups are a targeted biological description, not a complete pathway catalog. The oxidant-detoxification set is small (13features in the entire source) and is not a general redox-metabolism category; retain it without extrapolating its coverage.
+
+Any-namespace GO coverage is16,255features; BP coverage is11,196. A BP-category comparison must use BP-annotated, unambiguous features as its annotated background. MF/CC-only annotated features must not silently join that background. Unannotated and other-annotated observations remain visible. The primary expression panels have any-GO coverage67.74%(Carrizo) and69.13%(Cleopatra); coverage is incomplete and nonrandom. No enrichment P values, gene-independence assumption or mechanistic claims are justified by these descriptive memberships.
+
+Files: feature_annotation.csv.gz is one row per sourceFeature_GID; memberships.csv.gz is a deduplicated overlapping feature/category mapping; categories.csv records all six planned groups including empty cases. ANNOTATION_ANNEX.json pins code,source andoutput hashes. Reverse-graph BFS independently reproduces all memberships. GO.sqlite is only a reproducible cache; the GO.db tar archive plus extraction in the builder is sufficient. The extracted GO term table and selected BP edge graph are also provided.
+
+Primary sources:
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203331
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/022/201/045/GCF_022201045.2_DVS_A1.0/GCF_022201045.2_DVS_A1.0_gene_ontology.gaf.gz
+https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Citrus_sinensis/103/
+https://ncbiinsights.ncbi.nlm.nih.gov/2023/11/15/gene-ontology-terms-refseq-eukaryotic-genomes/
+https://geneontology.org/docs/download-go-annotations/
+https://ftp.gwdg.de/pub/misc/bioconductor/packages/3.18/data/annotation/src/contrib/GO.db_3.18.0.tar.gz
+
+Root-retrievable web refs: turn1443view0(GO source/version guidance); turn1444search1(NCBIAR103andIDpreservation); turn1444search2(NCBIGO pipeline); turn1446search0(BioconductorGO.db3.18.0packagepage).

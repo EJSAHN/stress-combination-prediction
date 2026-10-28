@@ -1,0 +1,115 @@
+{
+  "status": "PASS_EXACT_ID_VERSION_MATCHED_ANNOTATION",
+  "fixed_utc": "2026-10-28T18:52:15.071933+00:00",
+  "outcome_gain_files_read": false,
+  "source_features": 30136,
+  "source_unique_entrez": 30113,
+  "ambiguous_entrez_ids": 23,
+  "ambiguous_features": 46,
+  "GOcovered_features": 16255,
+  "BPcovered_features": 11196,
+  "GOcovered_without_BP_features": 5059,
+  "source_features_in_any_six_categories": 1651,
+  "membership_rows": 1657,
+  "categories": [
+    {
+      "category_id": "GO:0006457",
+      "category_name": "protein folding",
+      "root_GO": "GO:0006457",
+      "source_feature_count": 200
+    },
+    {
+      "category_id": "GO:0015979",
+      "category_name": "photosynthesis",
+      "root_GO": "GO:0015979",
+      "source_feature_count": 74
+    },
+    {
+      "category_id": "GO:0006412",
+      "category_name": "translation",
+      "root_GO": "GO:0006412",
+      "source_feature_count": 389
+    },
+    {
+      "category_id": "GO:0098869",
+      "category_name": "cellular oxidant detoxification",
+      "root_GO": "GO:0098869",
+      "source_feature_count": 13
+    },
+    {
+      "category_id": "GO:0055085",
+      "category_name": "transmembrane transport",
+      "root_GO": "GO:0055085",
+      "source_feature_count": 771
+    },
+    {
+      "category_id": "GO:0071554",
+      "category_name": "cell wall organization or biogenesis",
+      "root_GO": "GO:0071554",
+      "source_feature_count": 210
+    }
+  ],
+  "categories_overlap_allowed": true,
+  "background": "BPcovered and not ambiguous_entrez; any-GO coverage reported separately",
+  "GOcovered_definition": "non-NOT GAF mapped to activeGO term (or documentedsecondaryID) in anynamespace",
+  "BPcovered_definition": "same but BPnamespace only",
+  "excluded_graph_relations": {
+    "regulates": 3109,
+    "negatively regulates": 2696,
+    "positively regulates": 2686
+  },
+  "unknown_or_obsolete_GAF_terms": {},
+  "secondary_GO_ID_resolutions": {},
+  "NOT_rows_excluded": 0,
+  "GAF_evidence_counts": {
+    "IEA": 63808
+  },
+  "GAF_taxa": {
+    "taxon:2711": 63808
+  },
+  "ontology_metadata": {
+    "GOSOURCENAME": "Gene Ontology",
+    "GOSOURCEURL": "http://current.geneontology.org/ontology/go-basic.obo",
+    "GOSOURCEDATE": "2023-07-27",
+    "Db type": "GODb",
+    "package": "AnnotationDbi",
+    "DBSCHEMA": "GO_DB",
+    "GOEGSOURCEDATE": "2023-Sep11",
+    "GOEGSOURCENAME": "Entrez Gene",
+    "GOEGSOURCEURL": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA",
+    "DBSCHEMAVERSION": "2.1"
+  },
+  "code_sha256": "8d93e5d35d9810874dcebc6ea7554a5be1fbbb955a710071462398b37460c826",
+  "plan_sha256": "caea1f3a93ac7826fe436446bca3f92ee5856865995794578f921bc4fcf2ad8e",
+  "input_hashes": {
+    "GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f",
+    "GCF_022201045.2_DVS_A1.0_gene_ontology.gaf.gz": "a9c760b3328029474cf1c6d729f8cdc7a9106d59221323596b59416c7822a4e3",
+    "GO.db_3.18.0.tar.gz": "f580341e7fd19efa3e5789b993dd8ef0cf813a45c49a647a173c6f49c451d87e"
+  },
+  "output_hashes": {
+    "feature_annotation.csv.gz": "42559729beb53e15a4919be619bf149b4a8219711400357cf42938268bc4c2f2",
+    "memberships.csv.gz": "05f5e59dc5f8b2293ed8f79045f32b00466b8596839ab93f341615f3163b088b",
+    "categories.csv": "01d32acb703cfbc8f73cabc5e670bab777b719b22ffa31fd6df252e7f47153f2",
+    "exact_Entrez_GO_associations.csv.gz": "990d177c5029d85c74b1c3c91f9f4e3f04299ed28ec9c596e9d271327696f56c",
+    "GO_BP_is_a_part_of_graph.csv.gz": "7db2ff80c254f3bc2fd5dd4aa7cde53999cce735688ed1bbd8b9431b81734d19",
+    "GO_terms_2023-07-27.csv.gz": "fdfe302006eef05d37c5ef2b589a4020c2e8bbf34d326d1cad01222a83816d26"
+  },
+  "limits": {
+    "created_utc": "2026-10-28T18:52:10.399492+00:00",
+    "category_roots": [
+      "GO:0006457",
+      "GO:0015979",
+      "GO:0006412",
+      "GO:0098869",
+      "GO:0055085",
+      "GO:0071554"
+    ],
+    "scope": "CODE8 global outcomes known; no CODE9 gene gain/rank files read.",
+    "membership": "BP annotation itself or ancestor via is_a/part_of only; no regulation edges; overlapping categories.",
+    "mapping": "AR103 GAF by exact EntrezID to originalAR102 Feature_GID; no symbol/orthology remapping.",
+    "evidence": "allIEA computational functional annotation",
+    "ambiguous": "exclude all feature rows sharing sourceEntrez ID from functional summaries; global prediction unchanged",
+    "background": "BP-covered unique-Entrez features for BP summaries; anyGO and BP coverage separate.",
+    "inference": "descriptive functional categories; no enrichment significance or experimentally validated mechanism"
+  }
+}

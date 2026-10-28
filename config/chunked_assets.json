@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "purpose": "Restore an unchanged frozen reference from bundled byte chunks without network access.",
+  "assets": [
+    {
+      "path": "provenance/historical/stress_combinations_code5/frozen/predictions.npz",
+      "bytes": 19932365,
+      "sha256": "86fccfe3078dcaa830a4f30ab56a5189138edb31c537c892a92de9ed50591a13",
+      "parts": [
+        {
+          "path": "provenance/chunks/discovery_selection_predictions/predictions.npz.part001",
+          "bytes": 8388608,
+          "sha256": "161ffceb73c54969177a42da113db575059b1a4476596e4c1d58f2a532dec64a"
+        },
+        {
+          "path": "provenance/chunks/discovery_selection_predictions/predictions.npz.part002",
+          "bytes": 8388608,
+          "sha256": "ab49939396fb6e90db812f3f5213b042385839ef89ed0ce4af661bc340c99737"
+        },
+        {
+          "path": "provenance/chunks/discovery_selection_predictions/predictions.npz.part003",
+          "bytes": 3155149,
+          "sha256": "b11799f4845501e97ffd43c26924e10da66342285143a52e64ad32b4044b3e11"
+        }
+      ]
+    }
+  ]
+}

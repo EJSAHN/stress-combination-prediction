@@ -1,0 +1,4 @@
+comparator,n_common_features,cross_genotype_covariance,raw_Pearson,raw_Spearman,adjusted_Pearson,raw_Pearson_unavailable_reason,raw_Spearman_unavailable_reason,adjusted_Pearson_unavailable_reason,adjusted_Pearson_outside_unit_interval,Car_observed_variance,Cleo_observed_variance,Car_stable_variance,Cleo_stable_variance,CODE9_Pearson_reproduced,CODE9_Spearman_reproduced
+second_order_factorial,15466,0.09731736478757876,0.1189824395967386,0.06329541223473363,0.12098138427711559,,,,False,0.5018403984501184,1.3330588504234337,0.4956841431357989,1.3053848129817358,True,True
+pair_trained_factor_OLS,15466,0.10561036837099498,0.15388650932449932,0.05390030174528376,0.1552595319105721,,,,False,0.4847372130137457,0.9716406065010986,0.48212902944805824,0.9596951242896425,True,True
+within_V3,15466,0.11369599112613495,0.2681450453349387,0.11845122572654229,0.2699658366327967,,,,False,0.26896344700651403,0.6684323935210629,0.26779680534809214,0.6623191222717748,True,True

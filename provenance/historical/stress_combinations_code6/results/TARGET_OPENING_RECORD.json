@@ -1,0 +1,18 @@
+{
+  "opening_started_utc": "2026-10-28T16:51:31.683625+00:00",
+  "freeze_manifest_sha256": "52f98bceae42dbecf4abfaf6cd9649163808f5031ab12883baad52f70a9c0ae9",
+  "protocol_sha256": "063a0cff439e7856940e52023cfb65b01d83797151101e7d34b9b095229bf090",
+  "amendment_sha256": "c580b882b961ed816e7b3e27b090725434fef52e0c3f90c50c68268978012137",
+  "evaluation_code_sha256": "e56f39573d8dd1c0db7b7c682fe0a9c6f25ee9bbbe88b0a4ab1af4a861eeb33e",
+  "source_hashes": {
+    "WT": {
+      "path": "/workspace/scratch/2c80e384db1d/stress_combinations_code6/input/GSE330879_Col0_fpkm.txt.gz",
+      "sha256": "cc688c63c6f660268d0c3c32ee7de906694f728b53e04af9ef4e7dd0a874caa0"
+    },
+    "RAP2.3": {
+      "path": "/workspace/scratch/2c80e384db1d/stress_combinations_code6/input/GSE330879_RAP2.3_fpkm.txt.gz",
+      "sha256": "89fd2bc79eff30d390cb5aa6cadc6d7a020c1a65d55153b6a718c3c764ae5df5"
+    }
+  },
+  "statement": "All predictions, panels, models and reference-split bases are frozen; target-only columns are parsed next."
+}

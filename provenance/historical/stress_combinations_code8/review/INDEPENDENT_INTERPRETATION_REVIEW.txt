@@ -1,0 +1,19 @@
+CODE8 INDEPENDENT INTERPRETATION REVIEW — 2026-10-28
+
+NUMERICAL AUDIT: PASS. Independently reconstructed QR bases and normal-equation coefficients were frozen before opening. Post-opening evaluation matches 198 library-error rows,66 model means,60 comparator rows,72 gain-component rows,24 component means and18 oracle rows. Maximum numeric difference across all checked cells2.88e-13; no production scientific functions imported. Original source, frozen assets and result-file hashes verified. A truncated reviewer-only NPZ was detected before target opening, recorded and regenerated atomically to its original hash; no production scientific assets were changed.
+
+PRIMARY FINDING: the predeclared two-genotype crop-transport criterion passes. All seven ordinary fixed comparators are beaten in both primary panels. In fact, the centroid beats every reported ordinary comparator in every target library, stronger than the mean-comparison criterion. Both fixed threshold sensitivities also pass, but they are not extra independent experiments.
+
+Car: centroidMSE=0.212010622; CT=1.294142151 (83.618% lower); strongest ordinary comparator(second-order factorial)=0.309363573 (31.469% lower).
+Observed V3 target-fitted oracleMSE=0.379155282; oracle-centroid margin=0.167144661. Outside-V3 gain=0.203828480; outside-V11 gain=0.169562220, retaining 83.189% of outside-V3 prediction gain.
+
+Cleo: centroidMSE=0.279195458; CT=1.626397704 (82.834% lower); strongest ordinary comparator(second-order factorial)=0.486561664 (42.619% lower).
+Observed V3 target-fitted oracleMSE=0.566821099; oracle-centroid margin=0.287625642. Outside-V3 gain=0.317492691; outside-V11 gain=0.284781417, retaining 89.697% of outside-V3 prediction gain.
+
+ORACLE INTERPRETATION: C+P3(Tmean-C) minimizes average library MSE among ALL common prediction vectors in the fixed observed affine single-response span. Its worse MSE therefore rules out reproducing the centroid accuracy merely by any linear reweighting of these observed single-effect directions, even with target-informed coefficient choice. This is a descriptive algebraic statement about the observed span and targets. The oracle is outcome-fitted, not a prospective predictor. The displayed per-library oracle numbers evaluate that same common target-mean fitted vector; they are not each library own optimum.
+
+NOISE LIMIT: the oracle does not identify the unknown true biological single-stress span. V11 robustness and fresh-crop replication strengthen observed predictive evidence but do not resolve CODE7 measurement-noise/uncertain-orientation issues. Do not convert these results into a new biological dimension, pure third-order interaction, or mechanistic proof.
+
+INDEPENDENCE/SCOPE: citrus is a different crop experiment with overlapping investigator network, not necessarily independent-laboratory evidence. Carrizo and Cleopatra are two genotypes from one experiment, not two independent validation studies. Biological n=3 pooled RNA libraries per cell. Source-wide author preprocessing and the shared reference remain limitations. FPKM is the actual selected source-header layer under a pre-numeric amendment; source prose called it RPKM.
+
+SUITABLE NARRATIVE: fixed pair-response information predicts an unseen combined-stress endpoint substantially better than specified single-response attenuation and factorial extrapolation baselines, across both citrus genotypes. The observed pair information cannot be recovered by any linear combination confined to the estimated single-effect span on these targets. Avoid presenting equal averaging or projection as a newly invented algorithm; the finding is transferable response information and its limits. No statistical significance or journal-readiness follows from this benchmark alone.

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "independent_numeric_production_imports": false,
+  "basis_reconstruction": "small Gram eigendecomposition",
+  "factorial_reconstruction": "explicit single and pair inclusion-exclusion",
+  "prediction_vectors_verified": 120,
+  "score_rows_verified": 32,
+  "selection_rows_verified": 120,
+  "stability_rows_verified": 576,
+  "library_metric_rows_verified": 360,
+  "target_summary_rows_verified": 120,
+  "max_absolute_differences": {
+    "predictions": 6.750155989720952e-14,
+    "scores": 9.769962616701378e-15,
+    "metrics": 6.750155989720952e-14,
+    "summary": 6.217248937900877e-14,
+    "paired": 2.914335439641036e-16
+  },
+  "target_exclusion_tests": [
+    {
+      "target": "PQ-HL-HS",
+      "poisoned_columns": [
+        "PQ-HL-HS_43",
+        "PQ-HL-HS_44",
+        "PQ-HL-HS_45"
+      ],
+      "parsed_target_columns": [],
+      "max_prediction_change": 0.0,
+      "all_selections_unchanged": true
+    },
+    {
+      "target": "S-HL-HS",
+      "poisoned_columns": [
+        "S-HL-HS_40",
+        "S-HL-HS_41",
+        "S-HL-HS_42"
+      ],
+      "parsed_target_columns": [],
+      "max_prediction_change": 0.0,
+      "all_selections_unchanged": true
+    },
+    {
+      "target": "S-PQ-HL",
+      "poisoned_columns": [
+        "S-PQ-HL_11",
+        "S-PQ-HL_22",
+        "S-PQ-HL_33"
+      ],
+      "parsed_target_columns": [],
+      "max_prediction_change": 0.0,
+      "all_selections_unchanged": true
+    },
+    {
+      "target": "S-PQ-HS",
+      "poisoned_columns": [
+        "S-PQ-HS_34",
+        "S-PQ-HS_35",
+        "S-PQ-HS_36"
+      ],
+      "parsed_target_columns": [],
+      "max_prediction_change": 0.0,
+      "all_selections_unchanged": true
+    },
+    {
+      "target": "S-PQ-HL-HS",
+      "poisoned_columns": [
+        "S-PQ-HL-HS_46",
+        "S-PQ-HL-HS_47",
+        "S-PQ-HL-HS_48"
+      ],
+      "parsed_target_columns": [],
+      "max_prediction_change": 0.0,
+      "all_selections_unchanged": true
+    }
+  ],
+  "mutation_test_scope": "Production parser/model functions on modified fixture; not source-hash bypass in a production freeze",
+  "freeze_precedes_evaluation": true,
+  "scope": "Author-normalized matrix calculation audit; not raw FASTQ processing or new biological validation"
+}

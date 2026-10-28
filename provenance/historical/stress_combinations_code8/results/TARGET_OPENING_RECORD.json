@@ -1,0 +1,10 @@
+{
+  "opening_started_utc": "2026-10-28T18:31:44.690884+00:00",
+  "freeze_manifest_sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a",
+  "source_sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f",
+  "protocol_sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555",
+  "amendment_sha256": "b0e641430ee42775123968a74de5dc37aa043f12454375b964cf5582b63f53fd",
+  "code_sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393",
+  "poison_record_sha256": "b3a083b1563076252767cf402faad86b2938fe30ece0f1c8afdb5960a61a5de0",
+  "statement": "All six model sets and panels frozen and poisoned successfully; numerical targets parsed next."
+}

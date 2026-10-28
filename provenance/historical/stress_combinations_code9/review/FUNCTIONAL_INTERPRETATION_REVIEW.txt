@@ -1,0 +1,78 @@
+FUNCTIONAL INTERPRETATION REVIEW — CODE9
+Reviewed UTC: 2026-10-28T19:03:21.216918+00:00
+Status: PASS WITH INTERPRETIVE LIMITS. No annotation or category changes made.
+
+Scope
+Read functional_summary.csv, functional_core_summary.csv, strict_core_summary.csv,
+strict_core_examples.csv and the source-paper abstract. This is post-result
+attribution of an already observed predictive advantage, not new external
+validation or prospective biological hypothesis testing. Positive gain is lower
+squared prediction error for the pair centroid than its named comparator.
+
+Supported thread
+Against pair_trained_factor_OLS, translation has positive mean gain in both
+genotypes (Car 0.193779; Cleo 0.533303), with 75.40% and 85.29% mean-positive
+features versus 64.94% and 70.21% in the eligible BP background. Translation is
+therefore a defensible descriptive example of pair-condition information that
+this fitted single-response model does not capture. Its net contribution is
+only 2.07% and 3.84% of total gain; it is not the main explanation of the global
+advantage. Most gain lies outside the six chosen categories, including features
+without BP or any GO annotation.
+
+Contradictions that must stay visible
+The translation pattern is comparator dependent: against second_order_factorial,
+Car translation has mean gain -0.013303 and only 45.99% mean-positive features
+(BP background 56.54%); Cleo remains positive (0.086009; 63.49%). A uniform
+translation pathway advantage across baselines is unsupported. Protein folding
+also lacks a uniform story: Cleo mean gain against OLS is -0.230564 although
+62.92% of folding features are positive. Harmful tail magnitude outweighs the
+positive count. Counting favorable genes alone would conceal that reversal.
+Protein-folding GO membership is not a direct UPR pathway annotation.
+
+Shared strict core
+The intersection across second-order factorial, OLS and within-V3 comparisons
+contains 604 of 15,466 shared primary-panel features; 304 are BP eligible.
+Translation contributes 23/365 common eligible features (relative prevalence
+1.589 versus BP background), but folding contributes only 4/174 (0.580), and
+239 of the 304 BP core features lie outside the six categories. These are
+descriptive counts and prevalence ratios, not tested enrichment. No single
+program explains this diverse core. Shared predictability also does not imply
+shared activation: examples include MAPKKK18 (gene-LOC102619746) and the
+glycine-rich cell-wall protein-like gene-LOC107174352 with opposite target
+expression-change signs across genotypes. Examples were ranked by minimum
+prediction-gain percentile across contexts; they are illustrations, not newly
+validated causal genes or independent mechanistic evidence.
+
+Annotation limits
+All GAF annotations are IEA computational assignments from NCBI AR103, matched
+by exact Entrez ID to the original AR102 source features. The GAF and GO.db
+ontology both use GO 2023-07-27; BP membership propagated only via is_a/part_of.
+All source Entrez-to-feature ambiguity is excluded from functional summaries.
+The appropriate background is eligible BP annotation (Car 8,300; Cleo 7,883),
+not all GO annotation. MF/CC-only and unannotated features remain explicit.
+The six categories overlap and cannot be summed as disjoint totals.
+GO:0098869, cellular oxidant detoxification, has just 10 Car and 9 Cleo primary
+features and zero strict-core features. It cannot support a broad redox claim
+or a stable category-level conclusion. Partial annotation and all-IEA evidence
+preclude asserting validated mechanism or interpreting no annotation as no
+biological function. No formal pathway-enrichment claims are justified.
+
+Prior-art boundary
+The original paper, “Omics analyses in citrus reveal a possible role of RNA
+translation pathways and Unfolded Protein Response regulators in the tolerance
+to combined drought, high irradiance, and heat stress” (Horticulture Research
+2023, uhad107; https://doi.org/10.1093/hr/uhad107), already highlighted Carrizo
+RNA metabolism/translation and ER/UPR responses, including HSPs, BiP2 and
+PDIL2-2. This review checked its archived full-text XML abstract under CODE8
+metadata/prior_metadata_snapshot/uhad107_fulltext.xml. Thus involvement of
+translation or UPR is not the new finding. The incremental result is the
+comparison-specific distribution of pair-to-triple predictive information,
+including where that advantage fails. CODE9 does not resolve CODE7's noise/
+identifiability limit or establish an additional true biological dimension.
+
+Suggested claim
+“Pair-condition measurements retained predictive information across diverse
+functional backgrounds. Translation-associated features showed a particularly
+consistent descriptive advantage over the fitted single-response OLS model,
+but this pattern was not uniform across alternative comparators; no single
+annotated process accounted for the global gain.”

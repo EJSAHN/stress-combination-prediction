@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "All 19 workbook sheet layouts were visually inspected in 95 rendered top/last/horizontal section panels. The artifact renderer was used for quality assurance only; delivered workbook creation uses portable openpyxl.",
+  "panel_count": 95,
+  "reports": [
+    {
+      "report": "owner_visual_review.json",
+      "sha256": "31051268a479e561dba5f43a32a2b17852e56ab7327eda9dd7e917654ee96ab7",
+      "status": "PASS",
+      "panels": 45
+    },
+    {
+      "report": "independent_visual_review.json",
+      "sha256": "81fde8d2e154894484e22466e21b14ee6a14154f4f4ea6431d21828a97dc9306",
+      "status": "PASS",
+      "panels": 28
+    },
+    {
+      "report": "figure_source_owner_review.json",
+      "sha256": "775d1848f63997a6e63ea3bd2655642a383ccbd213f2b7213bdd35b53b7f7008",
+      "status": "PASS",
+      "panels": 10
+    },
+    {
+      "report": "figure_source_independent_review.json",
+      "sha256": "706dbcec3c3208a1a773a57c9a603b73b0059e24e33bacec20cbdb8c0cc84d23",
+      "status": "PASS",
+      "panels": 12
+    }
+  ],
+  "numeric_validation_report": "Each executed run writes tables/workbook_validation.json and tables/workbook_cell_lineage.json.",
+  "notes": [
+    "Base scientific and provenance sheets were reviewed in 73 panels; four main-figure source sheets were reviewed in 22 panels.",
+    "Column-sensitive wrapping and explicit Yes/No values resolved two layout issues; no unresolved clipping or lost numeric signs remained.",
+    "Scientific limits remain visible beside tables, including n=3 RNA pools, discovery chronology, observed-span qualification, conditional-noise interpretation and partition ranges not confidence intervals.",
+    "The final pipeline writes fresh workbook values and checks each displayed CSV field again; this static report documents layout review of the builder.",
+    "Raw QA images and intermediate workbooks are not runtime package dependencies.",
+    "Artifact-renderer review does not certify native Microsoft Excel or Windows PowerShell execution."
+  ],
+  "reviewed_base_workbook_sha256": "8ba55f7101013d5efb4ca6c729ef82c12563545b8958a08bd91bb76cc85a8703",
+  "reviewed_integrated_workbook_sha256": "d52d833b284f878cd4ef349254c2f1dec977dd9354b8812e4d918ec7c1d609b1",
+  "upstream_metadata_note": "During review, blank n-unit entries in some figure-source records were reported to the figure author. Final source metadata is exported afresh by the pipeline."
+}

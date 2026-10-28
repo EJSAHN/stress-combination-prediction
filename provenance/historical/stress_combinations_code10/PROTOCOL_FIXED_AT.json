@@ -1,0 +1,9 @@
+{
+  "fixed_utc": "2026-10-28T19:25:23.345265+00:00",
+  "protocol_sha256": "cef5121fa66cfbfdd2605be45d7fade65bb3749cb70e614be980df489f78c425",
+  "partition_sha256": "6b68fb1f47d436ae7303388518ef4cb5d6532c796a164007338dab9108121375",
+  "partition_rows": 4096,
+  "new_CODE10_numeric_results_computed": false,
+  "prior_CODE8_CODE9_outcomes_known": true,
+  "freeze_script_sha256": "87edb1eaa6ccbf768e745412e3ef92966f40d58c1147a09f06b11bf26e2d2de0"
+}

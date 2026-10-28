@@ -1,0 +1,50 @@
+CODE7 simulation: independent numerical and interpretation review
+28 October 2026
+
+PASS: independent full-gene-vector SVD replay reproduces 216 selected scenario
+outcomes (six draw IDs across all 36 cells), including the empirical-only
+compact-coordinate branch and both full-gene covariance mixtures. All five
+paired scores agree; largest score difference is 3.64e-15. All 180 summary
+rows were independently recomputed from all 36,000 stored draws. Source hashes,
+fixed feature panels, maps, protocol pinning and the fixed reporting flag agree.
+
+Joint latent means were independently reconstructed from their row-Gram
+eigensystem; maximum difference from direct SVD is 1.69e-13. Both nulls have
+three spanning latent single directions. All zero-noise gains are numerical
+zero. Independently computed covariance traces and all 108 analytic oracle
+expectations agree. A separate small synthetic covariance/Monte Carlo check
+also passed and is reported in ORACLE_EXPECTATION_CHECK.json.
+
+WT observed T is 0.062273019. The joint-rank-three, empirical-covariance,
+unit-SD model has q95=0.064190945 and 56/1000 draws at least as large as T.
+The fixed flag that T exceed all six unit-noise q95 values therefore fails.
+This is a borderline conditional range comparison with Monte Carlo SE about
+0.00727 for the fraction. It is not a calibrated biological P-value or evidence
+that noise caused the signal. The imposed latent orientation and covariance
+are substantially uncertain with three RNA pools per condition.
+
+A model reproducing a scalar statistic need not reproduce the full expression
+dataset or its mean-residual directions. In particular, rank-two empirical
+covariance has restricted support. Mean-fit MSE divided by estimated noise
+trace is only a scale diagnostic; it is not a goodness-of-fit test.
+
+The root READ_ME_FIRST.txt was reviewed. Its mixed interpretation is faithful:
+CODE6's prediction performance remains, and much of the outside contribution
+survives the observed replicate-cloud expansion, while the stronger biological
+claim about an unknown true response dimension remains unresolved. No primary
+endpoint is rescued by choosing another covariance mixture, genotype or scale.
+The T simulations do not calibrate the distinct disjoint-reference margins.
+
+DIAGNOSTIC FLOATING-POINT NOTE
+Strict '<0' latent-log and negative-probability diagnostics are sensitive to
+roundoff for genes with zero variance and means at numerical zero. Equivalent
+floating-point paths can shift their reported fractions by up to 0.002816.
+All strict diagnostics lie within the independently calculated +/-1e-12
+mean-boundary envelopes. Supplementary rates below -1e-12 are recorded in
+NEGATIVE_SCALE_TOLERANCE_DIAGNOSTIC.csv. This reviewer-only diagnostic does
+not alter any production latent means, noise, simulated scores or summaries.
+Negative working-scale diagnostics are not biological validity tests.
+
+Zero of 1000 exceedances likewise does not establish zero tail probability;
+the plug-in Monte Carlo SE is zero at the count boundary. The supplied count
+and finite Monte Carlo resolution must remain visible.

@@ -1,0 +1,32 @@
+DATA AND SOFTWARE ATTRIBUTION
+
+Original analysis and rendering code in this package is covered by LICENSE.
+The code license does not apply to third-party deposited expression data,
+annotation resources, cited publications or their text and figures.
+
+GEO inputs: GSE147962, GSE330879 and GSE203331. The exact four processed files,
+accession pages, source URLs, units, sizes and hashes are in config/data_sources.json.
+The local reproduction distribution retains these necessary inputs. The prepared
+GitHub distribution excludes them and provides scripts/fetch_inputs.py.
+
+NCBI's Molecular Data Usage policy states that NCBI places no restrictions on
+use or distribution of molecular data, including gene expression. NCBI also
+does not transfer or certify rights held by original contributors. This package
+does not describe third-party data as newly licensed by its code authors.
+Official sources checked 28 October 2026:
+https://www.ncbi.nlm.nih.gov/home/about/policies/
+https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html
+
+Frozen derived predictor arrays and reference tables retain the original data
+identifiers and accession attribution. Their inclusion enables reproducibility
+checks; they are not newly collected measurements.
+
+Citrus functional annotations were frozen from NCBI exact-Entrez GO associations
+and a compatible Gene Ontology snapshot. Their provenance and mapping limits
+are preserved with the annotation assets. Cite the Gene Ontology resource and
+the corresponding NCBI annotation release when reporting those analyses.
+Do not describe these computational annotations as experimentally validated.
+
+Python, NumPy, pandas, SciPy, matplotlib, Pillow and openpyxl are external
+dependencies and retain their own licenses. They are not bundled or installed
+by the local launcher.

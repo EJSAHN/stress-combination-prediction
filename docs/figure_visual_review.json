@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "review_date": "2026-10-28",
+  "review_scope": "Visual review of all eight publication figures rendered from fresh analysis tables; PNG full decode, dimensions, DPI, hashes and PDF vector/EOF checks. Manual visual judgment is separate from numerical source validation.",
+  "plot_code_sha256": "26e3106d2b2ccc93b54f2331320485c8fb9c6e85053010a9836d66b538a344c5",
+  "figures": [
+    {
+      "figure": "Figure_1",
+      "png_sha256": "f8e131dda94779fe1f2a83d10f1f74204b9072e0baede9f153bb9f2ff15e6153",
+      "pdf_sha256": "90cf506826b233dfe39476e464f304a548a6cb5183650b2a7c1e39b3b4b0231b",
+      "source_sha256": "77731178bfdceff1cf721f074241bd7c9fccdf1a67e29eea5343654b13d1dcbd",
+      "png_pixels": [
+        2125,
+        1875
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_2",
+      "png_sha256": "eb89e7609926a75323df03d32719d90bda3ce8258ae64556f3703570eb2da0a3",
+      "pdf_sha256": "b840a3563d8b625d88f1b6fc6b11aa9bf3001538d70fe73c2684b91ea930cc9e",
+      "source_sha256": "f1f9534a1af79a9e387c887949a1dbb63a23915b5b73aeb4c574dd62fcd8ccd9",
+      "png_pixels": [
+        2125,
+        1860
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_3",
+      "png_sha256": "e19e2c18acd19338292926acb313b4721223e046a74f2c0b4a608490a8600942",
+      "pdf_sha256": "32fca4f2d2b786c9504355b2c6bf3d6550b2971f7849eab924fb5821304d14e9",
+      "source_sha256": "79ca9f7f268850018d20e97b3ad176779546bb96a0f98111078fb990627c18e6",
+      "png_pixels": [
+        2125,
+        1890
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_4",
+      "png_sha256": "43be0e04850fab46783ac600ff7bc2358eabab7e44f19c2ae98b97aed1b9249d",
+      "pdf_sha256": "9e2f28ae6eb84859e249ae0c4c49ef2b092d5ff1537520a8b8097fdd77c17aa0",
+      "source_sha256": "1d1204c6bf9ddcf1800cc978d714021b2a9e670291075d38176a52703752eebb",
+      "png_pixels": [
+        2125,
+        1830
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_S1",
+      "png_sha256": "14df6415e789543e4e7ace3da97b4487ca311f66cdc2ca463054129df840c7d8",
+      "pdf_sha256": "edbe40a2a8fbb15c3bd0d35325afa234f0e6d1802f3b37a68aaa655c689f6aff",
+      "source_sha256": "e25a944ba8f239eb84b8bf33727894070104a97cea4df4c16329d63bd5c77fd6",
+      "png_pixels": [
+        2125,
+        1200
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_S2",
+      "png_sha256": "841826d05b12b82e618b2d2be54eb63aa4eb9b8ff0bcd154fc0627869f66371c",
+      "pdf_sha256": "7aaab1a48ba06a6d2532e94b26682840decc1b9b174bb80533828eebe55ccbe7",
+      "source_sha256": "6a4762ddb3433e3add6d4fb702930a8516dcb9269754dd1a95900f1d6ceb4c12",
+      "png_pixels": [
+        2125,
+        2460
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_S3",
+      "png_sha256": "f27e5e6d4124308ae40b0405965afc8f2a9ed2d47411f34bb9613d8d82c1a482",
+      "pdf_sha256": "8f6e4390f3e549cb48c4853eecb1d3526e2ace8e95ecff8bf5e00903b35d4492",
+      "source_sha256": "7ad32dff39e93c7764a7c1b350c2b8962d13aef4945108efbbee44f3ada6e892",
+      "png_pixels": [
+        2125,
+        1800
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    },
+    {
+      "figure": "Figure_S4",
+      "png_sha256": "f0a191d7e3f752e4af2511b60bd111910d337267545a8f3dbf82c225818e9c59",
+      "pdf_sha256": "437b10916309c55e414435772f5c10efb0e32a39918cbf35d8341811482da3ce",
+      "source_sha256": "8ff3c0e1e3d5fafa9be7620aa767221e14f335dd65e58f0a123884359f995128",
+      "png_pixels": [
+        2125,
+        1830
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "width_mm": 180
+    }
+  ],
+  "visual_review_checks": [
+    "Capital panel letters and legible 8-9 pt sans serif labels at 180 mm width",
+    "Italic species and rap2.3 labels where applicable",
+    "No clipped panel titles, axis labels or essential legend text",
+    "Negative gains, failed selector outcomes and adverse conditional-noise results visible",
+    "No legend obscures numerical points or intervals",
+    "3 RNA pools distinguished from features, conditional draws and overlapping partitions in source data and legends",
+    "Intervals explicitly described as conditional/partition ranges, not confidence intervals"
+  ],
+  "resolved_layout_issues": [
+    "Expanded Fig2 horizontal margins and split histogram annotations",
+    "Moved Fig3 comparator legend above panels and oracle legend into blank space",
+    "Relocated Fig4 legends and shortened fitted-singles ticks to prevent adjacency",
+    "Shortened supplementary donor-selection heading and protected GO count text from reference lines"
+  ],
+  "export_safeguard": "Publication PDF and PNG written to temporary sibling files, PNG fully decoded before atomic rename; all final hashes and EOF checks passed.",
+  "limits": [
+    "Review does not assert biological independent validation or independent investigators",
+    "PNG render on current Linux runtime; native Windows rendering awaits the local run",
+    "Scientific source data independently audited by a separate reviewer"
+  ]
+}

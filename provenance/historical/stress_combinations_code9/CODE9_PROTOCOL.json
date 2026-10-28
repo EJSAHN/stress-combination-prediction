@@ -1,0 +1,193 @@
+{
+  "protocol_id": "CODE9_CITRUS_POSTRESULT_GENE_ATTRIBUTION_V1",
+  "fixed_utc": "2026-10-28T18:51:08.175219+00:00",
+  "status": "fixed_before_CODE9_gene_gain_calculation_after_all_CODE8_targets_and_aggregate_outcomes_known",
+  "question": "How concentrated is the frozen pair-centroid prediction advantage across genes, which improvements recur in both citrus genotypes, and which externally annotated functions are represented?",
+  "scope": "Post-result attribution and fixed-score sensitivity. Not new held-out validation, new prediction, causal pathway analysis or resolution of CODE7 noisy-subspace uncertainty.",
+  "parent_pins": {
+    "protocol": {
+      "relative_path": "stress_combinations_code8/CODE8_PROTOCOL.json",
+      "sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555"
+    },
+    "amendment": {
+      "relative_path": "stress_combinations_code8/INPUT_AMENDMENT01.json",
+      "sha256": "b0e641430ee42775123968a74de5dc37aa043f12454375b964cf5582b63f53fd"
+    },
+    "freeze_manifest": {
+      "relative_path": "stress_combinations_code8/frozen/FREEZE_MANIFEST.json",
+      "sha256": "eab60a4b4d48d002ae81664d5bd2fe320fcc35ee519f7150c45427e3a62afc0a"
+    },
+    "result_summary": {
+      "relative_path": "stress_combinations_code8/results/RUN_SUMMARY.json",
+      "sha256": "5c1534b9d3f531b094d07c83b91c43b95168c5b4af11d6b648996d6da76310e5"
+    },
+    "source": {
+      "relative_path": "stress_combinations_code8/input/GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz",
+      "sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f"
+    },
+    "design": {
+      "relative_path": "stress_combinations_code8/input/GSE203331_design_verified.csv",
+      "sha256": "04b36dab139a44bc8102c27665e3e7e79ac7db6ad9cf48d07c60556fe867dd54"
+    },
+    "code": {
+      "relative_path": "stress_combinations_code8/code/stress_citrus_validation.py",
+      "sha256": "60c7fa1e3bf9d7b10247833a23691121c7a53d4f18bcc52704efad06d570e393"
+    }
+  },
+  "immutable_parent_rule": "Verify pins and all six CODE8 NPZ hashes. Do not edit, refit or replace CODE8 predictions, gene panels, coefficients, primary criterion or decisions.",
+  "genotypes": [
+    "Car",
+    "Cleo"
+  ],
+  "primary_threshold": 1.0,
+  "thresholds": [
+    1.0,
+    0.5,
+    2.0
+  ],
+  "scenario_scope": "All six frozen CODE8 genotype/filter scenarios. Primary1.0 separately in each genotype; other thresholds are sensitivity, not independent replication or rescue.",
+  "prediction": "full_pair_centroid",
+  "primary_comparators": [
+    "second_order_factorial",
+    "pair_trained_factor_OLS",
+    "within_V3"
+  ],
+  "secondary_comparators": [
+    "within_V11"
+  ],
+  "comparators": [
+    "second_order_factorial",
+    "pair_trained_factor_OLS",
+    "within_V3",
+    "within_V11"
+  ],
+  "units": "Squared error in log2(1+author-deposited FPKM); existing panels and three target RNA pools per genotype.",
+  "epsilon": 1e-12,
+  "epsilon_meaning": "Numerical zero convention, not biological effect-size or significance threshold.",
+  "gene_contribution": {
+    "per_library": "delta_gj=(baseline_g-target_gj)^2-(centroid_g-target_gj)^2",
+    "mean": "delta_g=mean_j(delta_gj)=(baseline_g-centroid_g)*(baseline_g+centroid_g-2*target_mean_g)",
+    "meaning": "Positive favors centroid. Equal gene mean recovers CODE8 comparator-minus-centroid MSE difference.",
+    "retain": [
+      "Feature_GID",
+      "genotype",
+      "filter",
+      "comparator",
+      "three library contributions",
+      "mean contribution",
+      "baseline and centroid predictions",
+      "target mean and three target values",
+      "control mean",
+      "source annotation identity"
+    ],
+    "summaries": [
+      "G",
+      "mean gain",
+      "median gain",
+      "quantiles0,0.01,0.05,0.25,0.5,0.75,0.95,0.99,1",
+      "positive/negative/numerical-zero counts",
+      "fraction positive mean",
+      "fraction positive all3 libraries",
+      "P=sum(max(delta,0))",
+      "N=sum(max(-delta,0))",
+      "H=P-N"
+    ],
+    "inference": "Descriptive gene distribution, no genes-as-independent-biological-replicates P values, binomial intervals or gene bootstrap."
+  },
+  "concentration": {
+    "fractions": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "count_rule": "k=ceil(q*G)",
+    "ordering": "Descending mean delta, ties by ascending lexical Feature_GID; exactly k genes removed.",
+    "refit": false,
+    "reports": [
+      "k",
+      "remaining G-k",
+      "removed gain sum",
+      "remaining total H_k",
+      "remaining mean H_k/(G-k)",
+      "total gain retention H_k/H",
+      "removed positive mass/P",
+      "each target-library mean gain on same retained set"
+    ],
+    "denominator_handling": "If H or P numerically zero, ratio unavailable with reason, not0. Net-gain shares may exceed1 or be negative; positive-mass shares bounded.",
+    "worst_case_scope": "Largest mean-gain deletion minimizes remaining total mean gain for this exact k and unchanged predictions. Same retained set is scored in each target library, not each library own worst-case deletion.",
+    "minimum_positive_prefix": "In descending strictly positive delta>epsilon prefix, smallest k with H-sum(top k delta)<=epsilon. Report k,k/G. If no such prefix, unavailable and remaining gain. If initial H<=epsilon, k=0 flagged no-positive-initial-net-gain. This outcome-selected fixed-prediction deletion fraction is not estimator breakdown or biological sparsity.",
+    "interpretation": "Report literal persistence after1/5/10% deletion. No new success criterion replaces CODE8."
+  },
+  "cross_genotype": {
+    "universe": "Exact Feature_GID intersection of two PRIMARY1.0 panels; report intersection and both original panel sizes.",
+    "shared_per_comparator": "For each primary comparator, delta>epsilon in all3 target libraries of BOTH genotypes.",
+    "shared_across_primary_comparators": "Intersection of shared-per-comparator sets for all3 primary comparators; strict descriptive shared core.",
+    "reports": [
+      "mean-gain sign contingency",
+      "Pearson and Spearman association of mean contributions without significance tests",
+      "shared counts/fractions of common universe",
+      "within-genotype gain mass of shared sets",
+      "same/opposite/zero sign of target-minus-control mean displacement, not DE"
+    ],
+    "limits": "One experiment, shared mapping reference. Six positive signs are not six independent studies. Sets selected on known outcomes, not validated biomarkers."
+  },
+  "gene_examples": {
+    "positive_count": 20,
+    "negative_count": 10,
+    "core_count": 20,
+    "per_genotype_comparator": "Primary panels and3primary comparators. Top20 strictly positive mean gains descending; bottom10 strictly negative ascending; lexical Feature_GID tie-break. If fewer qualifying genes, report all and count.",
+    "core_order": "On the primary common-gene universe, ascending mean-gain percentile ranks with average tied ranks divided by Gcommon. For strict-core genes, take minimum of all6 ranks (2genotypes x3primary comparators), sort descending then lexical Feature_GID; report top20 and all6ranks.",
+    "annotation": "Keep original Product,Gene_Symbol,Entrez and external provenance. Do not infer function from gain sign.",
+    "selection_disclosure": "Illustrative outcome-selected genes, not confirmatory panel."
+  },
+  "direction_oracle": {
+    "models": [
+      "full_pair_centroid",
+      "second_order_factorial",
+      "pair_trained_factor_OLS"
+    ],
+    "fitting": "Per frozen scenario/model, u=prediction-C,t=target_mean-C. alpha=dot(u,t)/dot(u,u), unconstrained, no intercept. Exact zero denominator givesalpha0 and zero-norm flag.",
+    "diagnostic": "C+alpha*u, evaluated on all3target libraries and target mean.",
+    "label": "TARGET_FITTED_GLOBAL_RESCALE_DIAGNOSTIC_NOT_PREDICTION",
+    "reports": [
+      "alpha",
+      "zero-norm flag",
+      "originalMSE",
+      "rescaled mean/per-libraryMSE",
+      "MSE to target mean",
+      "direction cosine with zero-norm unavailableflag"
+    ],
+    "limits": "Outcome-seen magnitude-versus-direction description. Does not enter CODE8 competition, alter predictions, validate performance or identify true biological span."
+  },
+  "annotation_gate": {
+    "annex_required_before_gene_gain_computation": true,
+    "annex": "ANNOTATION_ANNEX.json fixed with timestamp/hash by annotation audit before gene gain/rank inspection.",
+    "preferred_source": "Authoritative exact-Entrez GO associations with audited assembly/taxon/date and version-compatible ontology. Propagate only is_a and part_of, exclude NOT, and freeze obsolete-term handling in annex.",
+    "stop_rule": "No guessed orthology or post-gain category/version changes. If mapping/version compatibility unresolved, report unavailable or fix an explicit descriptive alternative annex before gains.",
+    "duplicate_Entrez_policy": "Define duplicates across FULL source feature annotation table. Exclude ALL features carrying a multiply assigned Entrez ID from functional summaries; never choose a representative. CODE8 overall scores preserved.",
+    "functional_eligibility": "One valid unambiguous Entrez per feature, no duplicate across source features. Report missing/ambiguous/unmappable identities and GO-unannotated eligible features.",
+    "score_QC": "Delete all features carrying duplicated Entrez IDs from fixed scores, no refit. Report mean/net/per-library gains. Missing functional annotations alone do not exclude valid features in duplicate-only QC.",
+    "functional_summaries": [
+      "eligible group count per panel",
+      "mean/net gain",
+      "positive-mass contribution/share of panel positive mass",
+      "fraction mean/all3librarypositive",
+      "core member count and descriptive membership ratio vs eligible common background"
+    ],
+    "small_group_n": 20,
+    "small_group_rule": "n<20 labelledsmall, retained in complete outputs, not promoted as broad biological conclusions.",
+    "coverage": "Report overlaps,unique union coverage,unmatched/unannotated/excluded counts andzero-membergroups. Overlapping group contributions cannot be summed as disjoint components.",
+    "inference": "No GO Pvalues or formal enrichment. Attribution of observed prediction gains, not pathway activation or causal tolerance."
+  },
+  "checks": [
+    "All parent and6frozen asset hashes",
+    "Direct and factorized contribution identity",
+    "Gene mean matchesCODE8 contrast",
+    "Independent ordering/denominators/prefix",
+    "ID joins/commoncore definitions",
+    "Group coverage/overlaps/duplicate exclusions",
+    "Direction-oracle algebra",
+    "Parent outputs unchanged"
+  ],
+  "reporting": "Preserve negative contributions and report all fixed scenarios/contrasts/categories. Corrections/additions explicitly post-result. No universal law, pure higher-order interaction, novel biological dimension or journal-readiness claim."
+}

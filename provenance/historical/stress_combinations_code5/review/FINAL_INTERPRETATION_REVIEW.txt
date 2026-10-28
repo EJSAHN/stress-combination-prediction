@@ -1,0 +1,51 @@
+CODE5 numerical and interpretation review
+
+Both audits passed. Main prediction and metric reconstruction used independent
+small-Gram eigendecomposition and explicit factorial inclusion-exclusion.
+Current-target input exclusion was separately tested by poisoning its three
+columns in a temporary source fixture; all predictions and selections were
+unchanged. Subspace geometry was reconstructed without production imports;
+the disjoint-reference extension used explicit distinct-library products.
+
+WHAT THE SELECTION RESULT SUPPORTS
+At primary rank two, common_low1 and raw_low1 select the same donors for every
+target; common_low2 and raw_low2 also match for every target. This is a negative
+result for any claim that common-axis selection adds value over distance from
+the control in this dataset. It does not erase the fixed four-way transfer.
+
+The common_low2 rule beats the all-donor mean in the two quiet triple targets
+and the four-way target, but is worse in the two active triple targets. The
+control mean is better than common_low2 in both quiet triple targets. Thus
+no universal donor-selection advantage follows. Removing the common component
+also fails to create a generally superior predictor.
+
+Primary common_low2 memberships are unchanged in every conditional one-pool
+omission comparison for all five targets. This stability is not predictive
+validity: it occurs even in tasks where the rule performs poorly. Keep the
+conditional fixed-basis interpretation and do not call these new replications.
+
+WHAT THE SUBSPACE RESULT SUPPORTS
+The previously observed four-way quiet-centroid MSE gain decomposes into
+approximately 0.000258 in the top two directions, 0.020023 in the remaining
+observed lower-order directions, and 0.021371 outside the full observed
+lower-order span. The latter two components each contribute positive realized
+gain in all three target libraries. This resolves a real ambiguity in the
+rank-two residual: it includes both omitted lower-order directions and an
+outside-span component.
+
+The separate disjoint-reference sensitivity also retains positive outside-span
+alignment and population proximity margins in all three overlapping control
+splits. Those estimates are not numerical corrections to the original gains,
+and their different gene filter/reference/basis must remain explicit.
+
+Use 'outside the observed lower-order span'. That span contains sampling noise
+and covers the observed condition means only. Outside-span expression is not
+automatically a pure higher-order factorial interaction, a new regulatory
+program, stress memory, or physiological benefit. Conversely, a high-order
+factorial interaction can lie inside the lower-order span.
+
+All these expression values were already examined before CODE5. The subspace
+amendment explicitly followed its earlier gain result. No independent biological
+validation or newly blinded test was performed. The supported paper direction
+is quantitative, resolution-dependent transfer and its limits; a new selection
+algorithm or general law is not supported by this stage.

@@ -1,0 +1,48 @@
+DIAGNOSTICS-ONLY PORTABILITY CORRECTION — 28 OCTOBER 2026
+
+The first native Windows run completed every scientific computation but failed
+the reference check on a working-scale diagnostic. The underlying issue was a
+strict sign comparison at a mathematical zero, compounded by numeric arrays
+serialized as strings. This correction does not widen the existing numerical
+tolerance or alter predictions, simulation draws, rankings or scientific scores.
+
+Under the single_mean_span construction, the full-rank span is defined by the
+three observed single-response vectors. Projection of those defining vectors
+onto their own span is the identity. The control effect is zero. Their absolute
+latent means therefore equal the original observed nonnegative means exactly.
+Floating-point SVD reconstruction can nevertheless leave values around -1e-15
+at zero entries. A strict '<0' count amplifies those signs into a fraction near
+1e-3. Gaussian negative probabilities are similarly unstable when their mean
+and standard deviation are both extremely small.
+
+src/stress_prediction/noise_diagnostics.py runs after the unchanged historical
+noise engine. It independently reloads checksum-pinned source data, fixed panels
+and sample metadata. It verifies single-span rank, the projection identity and
+source noise traces, and bounds each legacy reconstruction error using its
+reported MSE. Raw negative counts and Gaussian probabilities must be consistent
+with that bound; substantive departures stop the pipeline.
+
+Only single_mean_span rows CT/S/EL/HS are corrected. The reported latent minimum,
+negative fraction and expected negative Gaussian probability use the original
+observed absolute means. Gaussian probabilities are still calculated normally;
+they are not set wholesale to zero. Projected pair/triple rows and all joint-rank
+rows retain their original values, including genuine negative working values.
+
+The two raw CSVs and original RUN_SUMMARY.json remain under
+noise/raw_diagnostics/. The exposed run summary updates only the two changed
+output hashes and adds an explicit postprocessing record; the original audited
+engine code hash is retained. The corrected CSVs use the same schema.
+noise/PORTABILITY_DIAGNOSTIC_AMENDMENT.json records source hashes,
+identity bounds, every changed cell and both raw/corrected hashes. No simulation
+values are truncated, and no fitted array or simulation table is modified.
+
+The two corrected reference tables live separately under
+provenance/portability_reference_tables/noise/. Original historical reference
+tables and their hashes remain unchanged. All unrelated results continue to be
+compared using the original tolerance. Serialized singular-value arrays are
+compared as numeric arrays with identical dimensions, not literal text.
+
+The original failed Windows run remains a failed run. A fresh native Windows
+run, 20261028_170808_faf6bd34, passed the complete analysis, figures and workbook
+on 28 October 2026. The public confirmation record is in
+docs/validation/native_windows_confirmation.json.

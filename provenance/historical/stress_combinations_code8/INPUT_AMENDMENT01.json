@@ -1,0 +1,16 @@
+{
+  "amendment_id": "CODE8_INPUT_AMENDMENT01",
+  "created_utc": "2026-10-28T18:25:54.537281+00:00",
+  "original_protocol_sha256": "4630de82b2c2590e42adacf20f326918caab3e8adff98b4a39276e4b4193a555",
+  "expression_values_parsed": false,
+  "reason": "GEO description says RPKM, but actual deposited header has explicitly labelled FPKM, Read_Count and TPM layers. Choose only literal FPKM columns, consistent with CODE6 normalized expression workflow; no counts/TPM values analyzed. Headeronly correction before numerical opening.",
+  "replacements": {
+    "unit": "author-deposited FPKM as labelled in source header, despite GEO RPKM text",
+    "transform": "log2(1+FPKM)",
+    "feature_filter": "mean FPKM across12 CT/single libraries >= threshold",
+    "gene_column": "Feature_GID",
+    "design_file": "input/GSE203331_design_verified.csv"
+  },
+  "unchanged": "All numerical thresholds,models,fitting rules,comparators,primary criteria,target freeze boundary and biological units.",
+  "header_record_sha256": "7793004fae196f10d748026b009c8cb798c40d0cb0db0c20b9c046f1fb5d5e03"
+}

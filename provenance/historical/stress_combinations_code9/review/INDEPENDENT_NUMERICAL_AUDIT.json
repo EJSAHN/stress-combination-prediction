@@ -1,0 +1,95 @@
+{
+  "status": "PASS_INDEPENDENT_GENE_ATTRIBUTION_AUDIT",
+  "completed_utc": "2026-10-28T18:59:41.268859+00:00",
+  "method": "Raw target columns plus frozen CODE8 vectors; independent product/direct loss identities, Python sorted deletion order, SciPy percentile ranks and direct functional membership masks. No production imports.",
+  "checked_cells_by_table": {
+    "annotation_coverage": 66,
+    "direction_oracles": 288,
+    "gene_summary": 576,
+    "gene_contributions": 6039240,
+    "concentration_curves": 2013080,
+    "concentration_removal": 1008,
+    "critical_removal": 192,
+    "duplicate_Entrez_score_QC": 672,
+    "functional_summary": 7656,
+    "gene_examples_identity": 180,
+    "gene_examples": 1620,
+    "cross_genotype_summary": 78,
+    "shared_gene_gains": 603174,
+    "strict_core_summary": 5,
+    "strict_core_all_genes": 154660,
+    "strict_core_example_identity": 20,
+    "strict_core_examples": 180,
+    "functional_core_summary": 396
+  },
+  "maximum_absolute_numeric_discrepancy": 1.3642420526593924e-12,
+  "maximum_by_table": {
+    "annotation_coverage": 5.551115123125783e-17,
+    "direction_oracles": 4.440892098500626e-16,
+    "gene_summary": 1.3642420526593924e-12,
+    "gene_contributions": 3.552713678800501e-15,
+    "concentration_curves": 9.094947017729282e-13,
+    "concentration_removal": 4.547473508864641e-13,
+    "critical_removal": 1.3642420526593924e-12,
+    "duplicate_Entrez_score_QC": 9.094947017729282e-13,
+    "functional_summary": 9.094947017729282e-13,
+    "gene_examples": 3.552713678800501e-15,
+    "cross_genotype_summary": 2.220446049250313e-16,
+    "shared_gene_gains": 3.552713678800501e-15,
+    "strict_core_summary": 6.938893903907228e-18,
+    "strict_core_all_genes": 1.7763568394002505e-15,
+    "strict_core_examples": 4.440892098500626e-16,
+    "functional_core_summary": 2.220446049250313e-16
+  },
+  "primary_metrics": [
+    {
+      "scenario": "Car_fpkm1p0",
+      "comparator": "second_order_factorial",
+      "positive_gene_fraction": 0.5731539782484258,
+      "minimum_removal_fraction": 0.04419004006868918,
+      "mean_gain": 0.09735295109110315
+    },
+    {
+      "scenario": "Car_fpkm1p0",
+      "comparator": "pair_trained_factor_OLS",
+      "positive_gene_fraction": 0.6525472238122496,
+      "minimum_removal_fraction": 0.17532913566113337,
+      "mean_gain": 0.20005379686436855
+    },
+    {
+      "scenario": "Car_fpkm1p0",
+      "comparator": "within_V3",
+      "positive_gene_fraction": 0.7195764167143675,
+      "minimum_removal_fraction": 0.34321694333142533,
+      "mean_gain": 0.20382847994562667
+    },
+    {
+      "scenario": "Cleo_fpkm1p0",
+      "comparator": "second_order_factorial",
+      "positive_gene_fraction": 0.6078660675817074,
+      "minimum_removal_fraction": 0.07004370037545393,
+      "mean_gain": 0.2073662064897817
+    },
+    {
+      "scenario": "Cleo_fpkm1p0",
+      "comparator": "pair_trained_factor_OLS",
+      "positive_gene_fraction": 0.7060380377915922,
+      "minimum_removal_fraction": 0.24835354219240474,
+      "mean_gain": 0.31375340543040775
+    },
+    {
+      "scenario": "Cleo_fpkm1p0",
+      "comparator": "within_V3",
+      "positive_gene_fraction": 0.7832830676432572,
+      "minimum_removal_fraction": 0.43023327383516957,
+      "mean_gain": 0.3174926909954495
+    }
+  ],
+  "strict_core_features": 604,
+  "common_primary_features": 15466,
+  "source_and_parent_hashes_unchanged": true,
+  "protocol_sha256": "fe77a77a223fd30a4022efe0933f214332daa11a8c9e2fb7ec8038479f7b313f",
+  "annotation_annex_sha256": "281a7d49b3957419711bf8cb7e25eec45942174d1dd6e02b4fe4dbe6d75e483a",
+  "production_code_sha256": "90e87dba53f718879595af34a5ce2550012413324c109a87e82de65180cd831e",
+  "production_result_sha256": "619797d31f1613eb0d5de1d884812625eb1d87e9d46610cdb032452f8cb48125"
+}

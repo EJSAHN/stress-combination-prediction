@@ -1,0 +1,39 @@
+{
+  "status": "PASS_INDEPENDENT_ANNOTATION_AUDIT",
+  "completed_utc": "2026-10-28T18:54:38.392974+00:00",
+  "outcomes_or_gene_gains_used": false,
+  "method": "Raw GAF and source identity parse, reverse BFS descendants of GO.db SQLite; no production imports",
+  "source_features": 30136,
+  "all_Entrez_single_decimal": true,
+  "duplicated_EntrezIDs": 23,
+  "duplicated_Entrez_features": 46,
+  "GO_version_header_matches_SQLite_date": "2023-07-27",
+  "GAF_rows": 63808,
+  "IEA_rows": 63808,
+  "taxa": {
+    "taxon:2711": 63808
+  },
+  "membership_rows": 1657,
+  "unique_member_features": 1651,
+  "eligible_membership_rows_after_duplicate_exclusion": 1657,
+  "eligible_unique_member_features": 1651,
+  "eligible_category_counts": {
+    "GO:0006457": 200,
+    "GO:0015979": 74,
+    "GO:0006412": 389,
+    "GO:0098869": 13,
+    "GO:0055085": 771,
+    "GO:0071554": 210
+  },
+  "GO_covered_features": 16255,
+  "BP_covered_features": 11196,
+  "excluded_graph_relations": {
+    "regulates": 3109,
+    "negatively regulates": 2696,
+    "positively regulates": 2686
+  },
+  "NOT_rows_excluded": 0,
+  "annex_sha256": "281a7d49b3957419711bf8cb7e25eec45942174d1dd6e02b4fe4dbe6d75e483a",
+  "protocol_sha256": "fe77a77a223fd30a4022efe0933f214332daa11a8c9e2fb7ec8038479f7b313f",
+  "caveat": "Exact Entrez transfer from newer AR103 to original AR102 features, not unchanged transcript structure; all computational IEA. Exclude duplicate-Entrez features in functional summaries and retain coverage."
+}

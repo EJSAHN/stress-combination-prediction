@@ -1,0 +1,167 @@
+SCIENTIFIC CLAIMS AND INTERPRETATION LIMITS
+
+This release prepares the executed analysis and figures for a research paper.
+It does not itself establish publication-level novelty or a causal mechanism.
+
+CENTRAL QUESTION
+How much information about a higher-order stress combination is available in
+observed lower-order expression profiles, and how repeatable is the allocation
+of a prediction's accuracy gain among genes?
+
+The proposed contribution is an empirical comparison of fixed prediction rules
+and the limits of their interpretation. Equal-weight averaging, weighted single-
+response integration, projection, cross-repeat moments and complementary-pool
+refitting are established mathematical tools. Their use here is not a claim
+that a new general prediction algorithm, correlation estimator or biological
+law has been invented.
+
+EVIDENCE STRUCTURE
+
+1. Discovery: GSE147962, Arabidopsis, four stress factors and three RNA pools per
+   factorial cell. The author-processed values are DESeq2-normalized counts.
+   Donor exploration and rank choices occurred after inspecting parts of this
+   dataset. A selected pair of quiet triple-condition profiles predicted the
+   four-way profile better than the control, but donor-selection rules did not
+   generalize uniformly across triple/four-way targets. The common-response
+   selector chose the same primary donors as ordinary distance to control.
+   Keep these unfavorable comparisons visible. Do not market the selector as
+   a superior new method or count the same four-way result more than once.
+
+2. Separate Arabidopsis experiment: GSE330879, wild type and rap2.3_1, salt,
+   excess light and heat, with the complete eight-condition design and three
+   RNA pools per cell. The primary wild-type/filter test and secondary
+   mutant/filter scenarios were fixed and predictions frozen before numerical
+   triple-target parsing. The rule was the equal mean of all three pair-stress
+   profiles. The source supplied FPKM, not raw counts. This experiment came
+   from the same investigator network as discovery; it is not independent-
+   laboratory replication or an exact replication of selected triples
+   predicting a four-way treatment.
+
+3. Citrus experiment: GSE203331, Carrizo citrange and Cleopatra mandarin,
+   water stress, high light and heat, with three RNA pools per factorial cell.
+   Each pool combines plants; the number of independent RNA pools remains
+   three. Carrizo is a Poncirus trifoliata × Citrus sinensis hybrid and
+   Cleopatra is Citrus reshni. Therefore 'Arabidopsis and citrus' or 'two plant
+   systems' is safer than 'two species'. The source file contains FPKM, TPM and
+   read-count columns; the fixed analysis uses the columns labelled FPKM.
+   Predictions for both genotypes and all expression filters were frozen
+   before numerical triple-target parsing. The crop and experiment differ,
+   while investigators overlap with earlier work. Both genotypes were mapped
+   to a common sweet-orange reference.
+
+All analyses start from publicly deposited, author-processed expression
+matrices. No raw FASTQ reprocessing was performed. Numerical target withholding
+within the reanalysis does not remove possible coupling introduced by the
+authors' source-wide preprocessing or published qualitative knowledge.
+
+WHAT THE RESULTS SUPPORT
+
+The same pair-centroid rule, fitted separately to each genotype's own lower-
+order observations, achieved lower mean squared error than the specified
+comparators in the fixed external Arabidopsis and citrus tests. All gene
+filters, comparator definitions, transformations, sample mappings and target
+libraries must remain stated. Absolute MSE values should not be compared
+between normalized-count and FPKM scales as if they measured a common unit.
+
+The centroid's observed component outside the estimated single-response span
+contributes to prediction gain. Expanding that span with observed single-stress
+and control replicate variation retains much of the gain. The correct phrase
+is 'outside the fitted/observed response span', not 'pure higher-order
+interaction', a previously absent biological dimension or causal protection.
+
+In citrus, the centroid's advantage over learned single-response weights is
+distributed across many genes and survives deleting the highest-gain 10% from
+scoring. Its advantage over the second-order model is more concentrated and
+does not survive the same deletion. One global target-fitted rescaling of the
+second-order vector still does not reach the original centroid's error. This
+rescaling is an outcome-seen diagnostic, not another validated predictor.
+
+On the common 15,466-feature citrus universe, the centroid remains more
+accurate than each of three comparators across all 1,024 sampled side-specific
+refits. There are 3,072 mean-gain comparisons, not 3,072 independent biological
+experiments. The models are rebuilt separately within each genotype; no model
+trained only in one genotype is transferred to predict the other genotype.
+
+Gene-gain ranks are more concordant within genotype than between genotypes.
+The target-repeat correction changes between-genotype Pearson coefficients
+only slightly, and the within-versus-between contrast persists when fitting
+and target scoring use complementary pool sides. This supports conditional
+repeatability of an observed difference in gain profiles. It does not prove
+that the genotypes use different causal stress-response mechanisms.
+
+RESULTS THAT LIMIT THE STRONGER INTERPRETATION
+
+Observed response spans are estimated with noise. True lower-order directions
+may lie outside an estimated span, while higher-order effects may lie inside.
+A conditional simulation with a joint rank-three latent mean and empirical
+residual covariance reaches the observed wild-type outside-span statistic:
+observed 0.062273019; simulated 95th percentile 0.064190945; 56/1,000 outcomes
+at least as large. The corresponding mutant count is 61/1,000. All 36 fixed
+scenarios are retained. This neither proves that the gain is noise nor
+establishes a biological P value. The joint latent model uses the already-seen
+target as a nuisance construction; it is not a predictor. Three pools cannot
+identify the full covariance or true span orientation. Matching one scalar
+statistic does not demonstrate a fit to the whole expression dataset.
+
+Gene-wise gains are differences of squared prediction error. They depend on
+the comparator, scale, panel and fitted model. They are not gene effects,
+causal contributions, differential expression or pathway activation.
+Functional summaries are descriptive and comparator-dependent. Carrizo
+translation has negative net gain against the second-order comparator;
+Cleopatra protein-folding features have negative net gain against learned
+single-response weights. These patterns preclude a universal beneficial
+pathway claim. The original citrus study already discussed translation and
+unfolded-protein responses.
+
+The functional annotation join uses exact Entrez identifiers from a newer
+NCBI annotation release, with a date-matched ontology. All source GAF evidence
+is computational IEA. Ambiguous duplicated Entrez mappings are excluded from
+functional summaries, not silently resolved. Categories can overlap; small
+oxidant-detoxification groups contain only 10/9 primary-panel features. No GO
+enrichment P values or genes-as-biological-replicates tests were calculated.
+
+Conditional target-repeat reliability holds the fitted predictor fixed. It
+does not remove errors shared through that predictor. Its near-one stable
+moment fraction is not a proportion of biological truth or the reliability
+of the complete refitting procedure. Adjusted Pearson is a plug-in ratio,
+not an unbiased correlation estimator; the formula is not applied to ranks.
+
+Complementary sides within a draw use disjoint pools, but different draws
+reuse the same observations. The 1,024 fits are not mutually disjoint. Shared
+feature selection, reference mapping and preprocessing remain. Full fitting
+panels differ between citrus genotypes even though scoring uses common IDs.
+The 2.5–97.5% ranges describe partition sensitivity, not confidence intervals.
+All-positive matched contrasts provide no calibrated significance test.
+
+The experiments are endpoint expression measurements. Do not infer recovery,
+hysteresis, memory, resistance or tolerance from these prediction diagnostics.
+
+RELEASE AND VALIDATION LANGUAGE
+
+Use 'recomputed from deposited processed expression matrices', not 'raw-read
+reanalysis'. Distinguish numerical replay, independent numerical audit, figure
+source verification, PowerShell syntax/contract review, and actual execution
+on Windows. The complete native Windows run 20261028_170808_faf6bd34 passed
+on 28 October 2026. This establishes portability, not new biological validation.
+
+The code license must not relabel third-party inputs.
+Public GEO availability and source URLs should be documented without claiming
+that deposited data are covered by the project's code license. NCBI's Molecular
+Data Usage policy places no NCBI restrictions on use/distribution of molecular
+data, including gene expression, but does not certify or transfer third-party
+rights. A code repository with pinned acquisition instructions and checksums,
+and a separate local reproduction bundle, makes these input roles clear.
+Policy checked 28 October 2026:
+https://www.ncbi.nlm.nih.gov/home/about/policies/
+
+FIGURE REVIEW CHECKLIST
+
+Main figures should state the question/design, show fixed prediction
+comparisons, show both span persistence and its noise-identifiability limit,
+and distinguish aggregate accuracy from gene-profile agreement. Supplements
+must retain failed discovery selection, filter/library sensitivity, the full
+noise-scenario grid and comparator-dependent functional/QC results. All
+panels require numerical source tables, correct sample units and traceable
+links to executed outputs. No panel may turn a simulation exceedance into a
+biological P value, a partition range into a confidence interval, or an
+observed-span component into a factorial interaction.

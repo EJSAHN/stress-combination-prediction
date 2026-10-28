@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "accession": "GSE330879",
+      "relative_path": "provenance/historical/stress_combinations_code6/input/GSE330879_Col0_fpkm.txt.gz",
+      "sha256": "cc688c63c6f660268d0c3c32ee7de906694f728b53e04af9ef4e7dd0a874caa0",
+      "bytes": 2178093,
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE330nnn/GSE330879/suppl/GSE330879_Col0_fpkm.txt.gz",
+      "record_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE330879",
+      "kind": "Author-deposited FPKM",
+      "rights": "Third-party deposited research data; code license does not relicense source data. Cite accession and original study; retain source attribution."
+    },
+    {
+      "accession": "GSE330879",
+      "relative_path": "provenance/historical/stress_combinations_code6/input/GSE330879_RAP2.3_fpkm.txt.gz",
+      "sha256": "89fd2bc79eff30d390cb5aa6cadc6d7a020c1a65d55153b6a718c3c764ae5df5",
+      "bytes": 2166676,
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE330nnn/GSE330879/suppl/GSE330879_RAP2.3_fpkm.txt.gz",
+      "record_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE330879",
+      "kind": "Author-deposited FPKM",
+      "rights": "Third-party deposited research data; code license does not relicense source data. Cite accession and original study; retain source attribution."
+    },
+    {
+      "accession": "GSE147962",
+      "relative_path": "provenance/historical/stress_combinations_code3/reproduction/data/GSE147962_normalized_counts.txt.gz",
+      "sha256": "a306e5a3fc497dee7f2e137d352233a0da783ededbea658a2270f8a64efc8c8e",
+      "bytes": 9491190,
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE147nnn/GSE147962/suppl/GSE147962_normalized_counts.txt.gz",
+      "record_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147962",
+      "kind": "Author-processed normalized counts",
+      "rights": "Third-party deposited research data; code license does not relicense source data. Cite accession and original study; retain source attribution."
+    },
+    {
+      "accession": "GSE203331",
+      "relative_path": "provenance/historical/stress_combinations_code8/input/GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz",
+      "sha256": "e141c05673de2c04085e2be1bb3291582b8d6a600f420113d3722402229bf31f",
+      "bytes": 13295096,
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE203nnn/GSE203331/suppl/GSE203331_Expression_Profile.GCF_000317415.1_Csi_valencia_1.0.gene.txt.gz",
+      "record_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203331",
+      "kind": "Author-deposited FPKM",
+      "rights": "Third-party deposited research data; code license does not relicense source data. Cite accession and original study; retain source attribution."
+    }
+  ]
+}

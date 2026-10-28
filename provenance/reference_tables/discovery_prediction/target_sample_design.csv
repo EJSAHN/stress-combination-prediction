@@ -1,0 +1,4 @@
+GSM,matrix_column,treatment,biological_repeat_label,salt,paraquat,high_light,heat,order,source_column,condition,split,repeat_label_is_assumed_block
+GSM4451007,S-PQ-HL-HS_46,salt+paraquat+highlight+heat_stress,1,1,1,1,1,4,S-PQ-HL-HS_46,S-PQ-HL-HS,locked_four_way,False
+GSM4451008,S-PQ-HL-HS_47,salt+paraquat+highlight+heat_stress,2,1,1,1,1,4,S-PQ-HL-HS_47,S-PQ-HL-HS,locked_four_way,False
+GSM4451009,S-PQ-HL-HS_48,salt+paraquat+highlight+heat_stress,3,1,1,1,1,4,S-PQ-HL-HS_48,S-PQ-HL-HS,locked_four_way,False

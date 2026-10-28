@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "Packaging only. No scientific engine, source, reference or tolerance changed.",
+  "original_runtime_files_unchanged": 29,
+  "pinned_analysis_assets": 114,
+  "canonical_source_files_omitted": 4,
+  "restoration_tests_passed": 9,
+  "production_restore_exact_bytes": true,
+  "production_reference": {
+    "path": "provenance/historical/stress_combinations_code5/frozen/predictions.npz",
+    "bytes": 19932365,
+    "sha256": "86fccfe3078dcaa830a4f30ab56a5189138edb31c537c892a92de9ed50591a13",
+    "parts": [
+      {
+        "path": "provenance/chunks/discovery_selection_predictions/predictions.npz.part001",
+        "bytes": 8388608,
+        "sha256": "161ffceb73c54969177a42da113db575059b1a4476596e4c1d58f2a532dec64a"
+      },
+      {
+        "path": "provenance/chunks/discovery_selection_predictions/predictions.npz.part002",
+        "bytes": 8388608,
+        "sha256": "ab49939396fb6e90db812f3f5213b042385839ef89ed0ce4af661bc340c99737"
+      },
+      {
+        "path": "provenance/chunks/discovery_selection_predictions/predictions.npz.part003",
+        "bytes": 3155149,
+        "sha256": "b11799f4845501e97ffd43c26924e10da66342285143a52e64ad32b4044b3e11"
+      }
+    ]
+  },
+  "new_packaging_file_hashes": {
+    "scripts/restore_reference.py": "560ff6f9ef1ab428b6647f8c0b4e75c9696b53e35ebb71bdbc00b646e0012a5f",
+    "tests/test_restore_reference.py": "1aaef806362726f1b70ce579a0cebe5ac099c2e406e42b830399ab0383457c47",
+    "config/chunked_assets.json": "3d4cf5fa38721b6494517817e6990ca9e70cad4153a2deb4d30b82cdc63cbef6"
+  },
+  "helper_dependencies": "Python standard library only",
+  "network_access": false,
+  "package_installation": false,
+  "native_windows_scope": "The 29 original executables were validated on native Windows. The added packaging helper was tested on Linux, including production restoration; no new Windows helper execution is claimed.",
+  "publication": "Atomic no-overwrite same-directory hard link after closing the temporary file; supported on NTFS.",
+  "test_cases": [
+    "exact restoration and idempotence",
+    "corrupted part",
+    "missing part",
+    "preserve mismatched existing target",
+    "full-asset hash failure with partial cleanup",
+    "check-only missing target",
+    "unsafe relative traversal",
+    "publication failure with partial cleanup",
+    "real production parts reconstructed in a fresh directory"
+  ]
+}
